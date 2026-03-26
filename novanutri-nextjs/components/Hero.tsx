@@ -11,7 +11,7 @@ export default function Hero() {
   // 2. Add a loading state so the button doesn't get clicked twice
   const [loading, setLoading] = useState(false);
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (!email) return;
 
@@ -35,7 +35,7 @@ export default function Hero() {
     }
   };
   return (
-    <main className="flex-grow flex items-center justify-center px-6 py-12 md:py-24 overflow-hidden">
+    <main className="grow flex items-center justify-center px-6 py-12 md:py-24 overflow-hidden">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-20 items-center w-full">
         
         {/* Left Column: Text & Form */}
@@ -71,14 +71,15 @@ export default function Hero() {
                   placeholder="Enter your email address"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="flex-grow px-5 py-4 rounded-2xl border border-muted/30 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent text-heading shadow-sm placeholder:text-muted transition-all"
+                  className="grow px-5 py-4 rounded-2xl border border-muted/30 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent text-heading shadow-sm placeholder:text-muted transition-all"
                 />
-                <button
-                  type="submit"
-                  className="bg-primary hover:bg-primary-dark text-white px-8 py-4 rounded-2xl font-bold transition-all shadow-lg shadow-primary/30 hover:shadow-primary/50 whitespace-nowrap active:scale-95"
-                >
-                  Join Waitlist
-                </button>
+<button
+  type="submit"
+  disabled={loading}
+  className="bg-primary hover:bg-primary-dark disabled:opacity-70 disabled:cursor-not-allowed text-white px-8 py-4 rounded-2xl font-bold transition-all shadow-lg shadow-primary/30 hover:shadow-primary/50 whitespace-nowrap active:scale-95"
+>
+  {loading ? "Joining..." : "Join Waitlist"}
+</button>
               </form>
             )}
             <p className="text-sm text-muted mt-4">
@@ -89,8 +90,8 @@ export default function Hero() {
 
         {/* Right Column: Floating App Mockup */}
         <div className="relative flex justify-center mt-12 md:mt-0 lg:ml-auto w-full max-w-sm mx-auto z-0">
-          <div className="absolute inset-0 bg-gradient-to-tr from-primary/30 to-tertiary/30 blur-3xl rounded-full scale-110 -z-10"></div>
-          <div className="relative w-full aspect-1/2 rounded-4xl md:rounded-[3rem] border-[10px] md:border-[14px] border-surface shadow-2xl shadow-primary/40 overflow-hidden -rotate-6 hover:rotate-0 hover:-translate-y-4 transition-all duration-700 ease-out">
+          <div className="absolute inset-0 bg-linear-to-tr from-primary/30 to-tertiary/30 blur-3xl rounded-full scale-110 -z-10"></div>
+          <div className="relative w-full aspect-1/2 rounded-4xl md:rounded-[3rem] border-10 md:border-14 border-surface shadow-2xl shadow-primary/40 overflow-hidden -rotate-6 hover:rotate-0 hover:-translate-y-4 transition-all duration-700 ease-out">
             <Image 
               src="/hero-mockup.png" 
               alt="NovaNutri App Interface Mockup" 

@@ -16,11 +16,11 @@ export default function Header() {
         <span className="text-2xl font-bold text-heading tracking-tight">NovaNutri</span>
       </div>
       <nav className="hidden md:flex gap-8 text-body font-medium">
-        <a href="#features" className="hover:text-primary transition-colors">Features</a>
+      <a href="#features" className="hover:text-primary transition-colors">Features</a>
         <a href="#about" className="hover:text-primary transition-colors">About</a>
-        <button className="text-primary font-semibold hover:text-primary-dark transition-colors">
+        <a href="#contact" className="text-primary font-semibold hover:text-primary-dark transition-colors">
           Contact Us
-        </button>
+        </a>
       </nav>
     </header>
   );

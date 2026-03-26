@@ -6,7 +6,7 @@ export default function About() {
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
         
         {/* Left Column: Image Placeholder */}
-        <div className="relative w-full aspect-square md:aspect-[4/3] rounded-4xl overflow-hidden shadow-xl border-4 border-surface shadow-primary/10 bg-primary-light flex items-center justify-center group">
+        <div className="relative w-full aspect-square md:aspect-4/3 rounded-4xl overflow-hidden shadow-xl border-4 border-surface shadow-primary/10 bg-primary-light flex items-center justify-center group">
           {/* Note: Drop an image named 'about-image.jpg' into your public folder and uncomment the Image tag below! A photo of a family eating or someone cooking would look great here. */}
           
 
