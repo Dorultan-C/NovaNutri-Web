@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@theme {
+  /* --- BRAND COLORS (NovaNutri Theme) --- */
+  --color-primary: #8B5CF6;
+  --color-primary-dark: #6D28D9;
+  --color-primary-light: #EDE9FE;
+  
+  --color-secondary: #F59E0B;
+  --color-tertiary: #06B6D4;
+  --color-danger: #EF4444;
+
+  /* --- UI COLORS --- */
+  --color-background: #F9FAFB;
+  --color-surface: #FFFFFF;
+  --color-heading: #111827;
+  --color-body: #374151;
+  --color-muted: #9CA3AF;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-background);
+    color: var(--color-body);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--color-heading);
+  }
+}
