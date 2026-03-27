@@ -2,44 +2,59 @@ import Image from "next/image";
 
 export default function About() {
   return (
-    <section id="about" className="w-full bg-background py-24 px-6">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+    <section id="about" className="w-full bg-surface py-24 px-6 border-t border-muted/10">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
         
-        {/* Left Column: Image Placeholder */}
-        <div className="relative w-full aspect-square md:aspect-4/3 rounded-4xl overflow-hidden shadow-xl border-4 border-surface shadow-primary/10 bg-primary-light flex items-center justify-center group">
-          {/* Note: Drop an image named 'about-image.jpg' into your public folder and uncomment the Image tag below! A photo of a family eating or someone cooking would look great here. */}
-          
-
-          
-      <Image src="/about-image.png" alt="Family cooking healthy meal" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover" /> 
+        {/* Left Side: Image */}
+        <div className="relative w-full h-[300px] md:h-[400px] rounded-[2.5rem] overflow-hidden shadow-2xl">
+          <Image 
+            src="/about-image.png"
+            alt="Family enjoying a healthy meal together" 
+            fill 
+            className="object-cover"
+          /> 
         </div>
 
-        {/* Right Column: Text Content */}
+        {/* Right Side: Copy & Stats */}
         <div className="flex flex-col items-start text-left">
-          <h2 className="text-4xl md:text-5xl font-extrabold text-heading tracking-tight mb-6">
-            From Scrolling to <span className="text-primary">Serving.</span>
+          
+          <span className="text-primary font-bold uppercase tracking-wider text-sm mb-3">
+            Our Mission
+          </span>
+          
+          <h2 className="text-4xl md:text-5xl font-extrabold text-heading tracking-tight mb-6 leading-tight">
+            From <span className="text-indigo-500">Scrolling</span> to Serving.
           </h2>
+          
           <p className="text-lg text-body mb-6 leading-relaxed">
-            Families face a daily burden: they want to eat healthy, try exciting recipes they see online, and control their spending. We built NovaNutri to bridge the gap between inspiration and execution.
-          </p>
-          <p className="text-lg text-body mb-10 leading-relaxed">
-            Whether you are following clinical dietary recommendations or just trying to use up the ingredients left in your fridge, our AI handles the heavy lifting of planning and budgeting, so you can focus on enjoying the meal.
+            We believe feeding your family shouldn&apos;t feel like a second job. Between rising grocery costs, the stress of meal planning, and the guilt of throwing away forgotten food, dinner time has become unnecessarily complicated.
           </p>
           
-          {/* Quick Stats/Badges */}
-          <div className="flex gap-8">
-             <div className="flex flex-col">
-                <span className="text-3xl font-bold text-heading">7+</span>
-                <span className="text-sm text-muted font-bold uppercase tracking-wider mt-1">Languages</span>
-             </div>
-             <div className="w-px bg-muted/30"></div>
-             <div className="flex flex-col">
-                <span className="text-3xl font-bold text-heading">100%</span>
-                <span className="text-sm text-muted font-bold uppercase tracking-wider mt-1">Zero Waste</span>
-             </div>
-          </div>
-        </div>
+          <p className="text-lg text-body mb-10 leading-relaxed">
+            NovaNutri was built to change that. By combining our AI recipe scanner with practical household tools—like the Virtual Fridge and budget tracking—we help you maximize the ingredients you already have, discover new cuisines, and bring the joy back to the kitchen.
+          </p>
 
+          {/* Stats Row */}
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-8 w-full border-t border-muted/10 pt-8 mt-2">
+            
+            <div className="flex flex-col">
+              <span className="text-3xl font-extrabold text-heading mb-1">7+</span>
+              <span className="text-sm font-bold text-muted uppercase tracking-wider">Languages</span>
+            </div>
+            
+            <div className="flex flex-col">
+              <span className="text-3xl font-extrabold text-heading mb-1">Live</span>
+              <span className="text-sm font-bold text-muted uppercase tracking-wider">Budget Tracking</span>
+            </div>
+            
+            <div className="flex flex-col">
+              <span className="text-3xl font-extrabold text-heading mb-1">Minimal</span>
+              <span className="text-sm font-bold text-muted uppercase tracking-wider">Food Waste</span>
+            </div>
+
+          </div>
+          
+        </div>
       </div>
     </section>
   );
