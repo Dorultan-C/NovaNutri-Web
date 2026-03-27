@@ -86,13 +86,16 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Bottom Copyright Section */}
-        <div className="w-full flex flex-col md:flex-row justify-between items-center pt-8 border-t border-muted/10">
+{/* Bottom Copyright Section */}
+<div className="w-full flex flex-col md:flex-row justify-between items-center pt-8 border-t border-muted/10">
           <p className="text-sm font-bold text-heading mb-4 md:mb-0">NovaNutri</p>
-          <p className="text-sm text-muted text-center">
+          <p className="text-sm text-muted text-center mb-4 md:mb-0">
             &copy; {currentYear} NovaNutri. All rights reserved.
           </p>
-          <div className="hidden md:block w-20"></div> {/* Spacer to keep copyright centered */}
+          <div className="flex gap-6 text-sm text-muted font-medium">
+            <a href="/terms" className="hover:text-primary transition-colors">Terms & Conditions</a>
+            <a href="/license" className="hover:text-primary transition-colors">License</a>
+          </div>
         </div>
 
       </div>
