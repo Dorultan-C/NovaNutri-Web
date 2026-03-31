@@ -7,13 +7,13 @@ export default function Header() {
         <div className="relative w-10 h-10 rounded-xl overflow-hidden shadow-sm">
           <Image 
             src="/logo.png" 
-            alt="NovaNutri Logo" 
+            alt="Riov Logo" 
             fill 
             sizes="40px"
             className="object-cover"
           />
         </div>
-        <span className="text-2xl font-bold text-heading tracking-tight">NovaNutri</span>
+        <span className="text-2xl font-bold text-heading tracking-tight">Riov</span>
       </div>
       <nav className="hidden md:flex gap-8 text-body font-medium">
       <a href="#features" className="hover:text-primary transition-colors">Features</a>

@@ -31,7 +31,7 @@ export default function About() {
           </p>
           
           <p className="text-lg text-body mb-10 leading-relaxed">
-            NovaNutri was built to change that. By combining our AI recipe scanner with practical household tools—like the Virtual Fridge and budget tracking—we help you maximize the ingredients you already have, discover new cuisines, and bring the joy back to the kitchen.
+            Riov was built to change that. By combining our AI recipe scanner with practical household tools—like the Virtual Fridge and budget tracking—we help you maximize the ingredients you already have, discover new cuisines, and bring the joy back to the kitchen.
           </p>
 
           {/* Stats Row */}

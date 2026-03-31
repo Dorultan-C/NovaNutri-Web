@@ -88,9 +88,9 @@ export default function Footer() {
 
 {/* Bottom Copyright Section */}
 <div className="w-full flex flex-col md:flex-row justify-between items-center pt-8 border-t border-muted/10">
-          <p className="text-sm font-bold text-heading mb-4 md:mb-0">NovaNutri</p>
+          <p className="text-sm font-bold text-heading mb-4 md:mb-0">Riov</p>
           <p className="text-sm text-muted text-center mb-4 md:mb-0">
-            &copy; {currentYear} NovaNutri. All rights reserved.
+            &copy; {currentYear} Riov. All rights reserved.
           </p>
           <div className="flex gap-6 text-sm text-muted font-medium">
             <a href="/terms" className="hover:text-primary transition-colors">Terms & Conditions</a>

@@ -5,7 +5,7 @@ export default function LicensePage() {
     <main className="w-full bg-surface min-h-screen py-24 px-6">
       <div className="max-w-3xl mx-auto">
         <h1 className="text-4xl md:text-5xl font-extrabold text-heading tracking-tight mb-4">Software License</h1>
-        <p className="text-muted mb-12 font-medium">Copyright &copy; 2026 NovaNutri. All Rights Reserved.</p>
+        <p className="text-muted mb-12 font-medium">Copyright &copy; 2026 Riov. All Rights Reserved.</p>
 
         <div className="text-body space-y-6 leading-relaxed bg-white p-8 rounded-3xl border border-muted/10 shadow-sm">
           <p className="font-bold uppercase tracking-wider text-heading text-sm mb-6 pb-4 border-b border-muted/10">
@@ -13,7 +13,7 @@ export default function LicensePage() {
           </p>
 
           <p>
-            <strong className="text-heading">1. Ownership:</strong> All source code, documentation, UI/UX designs, algorithms, and associated files contained in this repository are the exclusive property of NovaNutri.
+            <strong className="text-heading">1. Ownership:</strong> All source code, documentation, UI/UX designs, algorithms, and associated files contained in this repository are the exclusive property of Riov.
           </p>
 
           <div>

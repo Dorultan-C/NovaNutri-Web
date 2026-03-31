@@ -57,7 +57,7 @@ export default function Hero() {
           </h1>
           
           <p className="text-lg text-body mb-10 max-w-lg leading-relaxed">
-            Drop a link to any viral cooking video, and our AI instantly converts it into a step-by-step recipe. NovaNutri automatically builds your weekly meal plan, tracks your nutrients, and organizes your grocery list to save you time and money.
+            Drop a link to any viral cooking video, and our AI instantly converts it into a step-by-step recipe. Riov automatically builds your weekly meal plan, tracks your nutrients, and organizes your grocery list to save you time and money.
           </p>
 
           {/* Waitlist Form & Web App Link */}
@@ -105,7 +105,7 @@ export default function Hero() {
                 <p className="text-xs text-muted">Experience the live web beta right now.</p>
               </div>
               <a 
-                href="https://novanutri.dorultan.dev/" 
+                href="https://riov.dorultan.dev/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="px-6 py-2.5 rounded-xl border-2 border-primary/20 text-primary font-bold hover:bg-primary/5 transition-all flex items-center gap-2 whitespace-nowrap active:scale-95"
@@ -125,7 +125,7 @@ export default function Hero() {
                <div className="w-full h-full bg-white rounded-[2.5rem] shadow-2xl border-[6px] sm:border-[8px] border-white overflow-hidden relative ring-1 ring-black/5">
                   <Image 
                     src="/hero-mockup.png"
-                    alt="NovaNutri App Interface"
+                    alt="Riov App Interface"
                     fill
                     className="object-cover object-top" 
                     priority 

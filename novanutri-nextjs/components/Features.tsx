@@ -66,7 +66,7 @@ export default function Features() {
             Everything you need in <span className="text-primary">one app.</span>
           </h2>
           <p className="text-lg text-body">
-            NovaNutri replaces your notes app, your calorie counter, your budget tracker, and your messy recipe links with a single, AI-powered ecosystem.
+          Riov replaces your notes app, your calorie counter, your budget tracker, and your messy recipe links with a single, AI-powered ecosystem.
           </p>
         </div>
 

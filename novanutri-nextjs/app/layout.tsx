@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "NovaNutri | Plan smarter. Eat better. Spend less.",
+  title: "Riov | Plan smarter. Eat better. Spend less.",
   description: "The AI-powered smart meal planner designed to turn viral social media recipes into budget-friendly, healthy family meals in seconds.",
 };
 
