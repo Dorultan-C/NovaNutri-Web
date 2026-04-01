@@ -79,7 +79,7 @@ export default function PrivacyPolicyPage() {
           <section>
             <h2 className="text-2xl font-bold text-heading mb-3">8. Contact Us</h2>
             <p>
-              If you have any questions, concerns, or requests regarding this Privacy Policy or how we handle your data, please contact us through the Riov App support menu.
+              If you have any questions, concerns, or requests regarding this Privacy Policy or how we handle your data, please contact us through the Riov App support menu or email us at <a href="mailto:c.dorultan@gmail.com" className="text-primary">c.dorultan@gmail.com</a>.
             </p>
           </section>
         </div>
