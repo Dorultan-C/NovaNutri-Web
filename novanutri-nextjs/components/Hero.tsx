@@ -105,7 +105,7 @@ export default function Hero() {
                 <p className="text-xs text-muted">Experience the live web beta right now.</p>
               </div>
               <a 
-                href="https://riov.dorultan.dev/" 
+                href="https://play.google.com/store/apps/details?id=com.riov.app" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="px-6 py-2.5 rounded-xl border-2 border-primary/20 text-primary font-bold hover:bg-primary/5 transition-all flex items-center gap-2 whitespace-nowrap active:scale-95"
