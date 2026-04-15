@@ -6,7 +6,7 @@ export default function About() {
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
         
         {/* Left Side: Image */}
-        <div className="relative w-full h-[300px] md:h-[400px] rounded-[2.5rem] overflow-hidden shadow-2xl">
+        <div className="relative w-full h-75 md:h-100 rounded-[2.5rem] overflow-hidden shadow-2xl">
           <Image 
             src="/about-image.png"
             alt="Family enjoying a healthy meal together" 
@@ -18,6 +18,7 @@ export default function About() {
         {/* Right Side: Copy & Stats */}
         <div className="flex flex-col items-start text-left">
           
+
           <span className="text-primary font-bold uppercase tracking-wider text-sm mb-3">
             Our Mission
           </span>
@@ -33,6 +34,14 @@ export default function About() {
           <p className="text-lg text-body mb-10 leading-relaxed">
             Riov was built to change that. By combining our AI recipe scanner with practical household tools—like the Virtual Fridge and budget tracking—we help you maximize the ingredients you already have, discover new cuisines, and bring the joy back to the kitchen.
           </p>
+
+          {/* NEW: Founder Background */}
+          <div className="bg-primary/5 border-l-4 border-primary p-4 rounded-r-xl mb-10">
+            <p className="text-sm text-heading font-medium italic">
+              &quot;After 10 years working as a professional Chef and Kitchen Manager, I realized households were missing the tools we use in the industry: strict food cost control, allergen compliance, and zero-waste logistics. I built Riov to bring that professional efficiency into your family kitchen.&quot;
+            </p>
+            <p className="text-xs text-muted mt-2 font-bold uppercase tracking-wider">— Cristian Dorultan, Founder & Lead Engineer</p>
+          </div>
 
           {/* Stats Row */}
           <div className="grid grid-cols-2 md:grid-cols-3 gap-8 w-full border-t border-muted/10 pt-8 mt-2">

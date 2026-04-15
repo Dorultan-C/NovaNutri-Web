@@ -38,7 +38,7 @@ export default function Hero() {
     <main className="grow flex items-center justify-center px-6 py-12 md:py-24 overflow-hidden relative">
       
       {/* Background Glow */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-primary/5 rounded-full blur-3xl -z-10"></div>
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-200 h-200 bg-primary/5 rounded-full blur-3xl -z-10"></div>
 
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         
@@ -120,9 +120,9 @@ export default function Hero() {
         {/* Right Image/App Preview Content */}
         <div className="relative w-full flex items-center justify-center lg:justify-end animate-in fade-in zoom-in duration-700 delay-200 lg:pl-10">
            {/* Smartphone Frame Container */}
-           <div className="relative w-[300px] sm:w-[340px] aspect-[9/19.5]">
-               <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-primary/5 rounded-[3rem] -rotate-3 scale-105 -z-10 translate-x-2 translate-y-4"></div>
-               <div className="w-full h-full bg-white rounded-[2.5rem] shadow-2xl border-[6px] sm:border-[8px] border-white overflow-hidden relative ring-1 ring-black/5">
+           <div className="relative w-75 sm:w-85 aspect-9/19.5">
+               <div className="absolute inset-0 bg-linear-to-tr from-primary/20 to-primary/5 rounded-[3rem] -rotate-3 scale-105 -z-10 translate-x-2 translate-y-4"></div>
+               <div className="w-full h-full bg-white rounded-[2.5rem] shadow-2xl border-[6px] sm:border-8 border-white overflow-hidden relative ring-1 ring-black/5">
                   <Image 
                     src="/hero-mockup.png"
                     alt="Riov App Interface"

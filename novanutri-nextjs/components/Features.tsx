@@ -33,18 +33,18 @@ export default function Features() {
       ]
     },
     {
-      category: "Health, Wallet & Community",
+      category: "Health, Wallet & Safety",
       badgeColor: "bg-green-100 text-green-700 border-green-200",
       items: [
         {
-          title: "Budget & Nutrient Tracking",
-          description: "Total budget transparency before you hit the store. Track macros and micronutrients to ensure your family is eating healthy.",
+          title: "Mediterranean Plans & Nutrition",
+          description: "Generate weekly menus based on clinical Mediterranean guidelines (prioritizing vegetables, legumes, and lean proteins) while tracking your daily macros.",
           icon: "🥑"
         },
         {
-          title: "Global Cooking Guide & Rewards",
-          description: "Interactive cooking guides in 7 different languages. Earn rewards as you cook, interact with the community, and master new cuisines.",
-          icon: "🌍"
+          title: "Clinical Dietary & Allergy Control",
+          description: "Navigate recipes safely. Set strict food allergies (like gluten or dairy) or list disliked ingredients, and Riov will automatically filter your meals.",
+          icon: "🛡️"
         }
       ]
     }
@@ -83,19 +83,22 @@ export default function Features() {
                 <div className="h-px bg-muted/20 flex-1"></div>
               </div>
 
-              {/* Feature Cards */}
-              {section.items.map((item, itemIdx) => (
-                <div 
-                  key={itemIdx} 
-                  className="bg-surface border border-muted/10 p-8 rounded-3xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group"
-                >
-                  <div className="w-14 h-14 bg-muted/5 rounded-2xl flex items-center justify-center text-3xl mb-6 group-hover:scale-110 transition-transform duration-300 shadow-inner border border-muted/10">
-                    {item.icon}
-                  </div>
-                  <h3 className="text-xl font-bold text-heading mb-3">{item.title}</h3>
-                  <p className="text-body leading-relaxed">{item.description}</p>
-                </div>
-              ))}
+{/* Feature Cards */}
+{section.items.map((item, itemIdx) => (
+  <div 
+    key={itemIdx} 
+    // 🌟 ADD 'flex-1' and 'flex flex-col' to make all cards in a row equal height
+    className="flex-1 flex flex-col bg-surface border border-muted/10 p-8 rounded-3xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group"
+  >
+    <div className="w-14 h-14 bg-muted/5 rounded-2xl flex items-center justify-center text-3xl mb-6 group-hover:scale-110 transition-transform duration-300 shadow-inner border border-muted/10">
+      {item.icon}
+    </div>
+    <h3 className="text-xl font-bold text-heading mb-3">{item.title}</h3>
+    
+    {/* 🌟 ADD 'flex-grow' to the paragraph so it fills the vertical space */}
+    <p className="text-body leading-relaxed grow">{item.description}</p>
+  </div>
+))}
             </div>
           ))}
         </div>
