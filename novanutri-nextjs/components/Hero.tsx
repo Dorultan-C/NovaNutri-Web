@@ -59,7 +59,7 @@ export default function Hero() {
                 />
               </div>
               {/* Increased text size and max-width for better proportions */}
-              <span className="text-sm font-bold text-muted uppercase tracking-wider max-w-[100px] leading-tight">
+              <span className="text-sm font-bold text-muted uppercase tracking-wider max-w-25 leading-tight">
                 Scan to Download
               </span>
             </div>
