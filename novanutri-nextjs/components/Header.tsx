@@ -20,6 +20,14 @@ export default function Header() {
 
       {/* Navigation Menu */}
       <nav className="hidden md:flex gap-8 text-body font-medium items-center">
+      <a 
+  href="https://play.google.com/store/apps/details?id=com.riov.app&pcampaignid=web_share" 
+  target="_blank" 
+  rel="noopener noreferrer"
+  className="bg-primary hover:bg-primary-dark text-white px-5 py-2.5 rounded-xl font-bold transition-all shadow-md active:scale-95"
+>
+  Get the App
+</a>
         <a href="#features" className="hover:text-primary transition-colors">Features</a>
         <a href="#about" className="hover:text-primary transition-colors">About</a>
         <a href="#investors" className="hover:text-primary transition-colors">Investors</a>
