@@ -32,7 +32,7 @@ export default function Footer() {
 
             {/* 2. YouTube */}
             <a 
-              href="https://youtube.com/" 
+              href="https://www.youtube.com/@Riov-app" 
               target="_blank" 
               rel="noopener noreferrer"
               className="w-12 h-12 rounded-full bg-muted/5 flex items-center justify-center text-muted hover:text-[#FF0000] hover:bg-[#FF0000]/10 hover:scale-110 transition-all duration-300"
@@ -46,7 +46,7 @@ export default function Footer() {
 
             {/* 3. X (Twitter) */}
             <a 
-              href="https://x.com/" 
+              href="https://x.com/RiovApp" 
               target="_blank" 
               rel="noopener noreferrer"
               className="w-12 h-12 rounded-full bg-muted/5 flex items-center justify-center text-muted hover:text-black hover:bg-black/5 hover:scale-110 transition-all duration-300"
@@ -72,7 +72,7 @@ export default function Footer() {
 
             {/* 5. Facebook */}
             <a 
-              href="https://facebook.com/" 
+              href="https://www.facebook.com/profile.php?id=61589291707380" 
               target="_blank" 
               rel="noopener noreferrer"
               className="w-12 h-12 rounded-full bg-muted/5 flex items-center justify-center text-muted hover:text-[#1877F2] hover:bg-[#1877F2]/10 hover:scale-110 transition-all duration-300"
