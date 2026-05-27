@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <main className="grow flex items-center justify-center px-6 py-12 md:py-24 overflow-hidden relative">
+    <main id="hero" className="grow flex items-center justify-center px-6 py-12 md:py-24 overflow-hidden relative" >
       
       {/* Background Glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-200 h-200 bg-primary/5 rounded-full blur-3xl -z-10"></div>
@@ -45,6 +45,7 @@ export default function Hero() {
                     src="/google-play-badge.png" 
                     alt="Get it on Google Play" 
                     fill 
+                    sizes="192px"
                     className="object-contain"
                   />
                 </div>
@@ -52,16 +53,17 @@ export default function Hero() {
 
               {/* App Store Button */}
               <a 
-                href="https://apps.apple.com/us/app/riov-mediterranean-meal-plan/id6770679057" 
+                href="/download" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="active:scale-95 transition-transform hover:opacity-90 shrink-0"
               >
                 <div className="relative w-48 h-14">
                   <Image 
-                    src="/app-store-badge.svg" // Ensure you add the apple badge asset to your public folder
+                    src="/app-store-badge.svg" 
                     alt="Download on the App Store" 
                     fill 
+                    sizes="192px"
                     className="object-contain"
                   />
                 </div>
@@ -75,6 +77,7 @@ export default function Hero() {
                   src="/qr-code.svg" 
                   alt="Scan to download Riov" 
                   fill 
+                  sizes="200px"
                   className="object-cover rounded-xl"
                 />
               </div>
@@ -97,6 +100,7 @@ export default function Hero() {
                     src="/hero-mockup.png"
                     alt="Riov App Interface"
                     fill
+                    sizes="1048px"
                     className="object-cover object-top" 
                     priority 
                   />

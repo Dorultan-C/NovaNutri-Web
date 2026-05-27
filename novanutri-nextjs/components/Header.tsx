@@ -21,9 +21,7 @@ export default function Header() {
       {/* Navigation Menu */}
       <nav className="hidden md:flex gap-8 text-body font-medium items-center">
       <a 
-  href="/download" 
-  target="_blank" 
-  rel="noopener noreferrer"
+  href="#hero"
   className="bg-primary hover:bg-primary-dark text-white px-5 py-2.5 rounded-xl font-bold transition-all shadow-md active:scale-95"
 >
   Get the App

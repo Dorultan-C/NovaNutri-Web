@@ -11,7 +11,9 @@ export default function About() {
             src="/about-image.png"
             alt="Family enjoying a healthy meal together" 
             fill 
+            sizes="1048px"
             className="object-cover"
+            priority 
           /> 
         </div>
 
