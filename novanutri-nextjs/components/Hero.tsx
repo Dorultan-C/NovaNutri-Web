@@ -53,7 +53,7 @@ export default function Hero() {
 
               {/* App Store Button */}
               <a 
-                href="/download" 
+                href="https://apps.apple.com/us/app/riov-mediterranean-meal-plan/id6770679057" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="active:scale-95 transition-transform hover:opacity-90 shrink-0"
