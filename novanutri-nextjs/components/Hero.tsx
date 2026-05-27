@@ -72,7 +72,7 @@ export default function Hero() {
             <div className="hidden sm:flex items-center gap-4 pl-8 border-l border-muted/20">
               <div className="bg-white p-2 rounded-2xl shadow-sm border border-muted/10 relative w-50 h-50 shrink-0">
                 <Image 
-                  src="/qr-code.png" 
+                  src="/qr-code.svg" 
                   alt="Scan to download Riov" 
                   fill 
                   className="object-cover rounded-xl"
