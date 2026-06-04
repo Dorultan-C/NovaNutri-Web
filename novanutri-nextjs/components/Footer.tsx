@@ -59,7 +59,7 @@ export default function Footer() {
 
             {/* 4. Threads */}
             <a 
-              href="https://threads.net/" 
+              href="https://www.threads.com/@riov.app" 
               target="_blank" 
               rel="noopener noreferrer"
               className="w-12 h-12 rounded-full bg-muted/5 flex items-center justify-center text-muted hover:text-black hover:bg-black/5 hover:scale-110 transition-all duration-300"
