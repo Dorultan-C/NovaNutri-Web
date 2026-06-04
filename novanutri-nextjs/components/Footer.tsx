@@ -17,7 +17,7 @@ export default function Footer() {
             
             {/* 1. Instagram */}
             <a 
-              href="https://instagram.com/" 
+              href="https://www.instagram.com/riov.app/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="w-12 h-12 rounded-full bg-muted/5 flex items-center justify-center text-muted hover:text-[#E4405F] hover:bg-[#E4405F]/10 hover:scale-110 transition-all duration-300"
