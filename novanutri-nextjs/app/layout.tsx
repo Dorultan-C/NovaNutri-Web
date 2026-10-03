@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react"; // 1. Import the component
+import { Providers } from "./providers"; // Add the Providers import
 import "./globals.css";
 
 const geistSans = Geist({
@@ -29,8 +30,11 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} scroll-smooth h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-        {children}
-        <Analytics /> {/* 2. Drop it inside the body tag! */}
+        {/* Wrap the body contents with Providers */}
+        <Providers>
+          {children}
+          <Analytics /> {/* 2. Drop it inside the body tag! */}
+        </Providers>
       </body>
     </html>
   );

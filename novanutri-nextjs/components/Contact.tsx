@@ -1,16 +1,17 @@
 "use client";
 
 import { useState } from "react";
-import { collection, addDoc, serverTimestamp } from "firebase/firestore";
-import { db } from "../firebase"; // Adjust the path if your firebase.ts is elsewhere
+import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
 
 export default function Contact() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-  
   const [loading, setLoading] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+
+  // Initialize the hook
+  const { executeRecaptcha } = useGoogleReCaptcha();
 
   const handleContactSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -19,19 +20,32 @@ export default function Contact() {
     setLoading(true);
 
     try {
-      await addDoc(collection(db, "contact_messages"), {
-        name: name,
-        email: email,
-        message: message,
-        timestamp: serverTimestamp(),
+      // 1. Ensure the script has loaded
+      if (!executeRecaptcha) {
+        alert("reCAPTCHA is still loading. Please try again in a moment.");
+        return;
+      }
+
+      // 2. Generate the token
+      const token = await executeRecaptcha("contact_submit");
+
+      // 3. Send the data and token to your backend API
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name, email, message, token }),
       });
+
+      if (!response.ok) {
+        throw new Error("Form submission failed");
+      }
       
       setSubmitted(true);
       setName("");
       setEmail("");
       setMessage("");
     } catch (error) {
-      console.error("Error adding document: ", error);
+      console.error("Error submitting form: ", error);
       alert("Something went wrong. Please try again.");
     } finally {
       setLoading(false);
