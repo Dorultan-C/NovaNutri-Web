@@ -1,13 +1,18 @@
 export default function Features() {
   const features = [
     {
-      category: "The AI Magic",
+      category: "Cook & Share",
       badgeColor: "bg-purple-100 text-purple-700 border-purple-200",
       items: [
         {
           title: "AI Food Scanner",
           description: "Not sure what to cook? Scan the ingredients in your kitchen, and we'll generate the perfect meal using exactly what you have.",
           icon: "📸"
+        },
+        {
+          title: "Export Your Plan & List as PDF",
+          description: "Turn your weekly meal plan or shopping list into a clean PDF and share it from your phone, or copy your list as text to paste into WhatsApp or Messenger.",
+          icon: "📄"
         }
       ]
     },
