@@ -35,7 +35,7 @@ export default function Investors() {
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-green-500 mt-1">✓</span>
-                  <span>Integrates advanced AI APIs (OpenAI) for extraction and dynamic macronutrient calculation.</span>
+                  <span>Integrates advanced AI APIs (OpenAI) for dynamic macronutrient calculation.</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-green-500 mt-1">✓</span>
@@ -51,7 +51,11 @@ export default function Investors() {
               </div>
               <h3 className="text-2xl font-bold text-heading mb-4">The Funding Goal</h3>
               <p className="text-body mb-4">
-                We are structuring a funding strategy to raise between €50,000 and €150,000. Acquiring a critical mass of active users and expanding a heavy-API infrastructure requires strategic capital.
+                We are structuring a funding strategy to support our next stage of growth. Acquiring a critical mass of active users and expanding a heavy-API infrastructure requires strategic capital.
+              </p>
+              <p className="text-body mb-4">
+                For the funding amount and full details,{" "}
+                <a href="#contact" className="text-primary font-semibold underline">request our pitch deck</a>.
               </p>
               <h4 className="font-bold text-heading mb-3 text-sm uppercase tracking-wider">How Capital Will Be Allocated:</h4>
               <ul className="space-y-3 text-body">

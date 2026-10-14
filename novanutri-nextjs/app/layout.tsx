@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Riov | Plan smarter. Eat better. Spend less.",
-  description: "The AI-powered smart meal planner designed to turn viral social media recipes into budget-friendly, healthy family meals in seconds.",
+  description: "The AI-powered smart meal planner that builds budget-friendly, healthy weekly meal plans, tracks your nutrition, and organizes your grocery list.",
 };
 
 export default function RootLayout({
