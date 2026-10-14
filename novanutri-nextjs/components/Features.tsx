@@ -1,18 +1,18 @@
 export default function Features() {
   const features = [
     {
-      category: "The AI Magic",
+      category: "Cook & Share",
       badgeColor: "bg-purple-100 text-purple-700 border-purple-200",
       items: [
-        {
-          title: "AI Video & Image to Recipe",
-          description: "Saw a viral recipe on TikTok or Instagram? Just upload the video or image, and our AI instantly converts it into a full, step-by-step recipe.",
-          icon: "🪄"
-        },
         {
           title: "AI Food Scanner",
           description: "Not sure what to cook? Scan the ingredients in your kitchen, and we'll generate the perfect meal using exactly what you have.",
           icon: "📸"
+        },
+        {
+          title: "Export Your Plan & List as PDF",
+          description: "Turn your weekly meal plan or shopping list into a clean PDF and share it from your phone, or copy your list as text to paste into WhatsApp or Messenger.",
+          icon: "📄"
         }
       ]
     },
@@ -66,7 +66,7 @@ export default function Features() {
             Everything you need in <span className="text-primary">one app.</span>
           </h2>
           <p className="text-lg text-body">
-          Riov replaces your notes app, your calorie counter, your budget tracker, and your messy recipe links with a single, AI-powered ecosystem.
+          Riov replaces your notes app, your calorie counter, and your budget tracker with a single, AI-powered ecosystem.
           </p>
         </div>
 

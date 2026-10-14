@@ -25,7 +25,7 @@ export default function Hero() {
           </h1>
           
           <p className="text-lg text-body mb-10 max-w-lg leading-relaxed">
-            Drop a link to any viral cooking video, and our AI instantly converts it into a step-by-step recipe. Riov automatically builds your weekly meal plan, tracks your nutrients, and organizes your grocery list to save you time and money.
+            Riov automatically builds your weekly meal plan, tracks your nutrients, and organizes your grocery list to save you time and money.
           </p>
 
           {/* Download CTAs & QR Code */}
