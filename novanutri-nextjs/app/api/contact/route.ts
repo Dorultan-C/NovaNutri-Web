@@ -1,12 +1,20 @@
 import { NextResponse } from "next/server";
-import { adminDb } from "@/firebaseAdmin"; 
+import { getAdminDb, hasAdminCredentials } from "@/firebaseAdmin";
 import { FieldValue } from "firebase-admin/firestore";
 import { Resend } from "resend";
 
-// Initialize Resend with your API key
-const resend = new Resend(process.env.RESEND_API_KEY);
+// Never prerender or evaluate this route at build time.
+export const dynamic = "force-dynamic";
 
 export async function POST(req: Request) {
+  if (!hasAdminCredentials()) {
+    console.error("Contact API: Firebase Admin credentials are not configured");
+    return NextResponse.json(
+      { error: "Contact form is temporarily unavailable. Please try again later." },
+      { status: 503 }
+    );
+  }
+
   try {
     const { name, email, message, token } = await req.json();
 
@@ -25,7 +33,7 @@ export async function POST(req: Request) {
     }
 
     // 2. Save to Firestore
-    await adminDb.collection("contact_messages").add({
+    await getAdminDb().collection("contact_messages").add({
       name,
       email,
       message,
@@ -34,6 +42,7 @@ export async function POST(req: Request) {
     });
 
     // 3. Send email notification via Resend
+    const resend = new Resend(process.env.RESEND_API_KEY);
     await resend.emails.send({
       from: "Riov App <onboarding@resend.dev>", // Resend's default testing address
       to: "c.dorultan@gmail.com", // Your personal email to receive the notification
