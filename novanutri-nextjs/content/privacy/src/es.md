@@ -61,7 +61,7 @@ Los datos sobre tus alergias, intolerancias, ingredientes que no te gustan, **ti
 
 - **Consentimiento previo al uso.** Pedimos este consentimiento en una pantalla de aceptación específica y explícita. Aparece antes de que introduzcas alergias, ingredientes que no te gustan o un tipo de dieta, uses el diario nutricional, registres comidas desde el modo cocina o guardes resultados del escáner o del registro rápido.
 - **Opcional.** Sin consentimiento, estas funciones permanecen desactivadas. Puedes seguir usando el resto de la App. En ese caso, el generador de planes de comidas funciona sin tus filtros personales y muestra un aviso sobre alérgenos.
-- **Gestiona o retira tu consentimiento en cualquier momento** en **Menú > Ajustes > Datos de salud y privacidad**, o escribiendo a [info@riov.app](mailto:info@riov.app). Al retirarlo, puedes elegir:
+- **Gestiona o retira tu consentimiento en cualquier momento** en **Menú › Datos de salud y privacidad**, o escribiendo a [info@riov.app](mailto:info@riov.app). Al retirarlo, puedes elegir:
   - **retirar y borrar:** se eliminan tus datos de salud y alimentación; o
   - **retirar y mantener los datos en pausa:** los datos se conservan pero no se tratan de ninguna forma, hasta que vuelvas a dar tu consentimiento o se eliminen conforme a las reglas de conservación de la cuenta de la sección 9.
 
@@ -70,7 +70,7 @@ Los datos sobre tus alergias, intolerancias, ingredientes que no te gustan, **ti
 - **Otros usos.** No utilizamos estos datos con fines publicitarios ni para elaborar perfiles con efectos jurídicos, y nunca los vendemos.
 - **Proveedores de IA.** No enviamos tus alergias, tu dieta, tu diario ni tu identidad de cuenta a proveedores de IA.
 
-Puedes dar, retirar o borrar tu consentimiento sobre los datos de salud en cualquier momento en Menú › Ajustes › Datos de salud y privacidad.
+Puedes dar, retirar o borrar tu consentimiento sobre los datos de salud en cualquier momento en Menú › Datos de salud y privacidad.
 
 ## 5. Para qué usamos tus datos y con qué base jurídica
 

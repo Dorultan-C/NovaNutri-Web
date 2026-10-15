@@ -1,8 +1,8 @@
-# Política de privacitat de Riov
+# Política de privadesa de Riov
 
 **Darrera actualització: 14 d'octubre de 2026** · Versió 2.0
 
-Aquesta Política de privacitat explica com es tracten les teves dades personals quan utilitzes l'aplicació mòbil Riov (l'"App") i el lloc web www.riov.app (el "Lloc web"), conjuntament els "Serveis". Està redactada per complir el Reglament general de protecció de dades de la UE (Reglament (UE) 2016/679, "RGPD") i la Llei orgànica 3/2018, de protecció de dades personals i garantia dels drets digitals ("LOPDGDD").
+Aquesta Política de privadesa explica com es tracten les teves dades personals quan utilitzes l'aplicació mòbil Riov (l'"App") i el lloc web www.riov.app (el "Lloc web"), conjuntament els "Serveis". Està redactada per complir el Reglament general de protecció de dades de la UE (Reglament (UE) 2016/679, "RGPD") i la Llei orgànica 3/2018, de protecció de dades personals i garantia dels drets digitals ("LOPDGDD").
 
 Aquesta Política és independent dels nostres Termes i condicions. Acceptar els Termes no vol dir que consenteixis cap tractament que requereixi consentiment. Quan necessitem el teu consentiment, te'l demanem per separat.
 
@@ -15,7 +15,7 @@ El responsable del tractament és:
 
 > Nota: Riov encara no és una societat legalment constituïda. Quan es constitueixi una societat, aquesta secció s'actualitzarà amb la seva denominació, domicili social i número d'identificació fiscal, i se t'informarà del canvi (vegeu la secció 15).
 
-No hem designat cap delegat de protecció de dades perquè no hi estem legalment obligats. Envia qualsevol sol·licitud relativa a la privacitat a [info@riov.app](mailto:info@riov.app).
+No hem designat cap delegat de protecció de dades perquè no hi estem legalment obligats. Envia qualsevol sol·licitud relativa a la privadesa a [info@riov.app](mailto:info@riov.app).
 
 ## 2. Què fan els Serveis
 
@@ -61,7 +61,7 @@ Les dades sobre les teves al·lèrgies, intoleràncies, ingredients que no t'agr
 
 - **Consentiment previ a l'ús.** Demanem aquest consentiment en una pantalla d'acceptació específica i explícita. Apareix abans que introdueixis al·lèrgies, ingredients que no t'agraden o un tipus de dieta, utilitzis el diari nutricional, registris àpats des del mode cuina o desis resultats de l'escàner o del registre ràpid.
 - **Opcional.** Sense consentiment, aquestes funcions es mantenen desactivades. Pots continuar utilitzant la resta de l'App. En aquest cas, el generador de plans d'àpats funciona sense els teus filtres personals i mostra un avís sobre al·lèrgens.
-- **Gestiona o retira el consentiment en qualsevol moment** a **Menú > Configuració > Dades de salut i privadesa**, o escrivint a [info@riov.app](mailto:info@riov.app). Quan el retiris, pots triar:
+- **Gestiona o retira el consentiment en qualsevol moment** a **Menú › Dades de salut i privadesa**, o escrivint a [info@riov.app](mailto:info@riov.app). Quan el retiris, pots triar:
   - **retirar i esborrar:** s'eliminen les teves dades de salut i alimentació; o
   - **retirar i mantenir les dades en pausa:** les dades es conserven però no es tracten de cap manera, fins que tornis a donar el consentiment o s'eliminin d'acord amb les regles de conservació del compte de la secció 9.
 
@@ -70,7 +70,7 @@ Les dades sobre les teves al·lèrgies, intoleràncies, ingredients que no t'agr
 - **Altres usos.** No fem servir aquestes dades amb finalitats publicitàries ni per elaborar perfils amb efectes jurídics, i no les venem mai.
 - **Proveïdors d'IA.** No enviem les teves al·lèrgies, la teva dieta, el teu diari ni la identitat del teu compte a proveïdors d'IA.
 
-Pots donar, retirar o esborrar el teu consentiment sobre les dades de salut en qualsevol moment a Menú › Configuració › Dades de salut i privadesa.
+Pots donar, retirar o esborrar el teu consentiment sobre les dades de salut en qualsevol moment a Menú › Dades de salut i privadesa.
 
 ## 5. Per a què fem servir les teves dades i amb quina base jurídica
 
@@ -91,7 +91,7 @@ Pots donar, retirar o esborrar el teu consentiment sobre les dades de salut en q
 | Seguretat, prevenció del frau, diagnòstic d'errors | Interès legítim, art. 6.1.f) |
 | Compliment d'obligacions legals i defensa davant de reclamacions | Art. 6.1.c) / art. 6.1.f) |
 
-Quan ens basem en l'interès legítim, l'hem ponderat amb els teus drets, i t'hi pots oposar en qualsevol moment (secció 11). No prenem decisions sobre tu basades únicament en el tractament automatitzat que produeixin efectes jurídics o que t'afectin significativament de manera similar. Les funcions d'IA només suggereixen o estimen. No decideixen res sobre tu.
+Quan ens basem en l'interès legítim, l'hem ponderat en relació amb els teus drets, i t'hi pots oposar en qualsevol moment (secció 11). No prenem decisions sobre tu basades únicament en el tractament automatitzat que produeixin efectes jurídics o que t'afectin significativament de manera similar. Les funcions d'IA només suggereixen o estimen. No decideixen res sobre tu.
 
 ## 6. Funcions de pagament
 
@@ -121,9 +121,9 @@ Altres destinataris:
 
 ## 8. Transferències internacionals
 
-Alguns proveïdors estan establerts als Estats Units o en altres països de fora de l'Espai Econòmic Europeu, o hi accedeixen a les dades des d'allà. En aquests casos, les transferències es basen en:
+Alguns proveïdors estan establerts als Estats Units o en altres països de fora de l'Espai Econòmic Europeu, o accedeixen a les dades des d'allà. En aquests casos, les transferències es basen en:
 
-- el **Marc de privacitat de dades UE-EUA**, quan el proveïdor està certificat (art. 45 RGPD), i/o
+- el **Marc de privadesa de dades UE-EUA**, quan el proveïdor està certificat (art. 45 RGPD), i/o
 - les **clàusules contractuals tipus de la Comissió Europea** (art. 46 RGPD), juntament amb garanties addicionals quan calgui.
 
 Pots sol·licitar una còpia de les garanties corresponents a [info@riov.app](mailto:info@riov.app).
@@ -202,4 +202,4 @@ Cristian Dorultan, que opera com a Riov, Espanya · **[info@riov.app](mailto:inf
 
 ## Idioma d'aquesta Política
 
-Aquesta Política de privacitat es va redactar originalment en anglès. Les traduccions es faciliten per a la teva comoditat. En cas de discrepància, prevaldrà la versió en anglès, llevat que la legislació aplicable disposi una altra cosa. Res del que disposa aquesta clàusula no limita els drets que et reconeix la normativa de protecció de dades.
+Aquesta Política de privadesa es va redactar originalment en anglès. Les traduccions es faciliten per a la teva comoditat. En cas de discrepància, prevaldrà la versió en anglès, llevat que la legislació aplicable disposi una altra cosa. Res del que disposa aquesta clàusula no limita els drets que et reconeix la normativa de protecció de dades.

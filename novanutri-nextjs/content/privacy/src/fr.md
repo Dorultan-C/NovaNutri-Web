@@ -61,7 +61,7 @@ Les données relatives à vos allergies, intolérances, ingrédients que vous n'
 
 - **Consentement préalable.** Nous demandons ce consentement sur un écran d'acceptation distinct et explicite. Il s'affiche avant que vous saisissiez des allergies, des ingrédients que vous n'aimez pas ou un type de régime, utilisiez le journal nutritionnel, enregistriez des repas en mode cuisine ou enregistriez des résultats du scanner ou de l'ajout rapide.
 - **Facultatif.** Sans consentement, ces fonctionnalités restent désactivées. Vous pouvez continuer à utiliser le reste de l'Application. Le générateur de plans de repas fonctionne alors sans vos filtres personnels et affiche un avertissement sur les allergènes.
-- **Gérez ou retirez votre consentement à tout moment** dans **Menu > Paramètres > Données de santé et confidentialité**, ou en écrivant à [info@riov.app](mailto:info@riov.app). Lors du retrait, vous pouvez choisir :
+- **Gérez ou retirez votre consentement à tout moment** dans **Menu › Données de santé et confidentialité**, ou en écrivant à [info@riov.app](mailto:info@riov.app). Lors du retrait, vous pouvez choisir :
   - **retirer et supprimer :** vos données de santé et d'alimentation sont effacées ; ou
   - **retirer et conserver les données en pause :** les données sont conservées mais ne font l'objet d'aucun traitement, jusqu'à ce que vous donniez à nouveau votre consentement ou qu'elles soient supprimées selon les règles de conservation du compte de la section 9.
 
@@ -70,7 +70,7 @@ Les données relatives à vos allergies, intolérances, ingrédients que vous n'
 - **Autres utilisations.** Nous n'utilisons pas ces données à des fins publicitaires ni pour un profilage produisant des effets juridiques, et nous ne les vendons jamais.
 - **Fournisseurs d'IA.** Nous n'envoyons ni vos allergies, ni votre régime, ni votre journal, ni l'identité de votre compte aux fournisseurs d'IA.
 
-Vous pouvez donner, retirer ou supprimer votre consentement concernant les données de santé à tout moment dans Menu › Paramètres › Données de santé et confidentialité.
+Vous pouvez donner, retirer ou supprimer votre consentement concernant les données de santé à tout moment dans Menu › Données de santé et confidentialité.
 
 ## 5. Pourquoi nous utilisons vos données et sur quelle base juridique
 

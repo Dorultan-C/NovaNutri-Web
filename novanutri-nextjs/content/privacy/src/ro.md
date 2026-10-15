@@ -61,7 +61,7 @@ Datele despre alergiile, intoleranțele, ingredientele care nu îți plac, **tip
 
 - **Acord înainte de utilizare.** Solicităm acest consimțământ printr-un ecran de acord separat și explicit. Acesta apare înainte să introduci alergii, ingrediente care nu îți plac sau un tip de dietă, să folosești jurnalul nutrițional, să înregistrezi mese din modul de gătit sau să salvezi rezultate din scaner ori din adăugarea rapidă.
 - **Opțional.** Fără consimțământ, aceste funcții rămân dezactivate. Poți folosi în continuare restul Aplicației. În acest caz, generatorul de planuri de mese funcționează fără filtrele tale personale și afișează un avertisment privind alergenii.
-- **Gestionează sau retrage consimțământul oricând** din **Meniu > Setări > Date de sănătate și confidențialitate** sau scriind la [info@riov.app](mailto:info@riov.app). Când îți retragi consimțământul, poți alege:
+- **Gestionează sau retrage consimțământul oricând** din **Meniu › Date de sănătate și confidențialitate** sau scriind la [info@riov.app](mailto:info@riov.app). Când îți retragi consimțământul, poți alege:
   - **retragere și ștergere:** datele tale privind sănătatea și alimentația sunt șterse; sau
   - **retragere și păstrarea datelor în pauză:** datele sunt păstrate, dar nu sunt prelucrate în niciun fel, până când îți dai din nou consimțământul sau până când sunt șterse conform regulilor de păstrare a contului din secțiunea 9.
 
@@ -70,7 +70,7 @@ Datele despre alergiile, intoleranțele, ingredientele care nu îți plac, **tip
 - **Alte utilizări.** Nu folosim aceste date pentru publicitate sau pentru creare de profiluri cu efecte juridice și nu le vindem niciodată.
 - **Furnizori de IA.** Nu trimitem furnizorilor de IA alergiile, dieta, jurnalul tău sau identitatea contului tău.
 
-Îți poți da, retrage sau șterge oricând consimțământul privind datele de sănătate din Meniu › Setări › Date de sănătate și confidențialitate.
+Îți poți da, retrage sau șterge oricând consimțământul privind datele de sănătate din Meniu › Date de sănătate și confidențialitate.
 
 ## 5. De ce folosim datele tale și în temeiul cărei baze legale
 

@@ -6,7 +6,7 @@ SRC = ROOT / 'content' / 'privacy' / 'src'
 META = {
   'en': {'htmlLang':'en','title':'Privacy Policy','policyTitle':'Riov Privacy Policy','lastUpdated':'Last updated: 14 October 2026','version':'Version 2.0','languageName':'English','path':''},
   'es': {'htmlLang':'es','title':'Política de privacidad','policyTitle':'Política de privacidad de Riov','lastUpdated':'Última actualización: 14 de octubre de 2026','version':'Versión 2.0','languageName':'Español','path':'es'},
-  'ca': {'htmlLang':'ca','title':'Política de privacitat','policyTitle':'Política de privacitat de Riov','lastUpdated':"Darrera actualització: 14 d'octubre de 2026",'version':'Versió 2.0','languageName':'Català','path':'ca'},
+  'ca': {'htmlLang':'ca','title':'Política de privadesa','policyTitle':'Política de privadesa de Riov','lastUpdated':"Darrera actualització: 14 d'octubre de 2026",'version':'Versió 2.0','languageName':'Català','path':'ca'},
   'fr': {'htmlLang':'fr','title':'Politique de confidentialité','policyTitle':'Politique de confidentialité de Riov','lastUpdated':'Dernière mise à jour : 14 octobre 2026','version':'Version 2.0','languageName':'Français','path':'fr'},
   'it': {'htmlLang':'it','title':'Informativa sulla privacy','policyTitle':'Informativa sulla privacy di Riov','lastUpdated':'Ultimo aggiornamento: 14 ottobre 2026','version':'Versione 2.0','languageName':'Italiano','path':'it'},
   'ro': {'htmlLang':'ro','title':'Politică de confidențialitate','policyTitle':'Politica de confidențialitate Riov','lastUpdated':'Ultima actualizare: 14 octombrie 2026','version':'Versiunea 2.0','languageName':'Română','path':'ro'},

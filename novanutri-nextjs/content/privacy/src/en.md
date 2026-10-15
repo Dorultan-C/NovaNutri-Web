@@ -61,7 +61,7 @@ Data about your allergies, intolerances, disliked ingredients, **diet type** (fo
 
 - **Opt-in before use.** We ask for this consent in a separate, explicit opt-in screen. It appears before you enter allergies, dislikes or a diet type, use the nutrition diary, log meals from cooking mode, or save scanner or quick-add results.
 - **Optional.** Without consent, these features stay switched off. You can still use the rest of the App. The meal-plan generator then works without your personal filters and shows an allergen warning.
-- **Manage or withdraw at any time** in **Menu > Settings > Health data & privacy**, or by emailing [info@riov.app](mailto:info@riov.app). When you withdraw, you can choose to:
+- **Manage or withdraw at any time** in **Menu › Health data & privacy**, or by emailing [info@riov.app](mailto:info@riov.app). When you withdraw, you can choose to:
   - **withdraw and delete:** your health and diet data is erased; or
   - **withdraw and keep data paused:** the data is kept but not processed in any way, until you consent again or it is deleted under the account retention rules in section 9.
 
@@ -70,7 +70,7 @@ Data about your allergies, intolerances, disliked ingredients, **diet type** (fo
 - **Other uses.** We do not use this data for advertising or for profiling with legal effects, and we never sell it.
 - **AI providers.** We do not send your allergies, diet, diary or account identity to AI providers.
 
-You can give, withdraw or delete your health data consent at any time in Menu › Settings › Health data & privacy.
+You can give, withdraw or delete your health data consent at any time in Menu › Health data & privacy.
 
 ## 5. Why we use your data and on what legal basis
 

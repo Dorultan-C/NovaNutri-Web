@@ -61,7 +61,7 @@ I dati relativi ad allergie, intolleranze, ingredienti non graditi, **tipo di di
 
 - **Consenso prima dell'uso.** Chiediamo questo consenso in una schermata di adesione separata ed esplicita. Compare prima che tu inserisca allergie, ingredienti non graditi o un tipo di dieta, utilizzi il diario nutrizionale, registri pasti dalla modalità cucina o salvi risultati dello scanner o dell'aggiunta rapida.
 - **Facoltativo.** Senza consenso, queste funzioni restano disattivate. Puoi comunque usare il resto dell'App. In tal caso il generatore di piani dei pasti funziona senza i tuoi filtri personali e mostra un avviso sugli allergeni.
-- **Gestisci o revoca il consenso in qualsiasi momento** in **Menu > Impostazioni > Dati sanitari e privacy**, oppure scrivendo a [info@riov.app](mailto:info@riov.app). Al momento della revoca puoi scegliere di:
+- **Gestisci o revoca il consenso in qualsiasi momento** in **Menu › Dati sanitari e privacy**, oppure scrivendo a [info@riov.app](mailto:info@riov.app). Al momento della revoca puoi scegliere di:
   - **revocare e cancellare:** i tuoi dati sanitari e alimentari vengono cancellati; oppure
   - **revocare e mantenere i dati in pausa:** i dati vengono conservati ma non sono trattati in alcun modo, finché non presti nuovamente il consenso o finché non vengono cancellati secondo le regole di conservazione dell'account della sezione 9.
 
@@ -70,7 +70,7 @@ I dati relativi ad allergie, intolleranze, ingredienti non graditi, **tipo di di
 - **Altri usi.** Non utilizziamo questi dati per pubblicità né per profilazione con effetti giuridici, e non li vendiamo mai.
 - **Fornitori di IA.** Non inviamo ai fornitori di IA le tue allergie, la tua dieta, il tuo diario né l'identità del tuo account.
 
-Puoi prestare, revocare o cancellare il tuo consenso relativo ai dati sanitari in qualsiasi momento in Menu › Impostazioni › Dati sanitari e privacy.
+Puoi prestare, revocare o cancellare il tuo consenso relativo ai dati sanitari in qualsiasi momento in Menu › Dati sanitari e privacy.
 
 ## 5. Perché usiamo i tuoi dati e su quale base giuridica
 

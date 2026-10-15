@@ -61,7 +61,7 @@ Oplysninger om dine allergier, intolerancer, ingredienser, du ikke kan lide, **k
 
 - **Samtykke før brug.** Vi beder om dette samtykke på en separat, udtrykkelig samtykkeskærm. Den vises, før du indtaster allergier, ingredienser, du ikke kan lide, eller en kosttype, bruger ernæringsdagbogen, registrerer måltider fra tilberedningstilstand eller gemmer resultater fra scanneren eller hurtig tilføjelse.
 - **Frivilligt.** Uden samtykke forbliver disse funktioner slået fra. Du kan stadig bruge resten af Appen. Madplangeneratoren fungerer så uden dine personlige filtre og viser en advarsel om allergener.
-- **Administrer eller træk samtykket tilbage når som helst** under **Menu > Indstillinger > Helbredsdata og privatliv** eller ved at skrive til [info@riov.app](mailto:info@riov.app). Når du trækker samtykket tilbage, kan du vælge at:
+- **Administrer eller træk samtykket tilbage når som helst** under **Menu › Helbredsdata og privatliv** eller ved at skrive til [info@riov.app](mailto:info@riov.app). Når du trækker samtykket tilbage, kan du vælge at:
   - **trække tilbage og slette:** dine helbreds- og kostoplysninger slettes, eller
   - **trække tilbage og sætte oplysningerne på pause:** oplysningerne opbevares, men behandles slet ikke, indtil du giver samtykke igen, eller indtil de slettes efter reglerne for opbevaring af kontoen i afsnit 9.
 
@@ -70,7 +70,7 @@ Oplysninger om dine allergier, intolerancer, ingredienser, du ikke kan lide, **k
 - **Anden brug.** Vi bruger ikke disse oplysninger til reklame eller til profilering med retsvirkning, og vi sælger dem aldrig.
 - **AI-leverandører.** Vi sender ikke dine allergier, din kost, din dagbog eller din kontoidentitet til AI-leverandører.
 
-Du kan give, trække tilbage eller slette dit samtykke til helbredsoplysninger når som helst under Menu › Indstillinger › Helbredsdata og privatliv.
+Du kan give, trække tilbage eller slette dit samtykke til helbredsoplysninger når som helst under Menu › Helbredsdata og privatliv.
 
 ## 5. Hvorfor vi bruger dine oplysninger, og på hvilket retsgrundlag
 
