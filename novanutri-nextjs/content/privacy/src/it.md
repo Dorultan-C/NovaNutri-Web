@@ -22,7 +22,7 @@ Non abbiamo nominato un Responsabile della protezione dei dati (DPO) perché non
 Riov è un'app per la pianificazione dei pasti e della spesa. Le sue funzioni principali sono:
 
 - **Catalogo di ricette:** ricette con costo stimato a persona e totale, valori nutrizionali, allergeni, utensili, tempo di preparazione e porzioni, disponibili in più lingue.
-- **Modalità cucina:** istruzioni passo passo con foto e timer.
+- **Modalità Cottura:** istruzioni passo passo con foto e timer.
 - **Pianificatore settimanale dei pasti:** include la generazione automatica dei piani, che si basa su regole interne all'App e non sull'IA.
 - **Carrello:** una lista della spesa creata a partire dal tuo piano.
 - **Esportazione in PDF:** esporta il tuo piano o la tua lista della spesa in PDF, oppure copiali come testo.
@@ -45,7 +45,7 @@ Riov è un'app per la pianificazione dei pasti e della spesa. Le sue funzioni pr
 | Dati dell'account | E-mail, nome visualizzato, ID utente, metodo di accesso, password (conservata solo come hash da Google Firebase), lingua, regione | Tu / accesso con Google |
 | Dati dell'account ospite | ID utente anonimo e i contenuti che crei come ospite | Generati automaticamente |
 | Dati del profilo | Foto del profilo, obiettivi nutrizionali, lingua e regione | Tu |
-| **Dati sanitari e alimentari (categoria particolare)** | Allergie e intolleranze, ingredienti non graditi, tipo di dieta, diario nutrizionale, pasti registrati in modalità cucina, elementi salvati con lo scanner e l'aggiunta rapida | Tu (solo con consenso esplicito, sezione 4) |
+| **Dati sanitari e alimentari (categoria particolare)** | Allergie e intolleranze, ingredienti non graditi, tipo di dieta, diario nutrizionale, pasti registrati in Modalità Cottura, elementi salvati con lo scanner e l'aggiunta rapida | Tu (solo con consenso esplicito, sezione 4) |
 | Contenuti che crei | Piani dei pasti, Carrello, preferiti, cronologia di cucina, recensioni, valutazioni, foto delle recensioni, ricette inviate e relative foto | Tu |
 | Immagini dello scanner | Foto che scatti o carichi per lo scanner di alimenti con IA | Tu |
 | Feedback e assistenza | Testo del feedback, allegati, messaggi del modulo di contatto (nome, e-mail, messaggio) | Tu |
@@ -57,9 +57,9 @@ Non trattiamo dati di carte di pagamento. Al momento non sono offerte funzioni a
 
 ## 4. Dati sanitari e alimentari (articolo 9 del GDPR)
 
-I dati relativi ad allergie, intolleranze, ingredienti non graditi, **tipo di dieta** (ad esempio vegana o mediterranea, che può rivelare condizioni di salute o convinzioni), diario nutrizionale, pasti registrati in modalità cucina e alimenti salvati tramite lo scanner o l'aggiunta rapida possono rivelare informazioni sulla tua salute. Li trattiamo tutti come **categorie particolari di dati**. Li trattiamo **solo con il tuo consenso esplicito** (art. 9, par. 2, lett. a), GDPR).
+I dati relativi ad allergie, intolleranze, ingredienti non graditi, **tipo di dieta** (ad esempio vegana o mediterranea, che può rivelare condizioni di salute o convinzioni), diario nutrizionale, pasti registrati in Modalità Cottura e alimenti salvati tramite lo scanner o l'aggiunta rapida possono rivelare informazioni sulla tua salute. Li trattiamo tutti come **categorie particolari di dati**. Li trattiamo **solo con il tuo consenso esplicito** (art. 9, par. 2, lett. a), GDPR).
 
-- **Consenso prima dell'uso.** Chiediamo questo consenso in una schermata di adesione separata ed esplicita. Compare prima che tu inserisca allergie, ingredienti non graditi o un tipo di dieta, utilizzi il diario nutrizionale, registri pasti dalla modalità cucina o salvi risultati dello scanner o dell'aggiunta rapida.
+- **Consenso prima dell'uso.** Chiediamo questo consenso in una schermata di adesione separata ed esplicita. Compare prima che tu inserisca allergie, ingredienti non graditi o un tipo di dieta, utilizzi il diario nutrizionale, registri pasti dalla Modalità Cottura o salvi risultati dello scanner o dell'aggiunta rapida.
 - **Facoltativo.** Senza consenso, queste funzioni restano disattivate. Puoi comunque usare il resto dell'App. In tal caso il generatore di piani dei pasti funziona senza i tuoi filtri personali e mostra un avviso sugli allergeni.
 - **Gestisci o revoca il consenso in qualsiasi momento** in **Menu › Dati sanitari e privacy**, oppure scrivendo a [info@riov.app](mailto:info@riov.app). Al momento della revoca puoi scegliere di:
   - **revocare e cancellare:** i tuoi dati sanitari e alimentari vengono cancellati; oppure
@@ -76,8 +76,8 @@ Puoi prestare, revocare o cancellare il tuo consenso relativo ai dati sanitari i
 
 | Finalità | Base giuridica (GDPR) |
 |---|---|
-| Creazione e gestione del tuo account (inclusi l'account ospite e l'accesso con Google) e fornitura delle funzioni principali: catalogo, modalità cucina, pianificatore, Carrello, esportazione in PDF, preferiti | Esecuzione di un contratto, art. 6, par. 1, lett. b) |
-| Filtri per allergie, ingredienti non graditi e dieta; diario nutrizionale; registrazione dalla modalità cucina; salvataggio dei risultati dello scanner o dell'aggiunta rapida | Consenso esplicito, art. 6, par. 1, lett. a) + art. 9, par. 2, lett. a) |
+| Creazione e gestione del tuo account (inclusi l'account ospite e l'accesso con Google) e fornitura delle funzioni principali: catalogo, Modalità Cottura, pianificatore, Carrello, esportazione in PDF, preferiti | Esecuzione di un contratto, art. 6, par. 1, lett. b) |
+| Filtri per allergie, ingredienti non graditi e dieta; diario nutrizionale; registrazione dalla Modalità Cottura; salvataggio dei risultati dello scanner o dell'aggiunta rapida | Consenso esplicito, art. 6, par. 1, lett. a) + art. 9, par. 2, lett. a) |
 | Scanner di alimenti con IA (immagini inviate a OpenAI per l'analisi) | Consenso, art. 6, par. 1, lett. a), richiesto prima del primo utilizzo. Il salvataggio dei risultati nel tuo diario richiede inoltre il consenso sui dati sanitari della sezione 4 |
 | Traduzione con IA di ricette e annunci | Legittimo interesse a offrire contenuti in più lingue, art. 6, par. 1, lett. f). Riguarda solo il testo delle ricette, non dati personali |
 | Pubblicazione e moderazione di recensioni, foto e ricette inviate | Contratto, art. 6, par. 1, lett. b); legittimo interesse a mantenere la community sicura e conforme alla legge, art. 6, par. 1, lett. f) |
@@ -177,7 +177,7 @@ Per esercitare un diritto, scrivi a **[info@riov.app](mailto:info@riov.app)** o 
 
 ## 12. Età minima
 
-Devi avere **almeno 14 anni** per utilizzare Riov (art. 7 LOPDGDD). Se vivi fuori dalla Spagna e il tuo paese fissa un'età del consenso digitale più alta, si applica tale età. Non raccogliamo consapevolmente dati di minori di tale età. Se veniamo a sapere di averlo fatto, li cancelleremo. Genitori o tutori possono scrivere a [info@riov.app](mailto:info@riov.app).
+L'età minima legale per utilizzare Riov è di **14 anni** (art. 7 LOPDGDD). Se vivi fuori dalla Spagna e il tuo paese fissa un'età del consenso digitale più alta (ad esempio 15 anni in Francia o 16 in Romania), si applica tale età. Al di sotto di tale età, trattiamo i tuoi dati solo con il consenso di un genitore o tutore. Per applicare un'unica regola ovunque, al momento della registrazione chiediamo a ogni utente di confermare di avere **almeno 16 anni oppure il consenso di un genitore o tutore**. Non raccogliamo consapevolmente dati di minori al di sotto dell'età applicabile senza tale consenso. Se veniamo a sapere di averlo fatto, li cancelleremo. Genitori o tutori possono scrivere a [info@riov.app](mailto:info@riov.app).
 
 ## 13. Sito, cookie e tecnologie simili
 

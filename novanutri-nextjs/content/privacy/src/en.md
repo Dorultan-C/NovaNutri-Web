@@ -177,7 +177,7 @@ To exercise a right, email **[info@riov.app](mailto:info@riov.app)** or use the 
 
 ## 12. Minimum age
 
-You must be **at least 14 years old** to use Riov (art. 7 LOPDGDD). If you live outside Spain and your country sets a higher age of digital consent, that age applies. We do not knowingly collect data from younger children. If we learn that we have, we will delete it. Parents or guardians can contact [info@riov.app](mailto:info@riov.app).
+The legal minimum age to use Riov is **14** (art. 7 LOPDGDD). If you live outside Spain and your country sets a higher age of digital consent (for example 15 in France or 16 in Romania), that age applies. Below that age, we process your data only with the consent of a parent or guardian. To apply one rule everywhere, at sign-up we ask every user to confirm that they are **at least 16 years old, or have their parent or guardian's consent**. We do not knowingly collect data from children below the applicable age without that consent. If we learn that we have, we will delete it. Parents or guardians can contact [info@riov.app](mailto:info@riov.app).
 
 ## 13. Website, cookies and similar technologies
 

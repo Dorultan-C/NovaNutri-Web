@@ -22,7 +22,7 @@ Nous n'avons pas désigné de délégué à la protection des données, car la l
 Riov est une application de planification des repas et des courses. Ses principales fonctionnalités sont :
 
 - **Catalogue de recettes :** recettes avec coût estimé par personne et total, valeurs nutritionnelles, allergènes, ustensiles, temps de préparation et nombre de portions, disponibles en plusieurs langues.
-- **Mode cuisine :** instructions étape par étape avec photos et minuteurs.
+- **Mode Cuisson :** instructions étape par étape avec photos et minuteurs.
 - **Planificateur de repas hebdomadaire :** comprend la génération automatique de plans, qui repose sur des règles intégrées à l'Application et non sur l'IA.
 - **Panier :** une liste de courses créée à partir de votre plan.
 - **Export PDF :** exportez votre plan ou votre liste de courses au format PDF, ou copiez-les sous forme de texte.
@@ -45,7 +45,7 @@ Riov est une application de planification des repas et des courses. Ses principa
 | Données du compte | E-mail, nom affiché, identifiant utilisateur, méthode de connexion, mot de passe (stocké uniquement sous forme de hachage par Google Firebase), langue, région | Vous / connexion avec Google |
 | Données du compte invité | Identifiant utilisateur anonyme et contenu que vous créez en tant qu'invité | Générées automatiquement |
 | Données du profil | Photo de profil, objectifs nutritionnels, langue et région | Vous |
-| **Données de santé et d'alimentation (catégorie particulière)** | Allergies et intolérances, ingrédients que vous n'aimez pas, type de régime, journal nutritionnel, repas enregistrés en mode cuisine, éléments enregistrés via le scanner et l'ajout rapide | Vous (uniquement avec votre consentement explicite, section 4) |
+| **Données de santé et d'alimentation (catégorie particulière)** | Allergies et intolérances, ingrédients que vous n'aimez pas, type de régime, journal nutritionnel, repas enregistrés en Mode Cuisson, éléments enregistrés via le scanner et l'ajout rapide | Vous (uniquement avec votre consentement explicite, section 4) |
 | Contenu que vous créez | Plans de repas, Panier, favoris, historique de cuisine, avis, notes, photos d'avis, recettes soumises et leurs photos | Vous |
 | Images du scanner | Photos que vous prenez ou téléversez pour le scanner d'aliments par IA | Vous |
 | Commentaires et assistance | Texte des commentaires, pièces jointes, messages du formulaire de contact (nom, e-mail, message) | Vous |
@@ -57,9 +57,9 @@ Nous ne traitons pas de données de carte de paiement. Aucune fonctionnalité pa
 
 ## 4. Données de santé et d'alimentation (article 9 du RGPD)
 
-Les données relatives à vos allergies, intolérances, ingrédients que vous n'aimez pas, **type de régime** (par exemple végan ou méditerranéen, qui peut révéler un état de santé ou des convictions), journal nutritionnel, repas enregistrés en mode cuisine et aliments enregistrés via le scanner ou l'ajout rapide peuvent révéler des informations sur votre santé. Nous les traitons toutes comme des **catégories particulières de données**. Nous les traitons **uniquement avec votre consentement explicite** (art. 9, paragraphe 2, point a), du RGPD).
+Les données relatives à vos allergies, intolérances, ingrédients que vous n'aimez pas, **type de régime** (par exemple végan ou méditerranéen, qui peut révéler un état de santé ou des convictions), journal nutritionnel, repas enregistrés en Mode Cuisson et aliments enregistrés via le scanner ou l'ajout rapide peuvent révéler des informations sur votre santé. Nous les traitons toutes comme des **catégories particulières de données**. Nous les traitons **uniquement avec votre consentement explicite** (art. 9, paragraphe 2, point a), du RGPD).
 
-- **Consentement préalable.** Nous demandons ce consentement sur un écran d'acceptation distinct et explicite. Il s'affiche avant que vous saisissiez des allergies, des ingrédients que vous n'aimez pas ou un type de régime, utilisiez le journal nutritionnel, enregistriez des repas en mode cuisine ou enregistriez des résultats du scanner ou de l'ajout rapide.
+- **Consentement préalable.** Nous demandons ce consentement sur un écran d'acceptation distinct et explicite. Il s'affiche avant que vous saisissiez des allergies, des ingrédients que vous n'aimez pas ou un type de régime, utilisiez le journal nutritionnel, enregistriez des repas en Mode Cuisson ou enregistriez des résultats du scanner ou de l'ajout rapide.
 - **Facultatif.** Sans consentement, ces fonctionnalités restent désactivées. Vous pouvez continuer à utiliser le reste de l'Application. Le générateur de plans de repas fonctionne alors sans vos filtres personnels et affiche un avertissement sur les allergènes.
 - **Gérez ou retirez votre consentement à tout moment** dans **Menu › Données de santé et confidentialité**, ou en écrivant à [info@riov.app](mailto:info@riov.app). Lors du retrait, vous pouvez choisir :
   - **retirer et supprimer :** vos données de santé et d'alimentation sont effacées ; ou
@@ -76,8 +76,8 @@ Vous pouvez donner, retirer ou supprimer votre consentement concernant les donn�
 
 | Finalité | Base juridique (RGPD) |
 |---|---|
-| Création et gestion de votre compte (y compris le compte invité et la connexion avec Google) et fourniture des fonctionnalités principales : catalogue, mode cuisine, planificateur, Panier, export PDF, favoris | Exécution d'un contrat, art. 6, par. 1, point b) |
-| Filtrage par allergies, ingrédients non aimés et régime ; journal nutritionnel ; enregistrement en mode cuisine ; enregistrement des résultats du scanner ou de l'ajout rapide | Consentement explicite, art. 6, par. 1, point a) + art. 9, par. 2, point a) |
+| Création et gestion de votre compte (y compris le compte invité et la connexion avec Google) et fourniture des fonctionnalités principales : catalogue, Mode Cuisson, planificateur, Panier, export PDF, favoris | Exécution d'un contrat, art. 6, par. 1, point b) |
+| Filtrage par allergies, ingrédients non aimés et régime ; journal nutritionnel ; enregistrement en Mode Cuisson ; enregistrement des résultats du scanner ou de l'ajout rapide | Consentement explicite, art. 6, par. 1, point a) + art. 9, par. 2, point a) |
 | Scanner d'aliments par IA (images envoyées à OpenAI pour analyse) | Consentement, art. 6, par. 1, point a), demandé avant la première utilisation. L'enregistrement des résultats dans votre journal nécessite en outre le consentement relatif aux données de santé de la section 4 |
 | Traduction par IA des recettes et des annonces | Intérêt légitime à proposer du contenu en plusieurs langues, art. 6, par. 1, point f). Cela ne concerne que le texte des recettes, pas des données personnelles |
 | Publication et modération des avis, photos et recettes soumises | Contrat, art. 6, par. 1, point b) ; intérêt légitime à maintenir une communauté sûre et respectueuse de la loi, art. 6, par. 1, point f) |
@@ -177,7 +177,7 @@ Pour exercer un droit, écrivez à **[info@riov.app](mailto:info@riov.app)** ou 
 
 ## 12. Âge minimum
 
-Vous devez avoir **au moins 14 ans** pour utiliser Riov (art. 7 de la LOPDGDD). Si vous vivez hors d'Espagne et que votre pays fixe un âge du consentement numérique plus élevé, c'est cet âge qui s'applique. Nous ne collectons pas sciemment de données concernant des enfants plus jeunes. Si nous apprenons que cela s'est produit, nous les supprimerons. Les parents ou tuteurs peuvent écrire à [info@riov.app](mailto:info@riov.app).
+L'âge minimum légal pour utiliser Riov est de **14 ans** (art. 7 de la LOPDGDD). Si vous vivez hors d'Espagne et que votre pays fixe un âge du consentement numérique plus élevé (par exemple 15 ans en France ou 16 ans en Roumanie), c'est cet âge qui s'applique. En dessous de cet âge, nous ne traitons vos données qu'avec le consentement d'un parent ou d'un tuteur. Afin d'appliquer une règle unique partout, nous demandons à chaque utilisateur, lors de l'inscription, de confirmer qu'il a **au moins 16 ans ou qu'il dispose du consentement de son parent ou tuteur**. Nous ne collectons pas sciemment de données concernant des enfants n'ayant pas l'âge applicable sans ce consentement. Si nous apprenons que cela s'est produit, nous les supprimerons. Les parents ou tuteurs peuvent écrire à [info@riov.app](mailto:info@riov.app).
 
 ## 13. Site, cookies et technologies similaires
 

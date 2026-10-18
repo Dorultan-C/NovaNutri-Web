@@ -22,7 +22,7 @@ Nu am desemnat un responsabil cu protecția datelor, deoarece nu suntem obligaț
 Riov este o aplicație de planificare a meselor și a cumpărăturilor. Principalele sale funcții sunt:
 
 - **Catalog de rețete:** rețete cu cost estimat pe persoană și total, valori nutriționale, alergeni, ustensile, timp de preparare și număr de porții, disponibile în mai multe limbi.
-- **Modul de gătit:** instrucțiuni pas cu pas, cu fotografii și cronometre.
+- **Mod de Gătire:** instrucțiuni pas cu pas, cu fotografii și cronometre.
 - **Planificator săptămânal de mese:** include generarea automată a planurilor, care funcționează pe baza unor reguli din Aplicație, nu cu IA.
 - **Coș:** o listă de cumpărături creată pe baza planului tău.
 - **Export PDF:** exportă planul sau lista de cumpărături ca PDF sau copiază-le ca text.
@@ -34,7 +34,7 @@ Riov este o aplicație de planificare a meselor și a cumpărăturilor. Principa
 - **Favorite, preferințe alimentare, alergii și ingrediente care nu îți plac**, folosite pentru filtrarea rețetelor.
 - **Notificări:** notificări în Aplicație și notificări push.
 - **Formular de feedback:** poți atașa capturi de ecran sau fișiere.
-- **Opțiuni de cont:** e-mail, conectare cu Google sau cont de invitat.
+- **Opțiuni de cont:** e-mail, conectare cu Google sau cont de vizitator.
 - **Estimări ale prețurilor din supermarketuri:** prețuri preluate din datele supermarketurilor pe care le monitorizăm în regiunea ta.
 - **Site:** informații, o listă de așteptare și un formular de contact.
 
@@ -43,9 +43,9 @@ Riov este o aplicație de planificare a meselor și a cumpărăturilor. Principa
 | Categorie | Exemple | Sursă |
 |---|---|---|
 | Datele contului | E-mail, nume afișat, ID de utilizator, metodă de conectare, parolă (stocată doar ca hash de Google Firebase), limbă, regiune | Tu / conectare cu Google |
-| Datele contului de invitat | ID de utilizator anonim și conținutul pe care îl creezi ca invitat | Generate automat |
+| Datele contului de vizitator | ID de utilizator anonim și conținutul pe care îl creezi ca vizitator | Generate automat |
 | Datele profilului | Fotografie de profil, obiective nutriționale, limbă și regiune | Tu |
-| **Date privind sănătatea și alimentația (categorie specială)** | Alergii și intoleranțe, ingrediente care nu îți plac, tip de dietă, jurnal nutrițional, mese înregistrate din modul de gătit, elemente salvate prin scaner și adăugare rapidă | Tu (doar cu consimțământ explicit, secțiunea 4) |
+| **Date privind sănătatea și alimentația (categorie specială)** | Alergii și intoleranțe, ingrediente care nu îți plac, tip de dietă, jurnal nutrițional, mese înregistrate din modul „Mod de Gătire”, elemente salvate prin scaner și adăugare rapidă | Tu (doar cu consimțământ explicit, secțiunea 4) |
 | Conținutul pe care îl creezi | Planuri de mese, Coș, favorite, istoric de gătit, recenzii, evaluări, fotografii din recenzii, rețete trimise și fotografiile acestora | Tu |
 | Imagini din scaner | Fotografii pe care le faci sau le încarci pentru scanerul de alimente cu IA | Tu |
 | Feedback și asistență | Textul feedbackului, atașamente, mesaje din formularul de contact (nume, e-mail, mesaj) | Tu |
@@ -57,9 +57,9 @@ Nu prelucrăm date ale cardurilor de plată. În prezent nu sunt oferite funcți
 
 ## 4. Date privind sănătatea și alimentația (articolul 9 din GDPR)
 
-Datele despre alergiile, intoleranțele, ingredientele care nu îți plac, **tipul de dietă** (de exemplu vegană sau mediteraneeană, care pot dezvălui afecțiuni de sănătate sau convingeri), jurnalul nutrițional, mesele înregistrate din modul de gătit și alimentele salvate prin scaner sau adăugare rapidă pot dezvălui informații despre sănătatea ta. Le tratăm pe toate ca **categorii speciale de date**. Le prelucrăm **numai cu consimțământul tău explicit** (art. 9 alin. (2) lit. (a) GDPR).
+Datele despre alergiile, intoleranțele, ingredientele care nu îți plac, **tipul de dietă** (de exemplu vegană sau mediteraneeană, care pot dezvălui afecțiuni de sănătate sau convingeri), jurnalul nutrițional, mesele înregistrate din modul „Mod de Gătire” și alimentele salvate prin scaner sau adăugare rapidă pot dezvălui informații despre sănătatea ta. Le tratăm pe toate ca **categorii speciale de date**. Le prelucrăm **numai cu consimțământul tău explicit** (art. 9 alin. (2) lit. (a) GDPR).
 
-- **Acord înainte de utilizare.** Solicităm acest consimțământ printr-un ecran de acord separat și explicit. Acesta apare înainte să introduci alergii, ingrediente care nu îți plac sau un tip de dietă, să folosești jurnalul nutrițional, să înregistrezi mese din modul de gătit sau să salvezi rezultate din scaner ori din adăugarea rapidă.
+- **Acord înainte de utilizare.** Solicităm acest consimțământ printr-un ecran de acord separat și explicit. Acesta apare înainte să introduci alergii, ingrediente care nu îți plac sau un tip de dietă, să folosești jurnalul nutrițional, să înregistrezi mese din modul „Mod de Gătire” sau să salvezi rezultate din scaner ori din adăugarea rapidă.
 - **Opțional.** Fără consimțământ, aceste funcții rămân dezactivate. Poți folosi în continuare restul Aplicației. În acest caz, generatorul de planuri de mese funcționează fără filtrele tale personale și afișează un avertisment privind alergenii.
 - **Gestionează sau retrage consimțământul oricând** din **Meniu › Date de sănătate și confidențialitate** sau scriind la [info@riov.app](mailto:info@riov.app). Când îți retragi consimțământul, poți alege:
   - **retragere și ștergere:** datele tale privind sănătatea și alimentația sunt șterse; sau
@@ -76,8 +76,8 @@ Datele despre alergiile, intoleranțele, ingredientele care nu îți plac, **tip
 
 | Scop | Temei juridic (GDPR) |
 |---|---|
-| Crearea și administrarea contului tău (inclusiv contul de invitat și conectarea cu Google) și furnizarea funcțiilor principale: catalog, modul de gătit, planificator, Coș, export PDF, favorite | Executarea unui contract, art. 6 alin. (1) lit. (b) |
-| Filtrarea după alergii, ingrediente nedorite și dietă; jurnal nutrițional; înregistrarea din modul de gătit; salvarea rezultatelor din scaner sau din adăugarea rapidă | Consimțământ explicit, art. 6 alin. (1) lit. (a) + art. 9 alin. (2) lit. (a) |
+| Crearea și administrarea contului tău (inclusiv contul de vizitator și conectarea cu Google) și furnizarea funcțiilor principale: catalog, modul „Mod de Gătire”, planificator, Coș, export PDF, favorite | Executarea unui contract, art. 6 alin. (1) lit. (b) |
+| Filtrarea după alergii, ingrediente nedorite și dietă; jurnal nutrițional; înregistrarea din modul „Mod de Gătire”; salvarea rezultatelor din scaner sau din adăugarea rapidă | Consimțământ explicit, art. 6 alin. (1) lit. (a) + art. 9 alin. (2) lit. (a) |
 | Scaner de alimente cu IA (imagini trimise către OpenAI pentru analiză) | Consimțământ, art. 6 alin. (1) lit. (a), solicitat înainte de prima utilizare. Salvarea rezultatelor în jurnal necesită și consimțământul privind datele de sănătate din secțiunea 4 |
 | Traducerea cu IA a rețetelor și a anunțurilor | Interes legitim de a oferi conținut în mai multe limbi, art. 6 alin. (1) lit. (f). Implică doar textul rețetelor, nu date cu caracter personal |
 | Publicarea și moderarea recenziilor, fotografiilor și rețetelor trimise | Contract, art. 6 alin. (1) lit. (b); interes legitim de a menține comunitatea sigură și conformă cu legea, art. 6 alin. (1) lit. (f) |
@@ -134,7 +134,7 @@ Poți solicita o copie a garanțiilor relevante la [info@riov.app](mailto:info@r
 |---|---|
 | Cont, profil, planuri, Coș, favorite | Până când îți ștergi contul sau până când acesta este șters pentru inactivitate (vezi mai jos) |
 | Date privind sănătatea și alimentația | Până când îți retragi consimțământul și alegi ștergerea sau până când îți ștergi contul. Datele în pauză sunt șterse conform acelorași reguli ale contului |
-| Conturi de invitat | Șterse după 12 luni de inactivitate |
+| Conturi de vizitator | Șterse după 12 luni de inactivitate |
 | Conturi înregistrate inactive | După 23 de luni de inactivitate trimitem un e-mail de avertizare. Contul este șters la 24 de luni și niciodată mai devreme de 30 de zile de la avertizare. Reconectarea anulează ștergerea. Sunt exceptate conturile de administrator, precum și conturile înregistrate fără adresă de e-mail, deoarece acestea nu pot fi avertizate |
 | Imagini din scaner | Stocate în contul tău și șterse odată cu acesta |
 | Recenzii și fotografii din recenzii | Șterse când le ștergi tu sau când îți ștergi contul |
@@ -177,7 +177,7 @@ Pentru a-ți exercita un drept, scrie la **[info@riov.app](mailto:info@riov.app)
 
 ## 12. Vârsta minimă
 
-Trebuie să ai **cel puțin 14 ani** pentru a folosi Riov (art. 7 LOPDGDD). Dacă locuiești în afara Spaniei și țara ta stabilește o vârstă mai mare pentru consimțământul digital, se aplică acea vârstă. Nu colectăm cu bună știință date de la copii mai mici. Dacă aflăm că am făcut acest lucru, le vom șterge. Părinții sau tutorii ne pot contacta la [info@riov.app](mailto:info@riov.app).
+Vârsta minimă legală pentru a folosi Riov este de **14 ani** (art. 7 LOPDGDD). Dacă locuiești în afara Spaniei și țara ta stabilește o vârstă mai mare pentru consimțământul digital (de exemplu 15 ani în Franța sau 16 ani în România), se aplică acea vârstă. Sub această vârstă, îți prelucrăm datele numai cu consimțământul unui părinte sau tutore. Pentru a aplica o singură regulă peste tot, la înregistrare îi rugăm pe toți utilizatorii să confirme că au **cel puțin 16 ani sau că au consimțământul părintelui ori al tutorelui**. Nu colectăm cu bună știință date de la copii sub vârsta aplicabilă fără acest consimțământ. Dacă aflăm că am făcut acest lucru, le vom șterge. Părinții sau tutorii ne pot contacta la [info@riov.app](mailto:info@riov.app).
 
 ## 13. Site, cookie-uri și tehnologii similare
 
