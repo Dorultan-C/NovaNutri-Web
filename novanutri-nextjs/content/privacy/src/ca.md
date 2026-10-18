@@ -1,6 +1,6 @@
 # Política de privadesa de Riov
 
-**Darrera actualització: 14 d'octubre de 2026** · Versió 2.0
+**Darrera actualització: 18 d'octubre de 2026** · Versió 2.1
 
 Aquesta Política de privadesa explica com es tracten les teves dades personals quan utilitzes l'aplicació mòbil Riov (l'"App") i el lloc web www.riov.app (el "Lloc web"), conjuntament els "Serveis". Està redactada per complir el Reglament general de protecció de dades de la UE (Reglament (UE) 2016/679, "RGPD") i la Llei orgànica 3/2018, de protecció de dades personals i garantia dels drets digitals ("LOPDGDD").
 
@@ -22,7 +22,7 @@ No hem designat cap delegat de protecció de dades perquè no hi estem legalment
 Riov és una app de planificació d'àpats i de compra. Les seves funcions principals són:
 
 - **Catàleg de receptes:** receptes amb el cost estimat per persona i total, informació nutricional, al·lèrgens, estris, temps de preparació i racions, disponibles en diversos idiomes.
-- **Mode cuina:** instruccions pas a pas amb fotos i temporitzadors.
+- **Mode de cocció:** instruccions pas a pas amb fotos i temporitzadors.
 - **Planificador setmanal d'àpats:** inclou la generació automàtica de plans, que funciona amb regles dins de l'App i no amb IA.
 - **Cistella:** una llista de la compra creada a partir del teu pla.
 - **Exportació a PDF:** exporta el teu pla o la teva llista de la compra en PDF, o copia'ls com a text.
@@ -45,7 +45,7 @@ Riov és una app de planificació d'àpats i de compra. Les seves funcions princ
 | Dades del compte | Correu electrònic, nom visible, ID d'usuari, mètode d'inici de sessió, contrasenya (emmagatzemada només com a hash per Google Firebase), idioma, regió | Tu / inici de sessió amb Google |
 | Dades del compte de convidat | ID d'usuari anònim i el contingut que crees com a convidat | Generades automàticament |
 | Dades del perfil | Foto de perfil, objectius nutricionals, idioma i regió | Tu |
-| **Dades de salut i alimentació (categoria especial)** | Al·lèrgies i intoleràncies, ingredients que no t'agraden, tipus de dieta, diari nutricional, registres d'àpats del mode cuina, elements desats des de l'escàner i el registre ràpid | Tu (només amb consentiment explícit, secció 4) |
+| **Dades de salut i alimentació (categoria especial)** | Al·lèrgies i intoleràncies, ingredients que no t'agraden, tipus de dieta, diari nutricional, registres d'àpats del Mode de cocció, elements desats des de l'escàner i el registre ràpid | Tu (només amb consentiment explícit, secció 4) |
 | Contingut que crees | Plans d'àpats, Cistella, preferits, historial de cuina, ressenyes, valoracions, fotos de ressenyes, receptes enviades i les seves fotos | Tu |
 | Imatges de l'escàner | Fotos que fas o puges per a l'escàner d'aliments amb IA | Tu |
 | Comentaris i suport | Text dels comentaris, fitxers adjunts, missatges del formulari de contacte (nom, correu electrònic, missatge) | Tu |
@@ -57,9 +57,9 @@ No tractem dades de targetes de pagament. Actualment no s'ofereixen funcions de 
 
 ## 4. Dades de salut i alimentació (article 9 del RGPD)
 
-Les dades sobre les teves al·lèrgies, intoleràncies, ingredients que no t'agraden, **tipus de dieta** (per exemple, vegana o mediterrània, que pot revelar problemes de salut o conviccions), diari nutricional, àpats registrats des del mode cuina i aliments desats mitjançant l'escàner o el registre ràpid poden revelar informació sobre la teva salut. Les tractem totes com a **categories especials de dades**. Les tractem **només amb el teu consentiment explícit** (art. 9.2.a) RGPD).
+Les dades sobre les teves al·lèrgies, intoleràncies, ingredients que no t'agraden, **tipus de dieta** (per exemple, vegana o mediterrània, que pot revelar problemes de salut o conviccions), diari nutricional, àpats registrats des del Mode de cocció i aliments desats mitjançant l'escàner o el registre ràpid poden revelar informació sobre la teva salut. Les tractem totes com a **categories especials de dades**. Les tractem **només amb el teu consentiment explícit** (art. 9.2.a) RGPD).
 
-- **Consentiment previ a l'ús.** Demanem aquest consentiment en una pantalla d'acceptació específica i explícita. Apareix abans que introdueixis al·lèrgies, ingredients que no t'agraden o un tipus de dieta, utilitzis el diari nutricional, registris àpats des del mode cuina o desis resultats de l'escàner o del registre ràpid.
+- **Consentiment previ a l'ús.** Demanem aquest consentiment en una pantalla d'acceptació específica i explícita. Apareix abans que introdueixis al·lèrgies, ingredients que no t'agraden o un tipus de dieta, utilitzis el diari nutricional, registris àpats des del Mode de cocció o desis resultats de l'escàner o del registre ràpid.
 - **Opcional.** Sense consentiment, aquestes funcions es mantenen desactivades. Pots continuar utilitzant la resta de l'App. En aquest cas, el generador de plans d'àpats funciona sense els teus filtres personals i mostra un avís sobre al·lèrgens.
 - **Gestiona o retira el consentiment en qualsevol moment** a **Menú › Dades de salut i privadesa**, o escrivint a [info@riov.app](mailto:info@riov.app). Quan el retiris, pots triar:
   - **retirar i esborrar:** s'eliminen les teves dades de salut i alimentació; o
@@ -76,8 +76,8 @@ Pots donar, retirar o esborrar el teu consentiment sobre les dades de salut en q
 
 | Finalitat | Base jurídica (RGPD) |
 |---|---|
-| Crear i gestionar el teu compte (inclosos el compte de convidat i l'inici de sessió amb Google) i prestar les funcions principals: catàleg, mode cuina, planificador, Cistella, exportació a PDF, preferits | Execució d'un contracte, art. 6.1.b) |
-| Filtratge per al·lèrgies, ingredients que no t'agraden i dieta; diari nutricional; registre des del mode cuina; desar resultats de l'escàner o del registre ràpid | Consentiment explícit, art. 6.1.a) + art. 9.2.a) |
+| Crear i gestionar el teu compte (inclosos el compte de convidat i l'inici de sessió amb Google) i prestar les funcions principals: catàleg, Mode de cocció, planificador, Cistella, exportació a PDF, preferits | Execució d'un contracte, art. 6.1.b) |
+| Filtratge per al·lèrgies, ingredients que no t'agraden i dieta; diari nutricional; registre des del Mode de cocció; desar resultats de l'escàner o del registre ràpid | Consentiment explícit, art. 6.1.a) + art. 9.2.a) |
 | Escàner d'aliments amb IA (imatges enviades a OpenAI per analitzar-les) | Consentiment, art. 6.1.a), sol·licitat abans del primer ús. Desar els resultats al teu diari requereix, a més, el consentiment sobre dades de salut de la secció 4 |
 | Traducció amb IA de receptes i avisos | Interès legítim a oferir contingut en diversos idiomes, art. 6.1.f). Només afecta el text de les receptes, no dades personals |
 | Publicació de ressenyes, fotos i receptes enviades, i la seva moderació | Contracte, art. 6.1.b); interès legítim a mantenir una comunitat segura i conforme a la llei, art. 6.1.f) |
@@ -177,7 +177,7 @@ Per exercir un dret, escriu a **[info@riov.app](mailto:info@riov.app)** o fes se
 
 ## 12. Edat mínima
 
-Has de tenir **com a mínim 14 anys** per utilitzar Riov (art. 7 LOPDGDD). Si vius fora d'Espanya i el teu país estableix una edat de consentiment digital superior, s'aplica aquesta edat. No recollim conscientment dades de menors d'aquesta edat. Si descobrim que ho hem fet, les eliminarem. Els pares o tutors poden escriure a [info@riov.app](mailto:info@riov.app).
+L'edat mínima legal per utilitzar Riov és de **14 anys** (art. 7 LOPDGDD). Si vius fora d'Espanya i el teu país estableix una edat de consentiment digital superior (per exemple, 15 anys a França o 16 a Romania), s'aplica aquesta edat. Per sota d'aquesta edat, només tractem les teves dades amb el consentiment del teu pare, mare o tutor. Per aplicar una única regla a tot arreu, en el registre demanem a tots els usuaris que confirmin que tenen **com a mínim 16 anys o que compten amb el consentiment del seu pare, mare o tutor**. No recollim conscientment dades de menors de l'edat aplicable sense aquest consentiment. Si descobrim que ho hem fet, les eliminarem. Els pares o tutors poden escriure a [info@riov.app](mailto:info@riov.app).
 
 ## 13. Lloc web, galetes i tecnologies similars
 

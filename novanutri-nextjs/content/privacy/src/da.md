@@ -1,6 +1,6 @@
 # Riovs privatlivspolitik
 
-**Senest opdateret: 14. oktober 2026** · Version 2.0
+**Senest opdateret: 18. oktober 2026** · Version 2.1
 
 Denne privatlivspolitik forklarer, hvordan dine personoplysninger behandles, når du bruger Riov-mobilappen ("Appen") og webstedet www.riov.app ("Webstedet"), tilsammen "Tjenesterne". Den er udformet, så den opfylder EU's generelle forordning om databeskyttelse (forordning (EU) 2016/679, "GDPR") og Spaniens organiske lov 3/2018 om beskyttelse af personoplysninger og garanti for digitale rettigheder ("LOPDGDD").
 
@@ -177,7 +177,7 @@ For at udøve en rettighed skal du skrive til **[info@riov.app](mailto:info@riov
 
 ## 12. Minimumsalder
 
-Du skal være **mindst 14 år** for at bruge Riov (art. 7 i LOPDGDD). Hvis du bor uden for Spanien, og dit land fastsætter en højere alder for digitalt samtykke, gælder den alder. Vi indsamler ikke bevidst oplysninger om yngre børn. Hvis vi opdager, at vi har gjort det, sletter vi dem. Forældre eller værger kan skrive til [info@riov.app](mailto:info@riov.app).
+Den lovbestemte minimumsalder for at bruge Riov er **14 år** (art. 7 i LOPDGDD). Hvis du bor uden for Spanien, og dit land fastsætter en højere alder for digitalt samtykke (for eksempel 15 år i Frankrig eller 16 år i Rumænien), gælder den alder. Under denne alder behandler vi kun dine oplysninger med samtykke fra en forælder eller værge. For at anvende én regel overalt beder vi ved oprettelsen alle brugere bekræfte, at de er **mindst 16 år eller har samtykke fra deres forælder eller værge**. Vi indsamler ikke bevidst oplysninger om børn under den gældende alder uden et sådant samtykke. Hvis vi opdager, at vi har gjort det, sletter vi dem. Forældre eller værger kan skrive til [info@riov.app](mailto:info@riov.app).
 
 ## 13. Websted, cookies og lignende teknologier
 

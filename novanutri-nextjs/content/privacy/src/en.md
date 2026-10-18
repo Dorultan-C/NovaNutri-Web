@@ -1,6 +1,6 @@
 # Riov Privacy Policy
 
-**Last updated: 14 October 2026** · Version 2.0
+**Last updated: 18 October 2026** · Version 2.1
 
 This Privacy Policy explains how your personal data is processed when you use the Riov mobile app (the "App") and the website www.riov.app (the "Website"), together the "Services". It is written to meet the EU General Data Protection Regulation (Regulation (EU) 2016/679, "GDPR") and Spain's Organic Law 3/2018 on Personal Data Protection and Guarantee of Digital Rights ("LOPDGDD").
 
@@ -177,7 +177,7 @@ To exercise a right, email **[info@riov.app](mailto:info@riov.app)** or use the 
 
 ## 12. Minimum age
 
-You must be **at least 14 years old** to use Riov (art. 7 LOPDGDD). If you live outside Spain and your country sets a higher age of digital consent, that age applies. We do not knowingly collect data from younger children. If we learn that we have, we will delete it. Parents or guardians can contact [info@riov.app](mailto:info@riov.app).
+The legal minimum age to use Riov is **14** (art. 7 LOPDGDD). If you live outside Spain and your country sets a higher age of digital consent (for example 15 in France or 16 in Romania), that age applies. Below that age, we process your data only with the consent of a parent or guardian. To apply one rule everywhere, at sign-up we ask every user to confirm that they are **at least 16 years old, or have their parent or guardian's consent**. We do not knowingly collect data from children below the applicable age without that consent. If we learn that we have, we will delete it. Parents or guardians can contact [info@riov.app](mailto:info@riov.app).
 
 ## 13. Website, cookies and similar technologies
 
