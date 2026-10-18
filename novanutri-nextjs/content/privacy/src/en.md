@@ -1,6 +1,6 @@
 # Riov Privacy Policy
 
-**Last updated: 14 October 2026** · Version 2.0
+**Last updated: 18 October 2026** · Version 2.1
 
 This Privacy Policy explains how your personal data is processed when you use the Riov mobile app (the "App") and the website www.riov.app (the "Website"), together the "Services". It is written to meet the EU General Data Protection Regulation (Regulation (EU) 2016/679, "GDPR") and Spain's Organic Law 3/2018 on Personal Data Protection and Guarantee of Digital Rights ("LOPDGDD").
 

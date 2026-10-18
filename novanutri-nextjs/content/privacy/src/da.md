@@ -1,6 +1,6 @@
 # Riovs privatlivspolitik
 
-**Senest opdateret: 14. oktober 2026** · Version 2.0
+**Senest opdateret: 18. oktober 2026** · Version 2.1
 
 Denne privatlivspolitik forklarer, hvordan dine personoplysninger behandles, når du bruger Riov-mobilappen ("Appen") og webstedet www.riov.app ("Webstedet"), tilsammen "Tjenesterne". Den er udformet, så den opfylder EU's generelle forordning om databeskyttelse (forordning (EU) 2016/679, "GDPR") og Spaniens organiske lov 3/2018 om beskyttelse af personoplysninger og garanti for digitale rettigheder ("LOPDGDD").
 

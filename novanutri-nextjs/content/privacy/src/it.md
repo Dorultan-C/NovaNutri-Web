@@ -1,6 +1,6 @@
 # Informativa sulla privacy di Riov
 
-**Ultimo aggiornamento: 14 ottobre 2026** · Versione 2.0
+**Ultimo aggiornamento: 18 ottobre 2026** · Versione 2.1
 
 La presente Informativa sulla privacy spiega come vengono trattati i tuoi dati personali quando utilizzi l'app mobile Riov (l'"App") e il sito web www.riov.app (il "Sito"), insieme i "Servizi". È redatta in conformità al Regolamento generale sulla protezione dei dati dell'UE (Regolamento (UE) 2016/679, "GDPR") e alla Legge organica spagnola 3/2018 sulla protezione dei dati personali e la garanzia dei diritti digitali ("LOPDGDD").
 

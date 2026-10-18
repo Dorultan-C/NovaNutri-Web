@@ -1,6 +1,6 @@
 # Politica de confidențialitate Riov
 
-**Ultima actualizare: 14 octombrie 2026** · Versiunea 2.0
+**Ultima actualizare: 18 octombrie 2026** · Versiunea 2.1
 
 Prezenta Politică de confidențialitate explică modul în care sunt prelucrate datele tale cu caracter personal atunci când utilizezi aplicația mobilă Riov („Aplicația”) și site-ul www.riov.app („Site-ul”), denumite împreună „Serviciile”. Aceasta este redactată în conformitate cu Regulamentul general privind protecția datelor al UE (Regulamentul (UE) 2016/679, „GDPR”) și cu Legea organică spaniolă 3/2018 privind protecția datelor cu caracter personal și garantarea drepturilor digitale („LOPDGDD”).
 
