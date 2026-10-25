@@ -1,6 +1,6 @@
 # Riovs privatlivspolitik
 
-**Senest opdateret: 18. oktober 2026** · Version 2.1
+**Senest opdateret: 25. oktober 2026** · Version 2.2
 
 Denne privatlivspolitik forklarer, hvordan dine personoplysninger behandles, når du bruger Riov-mobilappen ("Appen") og webstedet www.riov.app ("Webstedet"), tilsammen "Tjenesterne". Den er udformet, så den opfylder EU's generelle forordning om databeskyttelse (forordning (EU) 2016/679, "GDPR") og Spaniens organiske lov 3/2018 om beskyttelse af personoplysninger og garanti for digitale rettigheder ("LOPDGDD").
 
@@ -35,7 +35,7 @@ Riov er en app til madplanlægning og indkøb. De vigtigste funktioner er:
 - **Notifikationer:** notifikationer i Appen og push-notifikationer.
 - **Feedbackformular:** du kan vedhæfte skærmbilleder eller filer.
 - **Kontomuligheder:** e-mail, log ind med Google eller gæstekonto.
-- **Supermarkedspriser som estimat:** priser fra supermarkedsdata, som vi følger i dit område.
+- **Supermarkedspriser som estimat:** priser fra supermarkedsdata, som vi følger i dit område. Vi vælger landet for priserne ud fra din profil eller, hvis du ikke har angivet et, ud fra din enheds regionsindstilling, og vi gemmer det sammen med dine madplaner og din indkøbsliste.
 - **Websted:** information, en venteliste og en kontaktformular.
 
 ## 3. Hvilke oplysninger vi behandler
@@ -44,13 +44,14 @@ Riov er en app til madplanlægning og indkøb. De vigtigste funktioner er:
 |---|---|---|
 | Kontooplysninger | E-mail, vist navn, bruger-id, loginmetode, adgangskode (gemmes kun som hash af Google Firebase), sprog, region | Dig / log ind med Google |
 | Gæstekontooplysninger | Anonymt bruger-id og det indhold, du opretter som gæst | Genereres automatisk |
-| Profiloplysninger | Profilbillede, ernæringsmål, sprog og region | Dig |
+| Profiloplysninger | Profilbillede, ernæringsmål, sprog og region | Dig / din enheds indstillinger |
 | **Helbreds- og kostoplysninger (særlige kategorier)** | Allergier og intolerancer, ingredienser, du ikke kan lide, kosttype, ernæringsdagbog, måltider registreret fra tilberedningstilstand, elementer gemt fra scanneren og hurtig tilføjelse | Dig (kun med udtrykkeligt samtykke, afsnit 4) |
 | Indhold, du opretter | Madplaner, Kurv, favoritter, tilberedningshistorik, anmeldelser, bedømmelser, anmeldelsesbilleder, indsendte opskrifter og deres billeder | Dig |
 | Scannerbilleder | Billeder, du tager eller uploader til AI-madscanneren | Dig |
 | Feedback og support | Feedbacktekst, vedhæftede filer, beskeder fra kontaktformularen (navn, e-mail, besked) | Dig |
 | Notifikationsoplysninger | Push-token, notifikationsindstillinger | Din enhed |
 | Tekniske oplysninger | Enhedstype, styresystem, appversion, IP-adresse, fejllogge | Automatisk |
+| Brugsstatistik (kun i Appen og kun hvis du slår det til) | Hvilke skærme du åbner, og hvilke funktioner du bruger (f.eks. når du laver en madplan eller sætter flueben ved en vare i Kurven); id'er for de opskrifter, du ser, gemmer som favoritter, laver eller bedømmer, og din stjernebedømmelse; hvornår Appen åbnes, opdateres eller (på Android) afinstalleres; et app-instans-id oprettet af Google Analytics; enhedstype, styresystem og appversion; Appens sprog; om du bruger en registreret konto, en gæstekonto eller en Riov-medarbejderkonto; omtrentlig placering (land eller region), som Google udleder af din IP-adresse. Vi sender ikke dit navn, din e-mail, dit bruger-id, dine helbreds- og kostoplysninger eller noget, du skriver | Din enhed via Google Analytics for Firebase (med dit samtykke, afsnit 13) |
 | Webstedsoplysninger | E-mail til ventelisten, anonyme brugsstatistikker (Vercel Analytics), reCAPTCHA-signaler | Dig / automatisk |
 
 Vi behandler ikke betalingskortoplysninger. Der tilbydes i øjeblikket ingen betalingsfunktioner (se afsnit 6).
@@ -86,6 +87,7 @@ Du kan give, trække tilbage eller slette dit samtykke til helbredsoplysninger n
 | Servicemeddelelser (sikkerhed, ændringer af vilkår, nulstilling af adgangskode) | Kontrakt / retlig forpligtelse, artikel 6, stk. 1, litra b/c |
 | Feedback, support og kontaktformular | Legitim interesse i at besvare dig og forbedre Tjenesterne, artikel 6, stk. 1, litra f |
 | Webstedets venteliste | Samtykke, artikel 6, stk. 1, litra a |
+| Brugsstatistik i Appen (Google Analytics for Firebase) for at forstå, hvilke funktioner der bruges, og forbedre Appen | Samtykke, artikel 6, stk. 1, litra a. Lagring og læsning af statistik-id'et på din enhed kræver desuden dit samtykke efter artikel 22, stk. 2, i den spanske LSSI og tilsvarende regler, hvor du bor. Det er slået fra, medmindre du slår det til, og du kan til enhver tid trække dit samtykke tilbage (afsnit 13) |
 | Webstedsstatistik (Vercel Analytics, uden cookies og aggregeret) | Legitim interesse, artikel 6, stk. 1, litra f |
 | Forebyggelse af spam og misbrug (reCAPTCHA på kontaktformularen) | Legitim interesse, artikel 6, stk. 1, litra f |
 | Sikkerhed, forebyggelse af svindel, fejldiagnose | Legitim interesse, artikel 6, stk. 1, litra f |
@@ -104,6 +106,7 @@ Vi sælger ikke dine personoplysninger. Vi deler dem kun med tjenesteudbydere, d
 | Leverandør | Formål | Placering |
 |---|---|---|
 | Google (Firebase Authentication, Cloud Firestore, Cloud Storage, Cloud Functions, Google Cloud) | Login (herunder log ind med Google), database, fillagring, serverfunktioner, e-mails om nulstilling af adgangskode | EU/USA |
+| Google (Google Analytics for Firebase) | Brugsstatistik i Appen, kun hvis du slår det til. Google er vores databehandler i henhold til Google Ads' databehandlingsvilkår (Google Ads Data Processing Terms). Vi har slået datadeling med Google til Googles egne formål, Google Signals og annoncefunktioner fra | EU/USA |
 | OpenAI, L.L.C. / OpenAI Ireland Ltd. | AI-madscanner, estimater af ingredienser og næringsindhold, oversættelse | USA |
 | Vercel Inc. | Hosting af webstedet og Vercel Analytics (uden cookies) | USA/EU |
 | Resend | Afsendelse af beskeder fra kontaktformularen til os | USA |
@@ -126,6 +129,8 @@ Nogle leverandører er etableret i, eller tilgår oplysninger fra, USA eller and
 - **EU-US-rammen for databeskyttelse** (Data Privacy Framework), hvor leverandøren er certificeret (GDPR artikel 45), og/eller
 - **Europa-Kommissionens standardkontraktbestemmelser** (GDPR artikel 46) sammen med yderligere garantier, hvor det er nødvendigt.
 
+**Google Analytics for Firebase:** ved overførsler til Google LLC i USA bygger Google på EU-US-rammen for databeskyttelse (og dens udvidelse til Storbritannien) og, hvor rammen ikke gælder, på Kommissionens standardkontraktbestemmelser i Google Ads' databehandlingsvilkår. For brugere i EU logger eller gemmer Google Analytics ikke IP-adresser; de bruges kun til at udlede en omtrentlig placering.
+
 Du kan bede om en kopi af de relevante garantier på [info@riov.app](mailto:info@riov.app).
 
 ## 9. Hvor længe vi opbevarer oplysninger
@@ -142,6 +147,7 @@ Du kan bede om en kopi af de relevante garantier på [info@riov.app](mailto:info
 | Feedback fra Appen og vedhæftede filer | Slettes sammen med din konto |
 | Beskeder fra webstedets kontaktformular | 12 måneder |
 | Webstedets venteliste | Indtil du afmelder dig, eller Appen lanceres, alt efter hvad der kommer først |
+| Brugsstatistik (Google Analytics for Firebase) | Hændelses- og brugerdata slettes automatisk efter 2 måneder. Samlede rapporter, som ikke identificerer dig, berøres ikke. Da oplysningerne ikke er knyttet til din konto, slettes de ikke tidligere, når du sletter kontoen; de udløber under alle omstændigheder inden for 2 måneder |
 | Serverlogge | Op til 90 dage |
 | Sikkerhedskopier | Slettede oplysninger kan blive i krypterede sikkerhedskopier i op til 35 dage og overskrives derefter |
 
@@ -152,6 +158,8 @@ Du kan bede om en kopi af de relevante garantier på [info@riov.app](mailto:info
 - din loginpost (Firebase Authentication)
 
 De eneste undtagelser er offentliggjorte opskrifter (bevares uden dit navn), sikkerhedskopieringsperioden ovenfor og det, vi skal opbevare efter loven. Hvor LOPDGDD kræver det (art. 32), blokeres sådanne oplysninger og opbevares kun for at kunne stilles til rådighed for domstole og myndigheder, så længe retskrav fortsat er mulige.
+
+Brugsstatistik (afsnit 13) er ikke knyttet til din konto og slettes derfor ikke sammen med den, men automatisk inden for 2 måneder.
 
 ## 10. Sikkerhed
 
@@ -184,7 +192,8 @@ Den lovbestemte minimumsalder for at bruge Riov er **14 år** (art. 7 i LOPDGDD)
 - **Vercel Analytics:** registrerer sidebesøg i samlet form, uden cookies og uden at gemme personlige identifikatorer.
 - **Google reCAPTCHA** (kontaktformular): kan sætte cookies og indsamle oplysninger om enhed og interaktion for at opdage bots. Googles [privatlivspolitik](https://policies.google.com/privacy) og [vilkår](https://policies.google.com/terms) gælder.
 - **Strengt nødvendig lagring:** bruges kun til at drive webstedet eller Appen, for eksempel til at holde dig logget ind.
-- **Appen:** bruger enhedens lokale lagring til login, indstillinger og offlineoplysninger. Den bruger ikke reklameidentifikatorer eller tredjeparts reklamesporing. Firebase Analytics er deaktiveret.
+- **Appen:** bruger enhedens lokale lagring til login, indstillinger og offlineoplysninger. Den bruger ikke reklameidentifikatorer eller tredjeparts reklamesporing og sporer dig ikke på tværs af andre virksomheders apps eller websteder.
+- **Brugsstatistik (kun i Appen til iOS og Android, valgfrit):** hvis du slår **Del brugsstatistik** til under **Menu › Helbredsdata og privatliv**, bruger Appen Google Analytics for Firebase. Den gemmer et app-instans-id på din enhed og sender Google oplysninger om, hvordan du bruger Appen (se afsnit 3). Det er slået fra som standard, og intet indsamles, før du slår det til. Det er adskilt fra dit samtykke til helbredsoplysninger og bruges aldrig til reklame. Du kan til enhver tid slå det fra samme sted: indsamlingen stopper, id'et på din enhed nulstilles, og allerede indsamlede oplysninger slettes automatisk inden for 2 måneder (afsnit 9). Tilbagetrækning af samtykket påvirker ikke behandling, der fandt sted før. Indstillingen følger din konto, så hvis du bruger Riov på flere enheder, stopper de andre med at indsamle, næste gang de indlæser din profil.
 
 Vi bruger ikke reklamecookies. Hvis vi tilføjer ikke-nødvendige cookies, beder vi først om dit samtykke via et cookiebanner og opdaterer dette afsnit.
 
