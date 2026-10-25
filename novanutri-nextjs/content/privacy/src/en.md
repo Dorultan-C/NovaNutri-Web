@@ -1,6 +1,6 @@
 # Riov Privacy Policy
 
-**Last updated: 18 October 2026** · Version 2.1
+**Last updated: 25 October 2026** · Version 2.2
 
 This Privacy Policy explains how your personal data is processed when you use the Riov mobile app (the "App") and the website www.riov.app (the "Website"), together the "Services". It is written to meet the EU General Data Protection Regulation (Regulation (EU) 2016/679, "GDPR") and Spain's Organic Law 3/2018 on Personal Data Protection and Guarantee of Digital Rights ("LOPDGDD").
 
@@ -35,7 +35,7 @@ Riov is a meal-planning and grocery app. Its main features are:
 - **Notifications:** in-app and push notifications.
 - **Feedback form:** you can attach screenshots or files.
 - **Account options:** email, Google sign-in, or a guest account.
-- **Supermarket price estimates:** prices taken from tracked supermarket data for your region.
+- **Supermarket price estimates:** prices taken from tracked supermarket data for your region. We pick the country for prices from your profile or, if you haven't set one, from your device's region setting, and save it with your meal plans and shopping list.
 - **Website:** information, a waitlist and a contact form.
 
 ## 3. What data we process
@@ -44,13 +44,14 @@ Riov is a meal-planning and grocery app. Its main features are:
 |---|---|---|
 | Account data | Email, display name, user ID, sign-in method, password (stored only as a hash by Google Firebase), language, region | You / Google sign-in |
 | Guest account data | Anonymous user ID and the content you create as a guest | Generated automatically |
-| Profile data | Profile photo, nutrition targets, language and region | You |
+| Profile data | Profile photo, nutrition targets, language and region | You / your device settings |
 | **Health and diet data (special category)** | Allergies and intolerances, disliked ingredients, diet type, nutrition diary, cooking-mode meal logs, scanner and quick-add saves | You (only with explicit consent, section 4) |
 | Content you create | Meal plans, Basket, favourites, cooking history, reviews, ratings, review photos, submitted recipes and their photos | You |
 | Scanner images | Photos you take or upload for the AI food scanner | You |
 | Feedback and support | Feedback text, attachments, contact form messages (name, email, message) | You |
 | Notification data | Push token, notification preferences | Your device |
 | Technical data | Device type, operating system, app version, IP address, error logs | Automatic |
+| Usage analytics (App only, only if you turn it on) | Which screens you open and which features you use (for example generating a meal plan or ticking a Basket item); the IDs of recipes you view, save as favourites, cook or rate, and your star rating; when the App is opened, updated or (on Android) removed; an app-instance identifier created by Google Analytics; device type, operating system and App version; App language; whether you use a registered, guest or staff account; approximate location (country or region) that Google derives from your IP address. We do not send your name, email, user ID, health and diet data or anything you type | Your device, through Google Analytics for Firebase (with your consent, section 13) |
 | Website data | Waitlist email, anonymous usage statistics (Vercel Analytics), reCAPTCHA signals | You / automatic |
 
 We do not process payment card data. Paid features are not currently offered (see section 6).
@@ -86,6 +87,7 @@ You can give, withdraw or delete your health data consent at any time in Menu �
 | Service messages (security, changes to terms, password reset) | Contract / legal obligation, Art. 6(1)(b)/(c) |
 | Feedback, support and contact form | Legitimate interest in answering you and improving the Services, Art. 6(1)(f) |
 | Website waitlist | Consent, Art. 6(1)(a) |
+| Usage analytics in the App (Google Analytics for Firebase), to understand which features are used and improve the App | Consent, Art. 6(1)(a). Storing and reading the analytics identifier on your device also requires your consent under art. 22.2 LSSI and equivalent rules where you live. It is off unless you turn it on, and you can withdraw at any time (section 13) |
 | Website analytics (Vercel Analytics, cookieless and aggregated) | Legitimate interest, Art. 6(1)(f) |
 | Spam and abuse prevention (reCAPTCHA on the contact form) | Legitimate interest, Art. 6(1)(f) |
 | Security, fraud prevention, error diagnostics | Legitimate interest, Art. 6(1)(f) |
@@ -104,6 +106,7 @@ We do not sell your personal data. We share it only with service providers that 
 | Provider | Purpose | Location |
 |---|---|---|
 | Google (Firebase Authentication, Cloud Firestore, Cloud Storage, Cloud Functions, Google Cloud) | Sign-in (including Google sign-in), database, file storage, server functions, password-reset emails | EU/US |
+| Google (Google Analytics for Firebase) | Usage analytics in the App, only if you turn it on. Google acts as our processor under the Google Ads Data Processing Terms. We have turned off data sharing with Google for its own purposes, Google signals and advertising features | EU/US |
 | OpenAI, L.L.C. / OpenAI Ireland Ltd. | AI food scanner, ingredient and nutrition estimates, translation | US |
 | Vercel Inc. | Website hosting and Vercel Analytics (cookieless) | US/EU |
 | Resend | Sending contact form messages to us | US |
@@ -126,6 +129,8 @@ Some providers are based in, or access data from, the United States or other cou
 - the **EU–US Data Privacy Framework**, where the provider is certified (Art. 45 GDPR), and/or
 - the **European Commission's Standard Contractual Clauses** (Art. 46 GDPR), together with additional safeguards where needed.
 
+**Google Analytics for Firebase:** Google relies on the EU-US Data Privacy Framework (and its UK Extension) for transfers to Google LLC in the US, and on the Commission's standard contractual clauses in the Google Ads Data Processing Terms where the Framework does not apply. For users in the EU, Google Analytics does not log or store IP addresses; it uses them only to derive approximate location.
+
 You can ask for a copy of the relevant safeguards at [info@riov.app](mailto:info@riov.app).
 
 ## 9. How long we keep data
@@ -142,6 +147,7 @@ You can ask for a copy of the relevant safeguards at [info@riov.app](mailto:info
 | In-app feedback and attachments | Deleted with your account |
 | Website contact form messages | 12 months |
 | Website waitlist | Until you unsubscribe or the App launches, whichever comes first |
+| Usage analytics (Google Analytics for Firebase) | Event and user-level data is deleted automatically after 2 months. Aggregated reports, which do not identify you, are not affected. Because this data is not linked to your account, deleting your account does not delete it earlier; it still expires within 2 months |
 | Server logs | Up to 90 days |
 | Backups | Deleted data may remain in encrypted backups for up to 35 days and is then overwritten |
 
@@ -152,6 +158,8 @@ You can ask for a copy of the relevant safeguards at [info@riov.app](mailto:info
 - your sign-in record (Firebase Authentication)
 
 The only exceptions are published recipes (kept with your name removed), the backup period above, and anything we must keep by law. Where the LOPDGDD requires it (art. 32), such data is blocked and kept only to make it available to courts and authorities while legal claims remain possible.
+
+Usage analytics (section 13) are not linked to your account, so deleting your account does not remove them; they are deleted automatically within 2 months.
 
 ## 10. Security
 
@@ -184,7 +192,8 @@ The legal minimum age to use Riov is **14** (art. 7 LOPDGDD). If you live outsid
 - **Vercel Analytics:** records aggregated page visits without cookies and without storing personal identifiers.
 - **Google reCAPTCHA** (contact form): may set cookies and collect device and interaction data to detect bots. Google's [Privacy Policy](https://policies.google.com/privacy) and [Terms](https://policies.google.com/terms) apply.
 - **Strictly necessary storage:** used only to run the site or App, for example to keep you signed in.
-- **App:** uses local device storage for sign-in, settings and offline data. It does not use advertising identifiers or third-party advertising trackers. Firebase Analytics is disabled.
+- **App:** uses local device storage for sign-in, settings and offline data. It does not use advertising identifiers or third-party advertising trackers, and it does not track you across other companies' apps or websites.
+- **Usage analytics (iOS and Android App only, optional):** if you turn on **Share usage analytics** in **Menu › Health data & privacy**, the App uses Google Analytics for Firebase. It stores an app-instance identifier on your device and sends Google information about how you use the App (see section 3). It is off by default and nothing is collected until you turn it on. It is separate from your health data consent and is never used for advertising. You can turn it off at any time in the same place: collection stops, the identifier on your device is reset, and data already collected is deleted automatically within 2 months (section 9). Withdrawing does not affect processing that took place before. The setting follows your account, so if you use Riov on several devices, another device stops collecting the next time it loads your profile.
 
 We do not use advertising cookies. If we add non-essential cookies, we will ask for your consent first through a cookie banner and update this section.
 

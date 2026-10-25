@@ -1,6 +1,6 @@
 # Política de privacidad de Riov
 
-**Última actualización: 18 de octubre de 2026** · Versión 2.1
+**Última actualización: 25 de octubre de 2026** · Versión 2.2
 
 Esta Política de privacidad explica cómo se tratan tus datos personales cuando utilizas la aplicación móvil Riov (la "App") y el sitio web www.riov.app (el "Sitio web"), conjuntamente los "Servicios". Está redactada para cumplir el Reglamento General de Protección de Datos de la UE (Reglamento (UE) 2016/679, "RGPD") y la Ley Orgánica 3/2018, de Protección de Datos Personales y garantía de los derechos digitales ("LOPDGDD").
 
@@ -35,7 +35,7 @@ Riov es una app de planificación de comidas y de compra. Sus principales funcio
 - **Notificaciones:** notificaciones dentro de la App y notificaciones push.
 - **Formulario de comentarios:** puedes adjuntar capturas de pantalla o archivos.
 - **Opciones de cuenta:** correo electrónico, inicio de sesión con Google o cuenta de invitado.
-- **Estimación de precios de supermercado:** precios obtenidos de datos de supermercados que seguimos en tu región.
+- **Estimación de precios de supermercado:** precios obtenidos de datos de supermercados que seguimos en tu región. Elegimos el país de los precios a partir de tu perfil o, si no has indicado ninguno, de la configuración de región de tu dispositivo, y lo guardamos con tus planes de comidas y tu lista de la compra.
 - **Sitio web:** información, una lista de espera y un formulario de contacto.
 
 ## 3. Qué datos tratamos
@@ -44,13 +44,14 @@ Riov es una app de planificación de comidas y de compra. Sus principales funcio
 |---|---|---|
 | Datos de la cuenta | Correo electrónico, nombre visible, ID de usuario, método de inicio de sesión, contraseña (almacenada solo como hash por Google Firebase), idioma, región | Tú / inicio de sesión con Google |
 | Datos de la cuenta de invitado | ID de usuario anónimo y el contenido que creas como invitado | Generados automáticamente |
-| Datos del perfil | Foto de perfil, objetivos nutricionales, idioma y región | Tú |
+| Datos del perfil | Foto de perfil, objetivos nutricionales, idioma y región | Tú / la configuración de tu dispositivo |
 | **Datos de salud y alimentación (categoría especial)** | Alergias e intolerancias, ingredientes que no te gustan, tipo de dieta, diario nutricional, registros de comidas del Modo de Cocción, elementos guardados desde el escáner y el registro rápido | Tú (solo con consentimiento explícito, sección 4) |
 | Contenido que creas | Planes de comidas, Cesta, favoritos, historial de cocina, reseñas, valoraciones, fotos de reseñas, recetas enviadas y sus fotos | Tú |
 | Imágenes del escáner | Fotos que haces o subes para el escáner de alimentos con IA | Tú |
 | Comentarios y soporte | Texto de los comentarios, archivos adjuntos, mensajes del formulario de contacto (nombre, correo electrónico, mensaje) | Tú |
 | Datos de notificaciones | Token push, preferencias de notificaciones | Tu dispositivo |
 | Datos técnicos | Tipo de dispositivo, sistema operativo, versión de la App, dirección IP, registros de errores | Automático |
+| Analítica de uso (solo en la App y solo si la activas) | Qué pantallas abres y qué funciones usas (por ejemplo, generar un plan de comidas o marcar un artículo de la Cesta); los ID de las recetas que ves, guardas como favoritas, cocinas o valoras, y tu puntuación con estrellas; cuándo se abre, se actualiza o (en Android) se desinstala la App; un identificador de instancia de la app creado por Google Analytics; tipo de dispositivo, sistema operativo y versión de la App; idioma de la App; si usas una cuenta registrada, de invitado o del equipo de Riov; ubicación aproximada (país o región) que Google deduce de tu dirección IP. No enviamos tu nombre, tu correo electrónico, tu ID de usuario, tus datos de salud y alimentación ni nada de lo que escribas | Tu dispositivo, a través de Google Analytics for Firebase (con tu consentimiento, sección 13) |
 | Datos del sitio web | Correo electrónico de la lista de espera, estadísticas de uso anónimas (Vercel Analytics), señales de reCAPTCHA | Tú / automático |
 
 No tratamos datos de tarjetas de pago. Actualmente no se ofrecen funciones de pago (ver sección 6).
@@ -86,6 +87,7 @@ Puedes dar, retirar o borrar tu consentimiento sobre los datos de salud en cualq
 | Mensajes del servicio (seguridad, cambios en los términos, restablecimiento de contraseña) | Contrato / obligación legal, art. 6.1.b)/c) |
 | Comentarios, soporte y formulario de contacto | Interés legítimo en responderte y mejorar los Servicios, art. 6.1.f) |
 | Lista de espera del sitio web | Consentimiento, art. 6.1.a) |
+| Analítica de uso en la App (Google Analytics for Firebase), para saber qué funciones se usan y mejorar la App | Consentimiento, art. 6.1.a). Almacenar y leer el identificador de analítica en tu dispositivo también requiere tu consentimiento conforme al art. 22.2 de la LSSI y a las normas equivalentes de tu país. Está desactivada salvo que la actives, y puedes retirar tu consentimiento en cualquier momento (sección 13) |
 | Analítica del sitio web (Vercel Analytics, sin cookies y agregada) | Interés legítimo, art. 6.1.f) |
 | Prevención de spam y abusos (reCAPTCHA en el formulario de contacto) | Interés legítimo, art. 6.1.f) |
 | Seguridad, prevención del fraude, diagnóstico de errores | Interés legítimo, art. 6.1.f) |
@@ -104,6 +106,7 @@ No vendemos tus datos personales. Solo los compartimos con proveedores de servic
 | Proveedor | Finalidad | Ubicación |
 |---|---|---|
 | Google (Firebase Authentication, Cloud Firestore, Cloud Storage, Cloud Functions, Google Cloud) | Inicio de sesión (incluido el inicio de sesión con Google), base de datos, almacenamiento de archivos, funciones de servidor, correos de restablecimiento de contraseña | UE/EE. UU. |
+| Google (Google Analytics for Firebase) | Analítica de uso en la App, solo si la activas. Google actúa como encargado del tratamiento conforme a las Condiciones de Tratamiento de Datos de Google Ads. Hemos desactivado el uso compartido de datos con Google para sus propios fines, Google Signals y las funciones publicitarias | UE/EE. UU. |
 | OpenAI, L.L.C. / OpenAI Ireland Ltd. | Escáner de alimentos con IA, estimaciones de ingredientes y nutrición, traducción | EE. UU. |
 | Vercel Inc. | Alojamiento del sitio web y Vercel Analytics (sin cookies) | EE. UU./UE |
 | Resend | Envío a nosotros de los mensajes del formulario de contacto | EE. UU. |
@@ -126,6 +129,8 @@ Algunos proveedores están establecidos en Estados Unidos u otros países fuera 
 - el **Marco de Privacidad de Datos UE-EE. UU.**, cuando el proveedor está certificado (art. 45 RGPD), y/o
 - las **cláusulas contractuales tipo de la Comisión Europea** (art. 46 RGPD), junto con garantías adicionales cuando sea necesario.
 
+**Google Analytics for Firebase:** Google se basa en el Marco de Privacidad de Datos UE-EE. UU. (y su extensión para el Reino Unido) para las transferencias a Google LLC en Estados Unidos, y en las cláusulas contractuales tipo de la Comisión incluidas en las Condiciones de Tratamiento de Datos de Google Ads cuando el Marco no se aplica. Para los usuarios de la UE, Google Analytics no registra ni almacena direcciones IP; solo las usa para deducir la ubicación aproximada.
+
 Puedes solicitar una copia de las garantías correspondientes en [info@riov.app](mailto:info@riov.app).
 
 ## 9. Cuánto tiempo conservamos los datos
@@ -142,6 +147,7 @@ Puedes solicitar una copia de las garantías correspondientes en [info@riov.app]
 | Comentarios enviados desde la App y archivos adjuntos | Se eliminan con tu cuenta |
 | Mensajes del formulario de contacto del sitio web | 12 meses |
 | Lista de espera del sitio web | Hasta que te des de baja o se lance la App, lo que ocurra primero |
+| Analítica de uso (Google Analytics for Firebase) | Los datos de eventos y de usuario se eliminan automáticamente a los 2 meses. Los informes agregados, que no te identifican, no se ven afectados. Como estos datos no están vinculados a tu cuenta, eliminar tu cuenta no los borra antes; igualmente caducan en un plazo de 2 meses |
 | Registros del servidor | Hasta 90 días |
 | Copias de seguridad | Los datos eliminados pueden permanecer en copias de seguridad cifradas durante un máximo de 35 días y después se sobrescriben |
 
@@ -152,6 +158,8 @@ Puedes solicitar una copia de las garantías correspondientes en [info@riov.app]
 - tu registro de inicio de sesión (Firebase Authentication)
 
 Las únicas excepciones son las recetas publicadas (que se conservan sin tu nombre), el periodo de copias de seguridad indicado y aquello que debamos conservar por ley. Cuando lo exige la LOPDGDD (art. 32), dichos datos se bloquean y se conservan únicamente para ponerlos a disposición de los jueces y tribunales y de las autoridades competentes mientras puedan existir responsabilidades legales.
+
+Los datos de analítica de uso (sección 13) no están vinculados a tu cuenta, así que no se borran al eliminarla, sino automáticamente en un plazo de 2 meses.
 
 ## 10. Seguridad
 
@@ -184,7 +192,8 @@ La edad mínima legal para usar Riov es de **14 años** (art. 7 LOPDGDD). Si viv
 - **Vercel Analytics:** registra visitas a páginas de forma agregada, sin cookies y sin almacenar identificadores personales.
 - **Google reCAPTCHA** (formulario de contacto): puede instalar cookies y recoger datos del dispositivo y de la interacción para detectar bots. Se aplican la [Política de privacidad](https://policies.google.com/privacy) y los [Términos](https://policies.google.com/terms) de Google.
 - **Almacenamiento estrictamente necesario:** se utiliza solo para hacer funcionar el sitio o la App, por ejemplo, para mantener tu sesión iniciada.
-- **App:** utiliza el almacenamiento local del dispositivo para el inicio de sesión, los ajustes y los datos sin conexión. No utiliza identificadores publicitarios ni rastreadores publicitarios de terceros. Firebase Analytics está desactivado.
+- **App:** utiliza el almacenamiento local del dispositivo para el inicio de sesión, los ajustes y los datos sin conexión. No utiliza identificadores publicitarios ni rastreadores publicitarios de terceros, y no te rastrea en apps o sitios web de otras empresas.
+- **Analítica de uso (solo en la App para iOS y Android, opcional):** si activas **Compartir estadísticas de uso** en **Menú › Datos de salud y privacidad**, la App utiliza Google Analytics for Firebase. Guarda un identificador de instancia de la app en tu dispositivo y envía a Google información sobre cómo usas la App (ver sección 3). Está desactivada por defecto y no se recoge nada hasta que la activas. Es independiente de tu consentimiento sobre los datos de salud y nunca se usa con fines publicitarios. Puedes desactivarla en cualquier momento en el mismo lugar: la recogida se detiene, el identificador de tu dispositivo se restablece y los datos ya recogidos se eliminan automáticamente en un plazo de 2 meses (sección 9). Retirar el consentimiento no afecta al tratamiento realizado antes. El ajuste va asociado a tu cuenta, así que, si usas Riov en varios dispositivos, los demás dejan de recoger datos la próxima vez que cargan tu perfil.
 
 No utilizamos cookies publicitarias. Si añadimos cookies no esenciales, primero te pediremos el consentimiento mediante un banner de cookies y actualizaremos esta sección.
 

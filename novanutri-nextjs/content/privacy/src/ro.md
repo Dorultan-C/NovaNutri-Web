@@ -1,6 +1,6 @@
 # Politica de confidențialitate Riov
 
-**Ultima actualizare: 18 octombrie 2026** · Versiunea 2.1
+**Ultima actualizare: 25 octombrie 2026** · Versiunea 2.2
 
 Prezenta Politică de confidențialitate explică modul în care sunt prelucrate datele tale cu caracter personal atunci când utilizezi aplicația mobilă Riov („Aplicația”) și site-ul www.riov.app („Site-ul”), denumite împreună „Serviciile”. Aceasta este redactată în conformitate cu Regulamentul general privind protecția datelor al UE (Regulamentul (UE) 2016/679, „GDPR”) și cu Legea organică spaniolă 3/2018 privind protecția datelor cu caracter personal și garantarea drepturilor digitale („LOPDGDD”).
 
@@ -35,7 +35,7 @@ Riov este o aplicație de planificare a meselor și a cumpărăturilor. Principa
 - **Notificări:** notificări în Aplicație și notificări push.
 - **Formular de feedback:** poți atașa capturi de ecran sau fișiere.
 - **Opțiuni de cont:** e-mail, conectare cu Google sau cont de vizitator.
-- **Estimări ale prețurilor din supermarketuri:** prețuri preluate din datele supermarketurilor pe care le monitorizăm în regiunea ta.
+- **Estimări ale prețurilor din supermarketuri:** prețuri preluate din datele supermarketurilor pe care le monitorizăm în regiunea ta. Alegem țara pentru prețuri din profilul tău sau, dacă nu ai setat-o, din setarea de regiune a dispozitivului tău și o salvăm împreună cu planurile tale de mese și lista de cumpărături.
 - **Site:** informații, o listă de așteptare și un formular de contact.
 
 ## 3. Ce date prelucrăm
@@ -44,13 +44,14 @@ Riov este o aplicație de planificare a meselor și a cumpărăturilor. Principa
 |---|---|---|
 | Datele contului | E-mail, nume afișat, ID de utilizator, metodă de conectare, parolă (stocată doar ca hash de Google Firebase), limbă, regiune | Tu / conectare cu Google |
 | Datele contului de vizitator | ID de utilizator anonim și conținutul pe care îl creezi ca vizitator | Generate automat |
-| Datele profilului | Fotografie de profil, obiective nutriționale, limbă și regiune | Tu |
+| Datele profilului | Fotografie de profil, obiective nutriționale, limbă și regiune | Tu / setările dispozitivului tău |
 | **Date privind sănătatea și alimentația (categorie specială)** | Alergii și intoleranțe, ingrediente care nu îți plac, tip de dietă, jurnal nutrițional, mese înregistrate din modul „Mod de Gătire”, elemente salvate prin scaner și adăugare rapidă | Tu (doar cu consimțământ explicit, secțiunea 4) |
 | Conținutul pe care îl creezi | Planuri de mese, Coș, favorite, istoric de gătit, recenzii, evaluări, fotografii din recenzii, rețete trimise și fotografiile acestora | Tu |
 | Imagini din scaner | Fotografii pe care le faci sau le încarci pentru scanerul de alimente cu IA | Tu |
 | Feedback și asistență | Textul feedbackului, atașamente, mesaje din formularul de contact (nume, e-mail, mesaj) | Tu |
 | Date privind notificările | Token push, preferințe de notificare | Dispozitivul tău |
 | Date tehnice | Tipul dispozitivului, sistemul de operare, versiunea Aplicației, adresa IP, jurnale de erori | Automat |
+| Statistici de utilizare (doar în Aplicație și doar dacă le activezi) | Ce ecrane deschizi și ce funcții folosești (de exemplu, generarea unui plan de mese sau bifarea unui produs din Coș); ID-urile rețetelor pe care le vezi, le adaugi la favorite, le gătești sau le evaluezi, precum și nota ta în stele; momentele în care Aplicația este deschisă, actualizată sau (pe Android) dezinstalată; un identificator al instanței aplicației, creat de Google Analytics; tipul dispozitivului, sistemul de operare și versiunea Aplicației; limba Aplicației; dacă folosești un cont înregistrat, un cont de vizitator sau un cont al echipei Riov; locația aproximativă (țara sau regiunea), dedusă de Google din adresa ta IP. Nu trimitem numele tău, adresa de e-mail, ID-ul de utilizator, datele privind sănătatea și alimentația sau ce scrii | Dispozitivul tău, prin Google Analytics for Firebase (cu consimțământul tău, secțiunea 13) |
 | Datele Site-ului | E-mailul din lista de așteptare, statistici anonime de utilizare (Vercel Analytics), semnale reCAPTCHA | Tu / automat |
 
 Nu prelucrăm date ale cardurilor de plată. În prezent nu sunt oferite funcții cu plată (vezi secțiunea 6).
@@ -86,6 +87,7 @@ Datele despre alergiile, intoleranțele, ingredientele care nu îți plac, **tip
 | Mesaje de serviciu (securitate, modificări ale termenilor, resetarea parolei) | Contract / obligație legală, art. 6 alin. (1) lit. (b)/(c) |
 | Feedback, asistență și formular de contact | Interes legitim de a-ți răspunde și de a îmbunătăți Serviciile, art. 6 alin. (1) lit. (f) |
 | Lista de așteptare a Site-ului | Consimțământ, art. 6 alin. (1) lit. (a) |
+| Statistici de utilizare în Aplicație (Google Analytics for Firebase), pentru a înțelege ce funcții sunt folosite și a îmbunătăți Aplicația | Consimțământ, art. 6 alin. (1) lit. (a). Stocarea și citirea identificatorului pentru statistici pe dispozitivul tău necesită, de asemenea, consimțământul tău conform art. 22.2 din LSSI (legea spaniolă privind serviciile societății informaționale) și normelor echivalente din țara ta. Sunt dezactivate dacă nu le activezi și îți poți retrage consimțământul oricând (secțiunea 13) |
 | Statistici ale Site-ului (Vercel Analytics, fără cookie-uri și agregate) | Interes legitim, art. 6 alin. (1) lit. (f) |
 | Prevenirea spamului și a abuzurilor (reCAPTCHA pe formularul de contact) | Interes legitim, art. 6 alin. (1) lit. (f) |
 | Securitate, prevenirea fraudei, diagnosticarea erorilor | Interes legitim, art. 6 alin. (1) lit. (f) |
@@ -104,6 +106,7 @@ Nu vindem datele tale cu caracter personal. Le partajăm doar cu furnizori de se
 | Furnizor | Scop | Locație |
 |---|---|---|
 | Google (Firebase Authentication, Cloud Firestore, Cloud Storage, Cloud Functions, Google Cloud) | Conectare (inclusiv cu Google), bază de date, stocare de fișiere, funcții de server, e-mailuri de resetare a parolei | UE/SUA |
+| Google (Google Analytics for Firebase) | Statistici de utilizare în Aplicație, doar dacă le activezi. Google acționează ca persoană împuternicită de noi, în baza Termenilor privind prelucrarea datelor Google Ads (Google Ads Data Processing Terms). Am dezactivat partajarea datelor cu Google în scopurile proprii ale acestuia, Google Signals și funcțiile publicitare | UE/SUA |
 | OpenAI, L.L.C. / OpenAI Ireland Ltd. | Scaner de alimente cu IA, estimări privind ingredientele și valorile nutriționale, traducere | SUA |
 | Vercel Inc. | Găzduirea Site-ului și Vercel Analytics (fără cookie-uri) | SUA/UE |
 | Resend | Trimiterea către noi a mesajelor din formularul de contact | SUA |
@@ -126,6 +129,8 @@ Unii furnizori își au sediul în Statele Unite sau în alte țări din afara S
 - **Cadrul UE-SUA privind confidențialitatea datelor** (Data Privacy Framework), atunci când furnizorul este certificat (art. 45 GDPR), și/sau
 - **clauzele contractuale standard ale Comisiei Europene** (art. 46 GDPR), împreună cu garanții suplimentare, atunci când este necesar.
 
+**Google Analytics for Firebase:** pentru transferurile către Google LLC din SUA, Google se bazează pe Cadrul UE-SUA privind confidențialitatea datelor (și pe extensia acestuia pentru Regatul Unit), iar acolo unde Cadrul nu se aplică, pe clauzele contractuale standard ale Comisiei incluse în Termenii privind prelucrarea datelor Google Ads. Pentru utilizatorii din UE, Google Analytics nu înregistrează și nu stochează adresele IP; le folosește doar pentru a deduce locația aproximativă.
+
 Poți solicita o copie a garanțiilor relevante la [info@riov.app](mailto:info@riov.app).
 
 ## 9. Cât timp păstrăm datele
@@ -142,6 +147,7 @@ Poți solicita o copie a garanțiilor relevante la [info@riov.app](mailto:info@r
 | Feedback trimis din Aplicație și atașamente | Șterse odată cu contul tău |
 | Mesaje din formularul de contact al Site-ului | 12 luni |
 | Lista de așteptare a Site-ului | Până la dezabonare sau până la lansarea Aplicației, oricare dintre acestea survine mai întâi |
+| Statistici de utilizare (Google Analytics for Firebase) | Datele despre evenimente și cele la nivel de utilizator sunt șterse automat după 2 luni. Rapoartele agregate, care nu te identifică, nu sunt afectate. Deoarece aceste date nu sunt asociate contului tău, ștergerea contului nu le elimină mai devreme; ele expiră oricum în cel mult 2 luni |
 | Jurnale de server | Până la 90 de zile |
 | Copii de rezervă | Datele șterse pot rămâne în copii de rezervă criptate timp de cel mult 35 de zile, după care sunt suprascrise |
 
@@ -152,6 +158,8 @@ Poți solicita o copie a garanțiilor relevante la [info@riov.app](mailto:info@r
 - înregistrarea ta de autentificare (Firebase Authentication)
 
 Singurele excepții sunt rețetele publicate (păstrate fără numele tău), perioada de păstrare a copiilor de rezervă de mai sus și orice suntem obligați să păstrăm prin lege. Atunci când LOPDGDD impune acest lucru (art. 32), aceste date sunt blocate și păstrate doar pentru a fi puse la dispoziția instanțelor și autorităților cât timp sunt posibile acțiuni în justiție.
+
+Statisticile de utilizare (secțiunea 13) nu sunt asociate contului tău, așa că nu sunt șterse odată cu acesta, ci automat, în cel mult 2 luni.
 
 ## 10. Securitate
 
@@ -184,7 +192,8 @@ Vârsta minimă legală pentru a folosi Riov este de **14 ani** (art. 7 LOPDGDD)
 - **Vercel Analytics:** înregistrează vizitele pe pagini în mod agregat, fără cookie-uri și fără a stoca identificatori personali.
 - **Google reCAPTCHA** (formularul de contact): poate plasa cookie-uri și poate colecta date despre dispozitiv și interacțiune pentru a detecta roboții. Se aplică [Politica de confidențialitate](https://policies.google.com/privacy) și [Termenii](https://policies.google.com/terms) Google.
 - **Stocare strict necesară:** folosită doar pentru funcționarea Site-ului sau a Aplicației, de exemplu pentru a te menține conectat(ă).
-- **Aplicația:** folosește stocarea locală a dispozitivului pentru conectare, setări și date offline. Nu folosește identificatori publicitari sau instrumente de urmărire publicitară ale terților. Firebase Analytics este dezactivat.
+- **Aplicația:** folosește stocarea locală a dispozitivului pentru conectare, setări și date offline. Nu folosește identificatori publicitari sau instrumente de urmărire publicitară ale terților și nu te urmărește în aplicațiile sau pe site-urile altor companii.
+- **Statistici de utilizare (doar în Aplicația pentru iOS și Android, opționale):** dacă activezi opțiunea „Trimite statistici de utilizare” din **Meniu › Date de sănătate și confidențialitate**, Aplicația folosește Google Analytics for Firebase. Aceasta stochează pe dispozitivul tău un identificator al instanței aplicației și trimite către Google informații despre cum folosești Aplicația (vezi secțiunea 3). Opțiunea este dezactivată implicit și nu se colectează nimic până când nu o activezi. Este separată de consimțământul privind datele de sănătate și nu este folosită niciodată în scopuri publicitare. O poți dezactiva oricând din același loc: colectarea se oprește, identificatorul de pe dispozitiv este resetat, iar datele deja colectate sunt șterse automat în cel mult 2 luni (secțiunea 9). Retragerea consimțământului nu afectează prelucrarea efectuată înainte. Setarea este asociată contului tău, așa că, dacă folosești Riov pe mai multe dispozitive, celelalte nu mai colectează date după ce îți încarcă din nou profilul.
 
 Nu folosim cookie-uri publicitare. Dacă vom adăuga cookie-uri neesențiale, îți vom cere mai întâi consimțământul printr-un banner de cookie-uri și vom actualiza această secțiune.
 

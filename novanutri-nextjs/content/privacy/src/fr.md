@@ -1,6 +1,6 @@
 # Politique de confidentialité de Riov
 
-**Dernière mise à jour : 18 octobre 2026** · Version 2.1
+**Dernière mise à jour : 25 octobre 2026** · Version 2.2
 
 La présente Politique de confidentialité explique comment vos données à caractère personnel sont traitées lorsque vous utilisez l'application mobile Riov (l'« Application ») et le site web www.riov.app (le « Site »), ensemble les « Services ». Elle est rédigée conformément au Règlement général sur la protection des données de l'UE (Règlement (UE) 2016/679, « RGPD ») et à la loi organique espagnole 3/2018 relative à la protection des données à caractère personnel et à la garantie des droits numériques (« LOPDGDD »).
 
@@ -35,7 +35,7 @@ Riov est une application de planification des repas et des courses. Ses principa
 - **Notifications :** notifications dans l'Application et notifications push.
 - **Formulaire de commentaires :** vous pouvez joindre des captures d'écran ou des fichiers.
 - **Options de compte :** e-mail, connexion avec Google ou compte invité.
-- **Estimations des prix en supermarché :** prix issus des données de supermarchés que nous suivons dans votre région.
+- **Estimations des prix en supermarché :** prix issus des données de supermarchés que nous suivons dans votre région. Nous choisissons le pays des prix à partir de votre profil ou, si vous n'en avez pas indiqué, du réglage de région de votre appareil, et nous l'enregistrons avec vos plans de repas et votre liste de courses.
 - **Site :** informations, liste d'attente et formulaire de contact.
 
 ## 3. Quelles données nous traitons
@@ -44,13 +44,14 @@ Riov est une application de planification des repas et des courses. Ses principa
 |---|---|---|
 | Données du compte | E-mail, nom affiché, identifiant utilisateur, méthode de connexion, mot de passe (stocké uniquement sous forme de hachage par Google Firebase), langue, région | Vous / connexion avec Google |
 | Données du compte invité | Identifiant utilisateur anonyme et contenu que vous créez en tant qu'invité | Générées automatiquement |
-| Données du profil | Photo de profil, objectifs nutritionnels, langue et région | Vous |
+| Données du profil | Photo de profil, objectifs nutritionnels, langue et région | Vous / les réglages de votre appareil |
 | **Données de santé et d'alimentation (catégorie particulière)** | Allergies et intolérances, ingrédients que vous n'aimez pas, type de régime, journal nutritionnel, repas enregistrés en Mode Cuisson, éléments enregistrés via le scanner et l'ajout rapide | Vous (uniquement avec votre consentement explicite, section 4) |
 | Contenu que vous créez | Plans de repas, Panier, favoris, historique de cuisine, avis, notes, photos d'avis, recettes soumises et leurs photos | Vous |
 | Images du scanner | Photos que vous prenez ou téléversez pour le scanner d'aliments par IA | Vous |
 | Commentaires et assistance | Texte des commentaires, pièces jointes, messages du formulaire de contact (nom, e-mail, message) | Vous |
 | Données de notification | Jeton push, préférences de notification | Votre appareil |
 | Données techniques | Type d'appareil, système d'exploitation, version de l'Application, adresse IP, journaux d'erreurs | Automatique |
+| Statistiques d'utilisation (Application uniquement, et seulement si vous les activez) | Les écrans que vous ouvrez et les fonctionnalités que vous utilisez (par exemple générer un plan de repas ou cocher un article du Panier) ; les identifiants des recettes que vous consultez, ajoutez aux favoris, cuisinez ou notez, ainsi que votre note en étoiles ; le moment où l'Application est ouverte, mise à jour ou (sur Android) désinstallée ; un identifiant d'instance de l'application créé par Google Analytics ; le type d'appareil, le système d'exploitation et la version de l'Application ; la langue de l'Application ; le type de compte que vous utilisez (enregistré, invité ou équipe Riov) ; la localisation approximative (pays ou région) que Google déduit de votre adresse IP. Nous n'envoyons pas votre nom, votre e-mail, votre identifiant utilisateur, vos données de santé et d'alimentation ni ce que vous saisissez | Votre appareil, via Google Analytics for Firebase (avec votre consentement, section 13) |
 | Données du Site | E-mail de la liste d'attente, statistiques d'utilisation anonymes (Vercel Analytics), signaux reCAPTCHA | Vous / automatique |
 
 Nous ne traitons pas de données de carte de paiement. Aucune fonctionnalité payante n'est actuellement proposée (voir la section 6).
@@ -86,6 +87,7 @@ Vous pouvez donner, retirer ou supprimer votre consentement concernant les donn�
 | Messages de service (sécurité, modification des conditions, réinitialisation du mot de passe) | Contrat / obligation légale, art. 6, par. 1, points b)/c) |
 | Commentaires, assistance et formulaire de contact | Intérêt légitime à vous répondre et à améliorer les Services, art. 6, par. 1, point f) |
 | Liste d'attente du Site | Consentement, art. 6, par. 1, point a) |
+| Statistiques d'utilisation dans l'Application (Google Analytics for Firebase), pour savoir quelles fonctionnalités sont utilisées et améliorer l'Application | Consentement, art. 6, par. 1, point a). Le stockage et la lecture de l'identifiant de mesure sur votre appareil nécessitent aussi votre consentement en vertu de l'art. 22, par. 2, de la LSSI espagnole et des règles équivalentes du pays où vous vivez. Elles sont désactivées tant que vous ne les activez pas, et vous pouvez retirer votre consentement à tout moment (section 13) |
 | Mesure d'audience du Site (Vercel Analytics, sans cookies et agrégée) | Intérêt légitime, art. 6, par. 1, point f) |
 | Prévention du spam et des abus (reCAPTCHA sur le formulaire de contact) | Intérêt légitime, art. 6, par. 1, point f) |
 | Sécurité, prévention de la fraude, diagnostic des erreurs | Intérêt légitime, art. 6, par. 1, point f) |
@@ -104,6 +106,7 @@ Nous ne vendons pas vos données personnelles. Nous les partageons uniquement av
 | Prestataire | Finalité | Localisation |
 |---|---|---|
 | Google (Firebase Authentication, Cloud Firestore, Cloud Storage, Cloud Functions, Google Cloud) | Connexion (y compris avec Google), base de données, stockage de fichiers, fonctions serveur, e-mails de réinitialisation du mot de passe | UE/États-Unis |
+| Google (Google Analytics for Firebase) | Statistiques d'utilisation dans l'Application, uniquement si vous les activez. Google agit en tant que sous-traitant en vertu des conditions de traitement des données de Google Ads (Google Ads Data Processing Terms). Nous avons désactivé le partage de données avec Google pour ses propres finalités, Google Signals et les fonctionnalités publicitaires | UE/États-Unis |
 | OpenAI, L.L.C. / OpenAI Ireland Ltd. | Scanner d'aliments par IA, estimations des ingrédients et des valeurs nutritionnelles, traduction | États-Unis |
 | Vercel Inc. | Hébergement du Site et Vercel Analytics (sans cookies) | États-Unis/UE |
 | Resend | Envoi à notre attention des messages du formulaire de contact | États-Unis |
@@ -126,6 +129,8 @@ Certains prestataires sont établis aux États-Unis ou dans d'autres pays situé
 - le **cadre de protection des données UE–États-Unis** (Data Privacy Framework), lorsque le prestataire est certifié (art. 45 du RGPD), et/ou
 - les **clauses contractuelles types de la Commission européenne** (art. 46 du RGPD), accompagnées de garanties supplémentaires si nécessaire.
 
+**Google Analytics for Firebase :** pour les transferts vers Google LLC aux États-Unis, Google s'appuie sur le cadre de protection des données UE–États-Unis (et son extension au Royaume-Uni) et, lorsque ce cadre ne s'applique pas, sur les clauses contractuelles types de la Commission figurant dans les conditions de traitement des données de Google Ads. Pour les utilisateurs situés dans l'UE, Google Analytics n'enregistre ni ne stocke les adresses IP ; il ne les utilise que pour déduire une localisation approximative.
+
 Vous pouvez demander une copie des garanties applicables à [info@riov.app](mailto:info@riov.app).
 
 ## 9. Durée de conservation des données
@@ -142,6 +147,7 @@ Vous pouvez demander une copie des garanties applicables à [info@riov.app](mail
 | Commentaires envoyés depuis l'Application et pièces jointes | Supprimés avec votre compte |
 | Messages du formulaire de contact du Site | 12 mois |
 | Liste d'attente du Site | Jusqu'à votre désinscription ou au lancement de l'Application, selon ce qui intervient en premier |
+| Statistiques d'utilisation (Google Analytics for Firebase) | Les données d'événements et les données au niveau de l'utilisateur sont supprimées automatiquement au bout de 2 mois. Les rapports agrégés, qui ne vous identifient pas, ne sont pas concernés. Ces données n'étant pas liées à votre compte, la suppression de votre compte ne les efface pas plus tôt ; elles expirent de toute façon dans un délai de 2 mois |
 | Journaux du serveur | Jusqu'à 90 jours |
 | Sauvegardes | Les données supprimées peuvent subsister dans des sauvegardes chiffrées pendant 35 jours au maximum, puis sont écrasées |
 
@@ -152,6 +158,8 @@ Vous pouvez demander une copie des garanties applicables à [info@riov.app](mail
 - votre identifiant de connexion (Firebase Authentication)
 
 Les seules exceptions sont les recettes publiées (conservées sans votre nom), la période de sauvegarde indiquée ci-dessus et ce que la loi nous oblige à conserver. Lorsque la LOPDGDD l'exige (art. 32), ces données sont bloquées et conservées uniquement pour être mises à la disposition des juridictions et des autorités tant que des actions en justice restent possibles.
+
+Les statistiques d'utilisation (section 13) ne sont pas liées à votre compte : elles ne sont donc pas effacées avec celui-ci, mais supprimées automatiquement dans un délai de 2 mois.
 
 ## 10. Sécurité
 
@@ -184,7 +192,8 @@ L'âge minimum légal pour utiliser Riov est de **14 ans** (art. 7 de la LOPDGDD
 - **Vercel Analytics :** enregistre les visites de pages de manière agrégée, sans cookies et sans stocker d'identifiants personnels.
 - **Google reCAPTCHA** (formulaire de contact) : peut déposer des cookies et collecter des données relatives à l'appareil et aux interactions afin de détecter les robots. La [Politique de confidentialité](https://policies.google.com/privacy) et les [Conditions d'utilisation](https://policies.google.com/terms) de Google s'appliquent.
 - **Stockage strictement nécessaire :** utilisé uniquement pour faire fonctionner le Site ou l'Application, par exemple pour vous maintenir connecté(e).
-- **Application :** utilise le stockage local de l'appareil pour la connexion, les paramètres et les données hors ligne. Elle n'utilise pas d'identifiants publicitaires ni de traceurs publicitaires tiers. Firebase Analytics est désactivé.
+- **Application :** utilise le stockage local de l'appareil pour la connexion, les paramètres et les données hors ligne. Elle n'utilise pas d'identifiants publicitaires ni de traceurs publicitaires tiers, et elle ne vous suit pas sur les applications ou les sites d'autres entreprises.
+- **Statistiques d'utilisation (Application iOS et Android uniquement, facultatives) :** si vous activez **Partager les statistiques d'utilisation** dans **Menu › Données de santé et confidentialité**, l'Application utilise Google Analytics for Firebase. Elle enregistre un identifiant d'instance de l'application sur votre appareil et envoie à Google des informations sur la façon dont vous utilisez l'Application (voir la section 3). Cette option est désactivée par défaut et rien n'est collecté tant que vous ne l'activez pas. Elle est distincte de votre consentement relatif aux données de santé et n'est jamais utilisée à des fins publicitaires. Vous pouvez la désactiver à tout moment au même endroit : la collecte s'arrête, l'identifiant de votre appareil est réinitialisé et les données déjà collectées sont supprimées automatiquement dans un délai de 2 mois (section 9). Le retrait du consentement n'affecte pas le traitement effectué auparavant. Ce réglage est lié à votre compte : si vous utilisez Riov sur plusieurs appareils, les autres cessent la collecte la prochaine fois qu'ils chargent votre profil.
 
 Nous n'utilisons pas de cookies publicitaires. Si nous ajoutons des cookies non essentiels, nous vous demanderons d'abord votre consentement au moyen d'un bandeau cookies et mettrons à jour cette section.
 

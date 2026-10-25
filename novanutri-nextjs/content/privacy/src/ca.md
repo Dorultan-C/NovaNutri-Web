@@ -1,6 +1,6 @@
 # Política de privadesa de Riov
 
-**Darrera actualització: 18 d'octubre de 2026** · Versió 2.1
+**Darrera actualització: 25 d'octubre de 2026** · Versió 2.2
 
 Aquesta Política de privadesa explica com es tracten les teves dades personals quan utilitzes l'aplicació mòbil Riov (l'"App") i el lloc web www.riov.app (el "Lloc web"), conjuntament els "Serveis". Està redactada per complir el Reglament general de protecció de dades de la UE (Reglament (UE) 2016/679, "RGPD") i la Llei orgànica 3/2018, de protecció de dades personals i garantia dels drets digitals ("LOPDGDD").
 
@@ -35,7 +35,7 @@ Riov és una app de planificació d'àpats i de compra. Les seves funcions princ
 - **Notificacions:** notificacions dins de l'App i notificacions push.
 - **Formulari de comentaris:** pots adjuntar captures de pantalla o fitxers.
 - **Opcions de compte:** correu electrònic, inici de sessió amb Google o compte de convidat.
-- **Estimació de preus de supermercat:** preus obtinguts de dades de supermercats que seguim a la teva regió.
+- **Estimació de preus de supermercat:** preus obtinguts de dades de supermercats que seguim a la teva regió. Triem el país dels preus a partir del teu perfil o, si no n'has indicat cap, de la configuració de regió del teu dispositiu, i el desem amb els teus plans d'àpats i la teva llista de la compra.
 - **Lloc web:** informació, una llista d'espera i un formulari de contacte.
 
 ## 3. Quines dades tractem
@@ -44,13 +44,14 @@ Riov és una app de planificació d'àpats i de compra. Les seves funcions princ
 |---|---|---|
 | Dades del compte | Correu electrònic, nom visible, ID d'usuari, mètode d'inici de sessió, contrasenya (emmagatzemada només com a hash per Google Firebase), idioma, regió | Tu / inici de sessió amb Google |
 | Dades del compte de convidat | ID d'usuari anònim i el contingut que crees com a convidat | Generades automàticament |
-| Dades del perfil | Foto de perfil, objectius nutricionals, idioma i regió | Tu |
+| Dades del perfil | Foto de perfil, objectius nutricionals, idioma i regió | Tu / la configuració del teu dispositiu |
 | **Dades de salut i alimentació (categoria especial)** | Al·lèrgies i intoleràncies, ingredients que no t'agraden, tipus de dieta, diari nutricional, registres d'àpats del Mode de cocció, elements desats des de l'escàner i el registre ràpid | Tu (només amb consentiment explícit, secció 4) |
 | Contingut que crees | Plans d'àpats, Cistella, preferits, historial de cuina, ressenyes, valoracions, fotos de ressenyes, receptes enviades i les seves fotos | Tu |
 | Imatges de l'escàner | Fotos que fas o puges per a l'escàner d'aliments amb IA | Tu |
 | Comentaris i suport | Text dels comentaris, fitxers adjunts, missatges del formulari de contacte (nom, correu electrònic, missatge) | Tu |
 | Dades de notificacions | Token push, preferències de notificacions | El teu dispositiu |
 | Dades tècniques | Tipus de dispositiu, sistema operatiu, versió de l'App, adreça IP, registres d'errors | Automàtic |
+| Analítica d'ús (només a l'App i només si l'actives) | Quines pantalles obres i quines funcions fas servir (per exemple, generar un pla d'àpats o marcar un article de la Cistella); els ID de les receptes que mires, deses com a preferides, cuines o valores, i la teva puntuació amb estrelles; quan s'obre, s'actualitza o (a Android) es desinstal·la l'App; un identificador d'instància de l'app creat per Google Analytics; tipus de dispositiu, sistema operatiu i versió de l'App; idioma de l'App; si fas servir un compte registrat, de convidat o de l'equip de Riov; ubicació aproximada (país o regió) que Google dedueix de la teva adreça IP. No enviem el teu nom, el teu correu electrònic, el teu ID d'usuari, les teves dades de salut i alimentació ni res del que escriguis | El teu dispositiu, a través de Google Analytics for Firebase (amb el teu consentiment, secció 13) |
 | Dades del lloc web | Correu electrònic de la llista d'espera, estadístiques d'ús anònimes (Vercel Analytics), senyals de reCAPTCHA | Tu / automàtic |
 
 No tractem dades de targetes de pagament. Actualment no s'ofereixen funcions de pagament (vegeu la secció 6).
@@ -86,6 +87,7 @@ Pots donar, retirar o esborrar el teu consentiment sobre les dades de salut en q
 | Missatges del servei (seguretat, canvis en els termes, restabliment de la contrasenya) | Contracte / obligació legal, art. 6.1.b)/c) |
 | Comentaris, suport i formulari de contacte | Interès legítim a respondre't i millorar els Serveis, art. 6.1.f) |
 | Llista d'espera del lloc web | Consentiment, art. 6.1.a) |
+| Analítica d'ús a l'App (Google Analytics for Firebase), per saber quines funcions es fan servir i millorar l'App | Consentiment, art. 6.1.a). Emmagatzemar i llegir l'identificador d'analítica al teu dispositiu també requereix el teu consentiment d'acord amb l'art. 22.2 de la LSSI i les normes equivalents del teu país. Està desactivada si no l'actives, i pots retirar el consentiment en qualsevol moment (secció 13) |
 | Analítica del lloc web (Vercel Analytics, sense galetes i agregada) | Interès legítim, art. 6.1.f) |
 | Prevenció de correu brossa i abusos (reCAPTCHA al formulari de contacte) | Interès legítim, art. 6.1.f) |
 | Seguretat, prevenció del frau, diagnòstic d'errors | Interès legítim, art. 6.1.f) |
@@ -104,6 +106,7 @@ No venem les teves dades personals. Només les compartim amb proveïdors de serv
 | Proveïdor | Finalitat | Ubicació |
 |---|---|---|
 | Google (Firebase Authentication, Cloud Firestore, Cloud Storage, Cloud Functions, Google Cloud) | Inici de sessió (inclòs l'inici de sessió amb Google), base de dades, emmagatzematge de fitxers, funcions de servidor, correus de restabliment de la contrasenya | UE/EUA |
+| Google (Google Analytics for Firebase) | Analítica d'ús a l'App, només si l'actives. Google actua com a encarregat del tractament d'acord amb les Condicions de tractament de dades de Google Ads. Hem desactivat la compartició de dades amb Google per a les seves pròpies finalitats, Google Signals i les funcions publicitàries | UE/EUA |
 | OpenAI, L.L.C. / OpenAI Ireland Ltd. | Escàner d'aliments amb IA, estimacions d'ingredients i nutrició, traducció | EUA |
 | Vercel Inc. | Allotjament del lloc web i Vercel Analytics (sense galetes) | EUA/UE |
 | Resend | Enviament a nosaltres dels missatges del formulari de contacte | EUA |
@@ -126,6 +129,8 @@ Alguns proveïdors estan establerts als Estats Units o en altres països de fora
 - el **Marc de privadesa de dades UE-EUA**, quan el proveïdor està certificat (art. 45 RGPD), i/o
 - les **clàusules contractuals tipus de la Comissió Europea** (art. 46 RGPD), juntament amb garanties addicionals quan calgui.
 
+**Google Analytics for Firebase:** Google es basa en el Marc de privadesa de dades UE-EUA (i la seva extensió per al Regne Unit) per a les transferències a Google LLC als Estats Units, i en les clàusules contractuals tipus de la Comissió incloses a les Condicions de tractament de dades de Google Ads quan el Marc no s'aplica. Per als usuaris de la UE, Google Analytics no registra ni emmagatzema adreces IP; només les fa servir per deduir la ubicació aproximada.
+
 Pots sol·licitar una còpia de les garanties corresponents a [info@riov.app](mailto:info@riov.app).
 
 ## 9. Quant de temps conservem les dades
@@ -142,6 +147,7 @@ Pots sol·licitar una còpia de les garanties corresponents a [info@riov.app](ma
 | Comentaris enviats des de l'App i fitxers adjunts | S'eliminen amb el teu compte |
 | Missatges del formulari de contacte del lloc web | 12 mesos |
 | Llista d'espera del lloc web | Fins que et donis de baixa o es llanci l'App, el que passi primer |
+| Analítica d'ús (Google Analytics for Firebase) | Les dades d'esdeveniments i d'usuari s'eliminen automàticament als 2 mesos. Els informes agregats, que no t'identifiquen, no es veuen afectats. Com que aquestes dades no estan vinculades al teu compte, eliminar el compte no les esborra abans; igualment caduquen en un termini de 2 mesos |
 | Registres del servidor | Fins a 90 dies |
 | Còpies de seguretat | Les dades eliminades poden romandre en còpies de seguretat xifrades durant un màxim de 35 dies i després se sobreescriuen |
 
@@ -152,6 +158,8 @@ Pots sol·licitar una còpia de les garanties corresponents a [info@riov.app](ma
 - el teu registre d'inici de sessió (Firebase Authentication)
 
 Les úniques excepcions són les receptes publicades (que es conserven sense el teu nom), el període de còpies de seguretat indicat i el que hàgim de conservar per llei. Quan ho exigeix la LOPDGDD (art. 32), aquestes dades es bloquegen i es conserven únicament per posar-les a disposició dels jutges i tribunals i de les autoritats competents mentre puguin existir responsabilitats legals.
+
+Les dades d'analítica d'ús (secció 13) no estan vinculades al teu compte, així que no s'esborren en eliminar-lo, sinó automàticament en un termini de 2 mesos.
 
 ## 10. Seguretat
 
@@ -184,7 +192,8 @@ L'edat mínima legal per utilitzar Riov és de **14 anys** (art. 7 LOPDGDD). Si 
 - **Vercel Analytics:** registra visites a pàgines de manera agregada, sense galetes i sense emmagatzemar identificadors personals.
 - **Google reCAPTCHA** (formulari de contacte): pot instal·lar galetes i recollir dades del dispositiu i de la interacció per detectar bots. S'hi apliquen la [Política de privadesa](https://policies.google.com/privacy) i els [Termes](https://policies.google.com/terms) de Google.
 - **Emmagatzematge estrictament necessari:** es fa servir només per fer funcionar el lloc o l'App, per exemple, per mantenir la teva sessió iniciada.
-- **App:** fa servir l'emmagatzematge local del dispositiu per a l'inici de sessió, la configuració i les dades sense connexió. No fa servir identificadors publicitaris ni rastrejadors publicitaris de tercers. Firebase Analytics està desactivat.
+- **App:** fa servir l'emmagatzematge local del dispositiu per a l'inici de sessió, la configuració i les dades sense connexió. No fa servir identificadors publicitaris ni rastrejadors publicitaris de tercers, i no et rastreja en apps o llocs web d'altres empreses.
+- **Analítica d'ús (només a l'App per a iOS i Android, opcional):** si actives **Comparteix estadístiques d'ús** a **Menú › Dades de salut i privadesa**, l'App fa servir Google Analytics for Firebase. Desa un identificador d'instància de l'app al teu dispositiu i envia a Google informació sobre com fas servir l'App (vegeu la secció 3). Està desactivada per defecte i no es recull res fins que l'actives. És independent del teu consentiment sobre les dades de salut i no es fa servir mai amb finalitats publicitàries. La pots desactivar en qualsevol moment al mateix lloc: la recollida s'atura, l'identificador del dispositiu es restableix i les dades ja recollides s'eliminen automàticament en un termini de 2 mesos (secció 9). Retirar el consentiment no afecta el tractament fet abans. El paràmetre va associat al teu compte, de manera que, si fas servir Riov en diversos dispositius, els altres deixen de recollir dades la propera vegada que carreguen el teu perfil.
 
 No fem servir galetes publicitàries. Si afegim galetes no essencials, primer et demanarem el consentiment mitjançant un bàner de galetes i actualitzarem aquesta secció.
 
