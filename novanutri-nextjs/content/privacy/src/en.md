@@ -1,6 +1,6 @@
 # Riov Privacy Policy
 
-**Last updated: 25 October 2026** · Version 2.2
+**Last updated: 26 October 2026** · Version 2.3
 
 This Privacy Policy explains how your personal data is processed when you use the Riov mobile app (the "App") and the website www.riov.app (the "Website"), together the "Services". It is written to meet the EU General Data Protection Regulation (Regulation (EU) 2016/679, "GDPR") and Spain's Organic Law 3/2018 on Personal Data Protection and Guarantee of Digital Rights ("LOPDGDD").
 
@@ -60,7 +60,7 @@ We do not process payment card data. Paid features are not currently offered (se
 
 Data about your allergies, intolerances, disliked ingredients, **diet type** (for example vegan or Mediterranean, which can reveal health conditions or beliefs), nutrition diary, meals logged from cooking mode, and food saved through the scanner or quick-add can reveal information about your health. We treat all of it as **special-category data**. We process it **only with your explicit consent** (Art. 9(2)(a) GDPR).
 
-- **Opt-in before use.** We ask for this consent in a separate, explicit opt-in screen. It appears before you enter allergies, dislikes or a diet type, use the nutrition diary, log meals from cooking mode, or save scanner or quick-add results.
+- **Opt-in before use.** You can give this consent when you sign up, in a separate box that is unticked and optional, or later in a separate, explicit opt-in screen. That screen appears before you enter allergies, dislikes or a diet type, use the nutrition diary, log meals from cooking mode, or save scanner or quick-add results. If you don't give it, you can still use Riov, but these features stay off.
 - **Optional.** Without consent, these features stay switched off. You can still use the rest of the App. The meal-plan generator then works without your personal filters and shows an allergen warning.
 - **Manage or withdraw at any time** in **Menu › Health data & privacy**, or by emailing [info@riov.app](mailto:info@riov.app). When you withdraw, you can choose to:
   - **withdraw and delete:** your health and diet data is erased; or
@@ -193,7 +193,7 @@ The legal minimum age to use Riov is **14** (art. 7 LOPDGDD). If you live outsid
 - **Google reCAPTCHA** (contact form): may set cookies and collect device and interaction data to detect bots. Google's [Privacy Policy](https://policies.google.com/privacy) and [Terms](https://policies.google.com/terms) apply.
 - **Strictly necessary storage:** used only to run the site or App, for example to keep you signed in.
 - **App:** uses local device storage for sign-in, settings and offline data. It does not use advertising identifiers or third-party advertising trackers, and it does not track you across other companies' apps or websites.
-- **Usage analytics (iOS and Android App only, optional):** if you turn on **Share usage analytics** in **Menu › Health data & privacy**, the App uses Google Analytics for Firebase. It stores an app-instance identifier on your device and sends Google information about how you use the App (see section 3). It is off by default and nothing is collected until you turn it on. It is separate from your health data consent and is never used for advertising. You can turn it off at any time in the same place: collection stops, the identifier on your device is reset, and data already collected is deleted automatically within 2 months (section 9). Withdrawing does not affect processing that took place before. The setting follows your account, so if you use Riov on several devices, another device stops collecting the next time it loads your profile.
+- **Usage analytics (iOS and Android App only, optional):** if you turn on **Share usage analytics** in **Menu › Health data & privacy**, or answer **Yes** to the one-time question about it on the Home screen, the App uses Google Analytics for Firebase. It stores an app-instance identifier on your device and sends Google information about how you use the App (see section 3). It is off by default and nothing is collected until you turn it on. It is separate from your health data consent and is never used for advertising. You can turn it off at any time in the same place: collection stops, the identifier on your device is reset, and data already collected is deleted automatically within 2 months (section 9). Withdrawing does not affect processing that took place before. The setting follows your account, so if you use Riov on several devices, another device stops collecting the next time it loads your profile.
 
 We do not use advertising cookies. If we add non-essential cookies, we will ask for your consent first through a cookie banner and update this section.
 
