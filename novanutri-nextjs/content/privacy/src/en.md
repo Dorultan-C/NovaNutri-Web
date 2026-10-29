@@ -1,6 +1,6 @@
 # Riov Privacy Policy
 
-**Last updated: 26 October 2026** · Version 2.3
+**Last updated: DATE-ON-MERGE** · Version 2.4
 
 This Privacy Policy explains how your personal data is processed when you use the Riov mobile app (the "App") and the website www.riov.app (the "Website"), together the "Services". It is written to meet the EU General Data Protection Regulation (Regulation (EU) 2016/679, "GDPR") and Spain's Organic Law 3/2018 on Personal Data Protection and Guarantee of Digital Rights ("LOPDGDD").
 
@@ -63,7 +63,7 @@ Data about your allergies, intolerances, disliked ingredients, **diet type** (fo
 - **Opt-in before use.** You can give this consent when you sign up, in a separate box that is unticked and optional, or later in a separate, explicit opt-in screen. That screen appears before you enter allergies, dislikes or a diet type, use the nutrition diary, log meals from cooking mode, or save scanner or quick-add results. If you don't give it, you can still use Riov, but these features stay off.
 - **Optional.** Without consent, these features stay switched off. You can still use the rest of the App. The meal-plan generator then works without your personal filters and shows an allergen warning.
 - **Manage or withdraw at any time** in **Menu › Health data & privacy**, or by emailing [info@riov.app](mailto:info@riov.app). When you withdraw, you can choose to:
-  - **withdraw and delete:** your health and diet data is erased; or
+  - **withdraw and delete:** your health and diet data is erased (we keep only a short record that this was done, with no health data; see section 9); or
   - **withdraw and keep data paused:** the data is kept but not processed in any way, until you consent again or it is deleted under the account retention rules in section 9.
 
   Withdrawal does not make earlier processing unlawful.
@@ -139,6 +139,7 @@ You can ask for a copy of the relevant safeguards at [info@riov.app](mailto:info
 |---|---|
 | Account, profile, plans, Basket, favourites | Until you delete your account, or until it is deleted for inactivity (below) |
 | Health and diet data | Until you withdraw consent and choose deletion, or delete your account. Paused data is deleted under the same account rules |
+| Records that we deleted your health data (account ID, date, what was deleted; no health data) | 3 years from the deletion, to show we honoured your request |
 | Guest accounts | Deleted after 12 months of inactivity |
 | Inactive registered accounts | After 23 months of inactivity we send a warning email. The account is deleted at 24 months, and never less than 30 days after the warning. Signing back in cancels the deletion. Administrator accounts are exempt, and so are registered accounts without an email address because they cannot be warned |
 | Scanner images | Stored in your account and deleted with it |
@@ -157,7 +158,7 @@ You can ask for a copy of the relevant safeguards at [info@riov.app](mailto:info
 - your stored files, including scanner images, review photos and feedback attachments (Cloud Storage)
 - your sign-in record (Firebase Authentication)
 
-The only exceptions are published recipes (kept with your name removed), the backup period above, and anything we must keep by law. Where the LOPDGDD requires it (art. 32), such data is blocked and kept only to make it available to courts and authorities while legal claims remain possible.
+The only exceptions are published recipes (kept with your name removed), the record that we deleted your health data (kept for 3 years, see the table above), the backup period above, and anything we must keep by law. Where the LOPDGDD requires it (art. 32), such data is blocked and kept only to make it available to courts and authorities while legal claims remain possible.
 
 Usage analytics (section 13) are not linked to your account, so deleting your account does not remove them; they are deleted automatically within 2 months.
 

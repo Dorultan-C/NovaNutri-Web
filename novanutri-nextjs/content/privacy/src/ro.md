@@ -1,6 +1,6 @@
 # Politica de confidențialitate Riov
 
-**Ultima actualizare: 26 octombrie 2026** · Versiunea 2.3
+**Ultima actualizare: DATE-ON-MERGE** · Versiunea 2.4
 
 Prezenta Politică de confidențialitate explică modul în care sunt prelucrate datele tale cu caracter personal atunci când utilizezi aplicația mobilă Riov („Aplicația”) și site-ul www.riov.app („Site-ul”), denumite împreună „Serviciile”. Aceasta este redactată în conformitate cu Regulamentul general privind protecția datelor al UE (Regulamentul (UE) 2016/679, „GDPR”) și cu Legea organică spaniolă 3/2018 privind protecția datelor cu caracter personal și garantarea drepturilor digitale („LOPDGDD”).
 
@@ -63,7 +63,7 @@ Datele despre alergiile, intoleranțele, ingredientele care nu îți plac, **tip
 - **Acord înainte de utilizare.** Îți poți da acest consimțământ la înregistrare, într-o căsuță separată, nebifată și opțională, sau mai târziu, printr-un ecran de acord separat și explicit. Acest ecran apare înainte să introduci alergii, ingrediente care nu îți plac sau un tip de dietă, să folosești jurnalul nutrițional, să înregistrezi mese din modul „Mod de Gătire” sau să salvezi rezultate din scaner ori din adăugarea rapidă. Dacă nu îți dai consimțământul, poți folosi în continuare Riov, dar aceste funcții rămân dezactivate.
 - **Opțional.** Fără consimțământ, aceste funcții rămân dezactivate. Poți folosi în continuare restul Aplicației. În acest caz, generatorul de planuri de mese funcționează fără filtrele tale personale și afișează un avertisment privind alergenii.
 - **Gestionează sau retrage consimțământul oricând** din **Meniu › Date de sănătate și confidențialitate** sau scriind la [info@riov.app](mailto:info@riov.app). Când îți retragi consimțământul, poți alege:
-  - **retragere și ștergere:** datele tale privind sănătatea și alimentația sunt șterse; sau
+  - **retragere și ștergere:** datele tale privind sănătatea și alimentația sunt șterse (păstrăm doar o scurtă evidență a ștergerii, fără date privind sănătatea; vezi secțiunea 9); sau
   - **retragere și păstrarea datelor în pauză:** datele sunt păstrate, dar nu sunt prelucrate în niciun fel, până când îți dai din nou consimțământul sau până când sunt șterse conform regulilor de păstrare a contului din secțiunea 9.
 
   Retragerea nu afectează legalitatea prelucrării efectuate anterior.
@@ -139,6 +139,7 @@ Poți solicita o copie a garanțiilor relevante la [info@riov.app](mailto:info@r
 |---|---|
 | Cont, profil, planuri, Coș, favorite | Până când îți ștergi contul sau până când acesta este șters pentru inactivitate (vezi mai jos) |
 | Date privind sănătatea și alimentația | Până când îți retragi consimțământul și alegi ștergerea sau până când îți ștergi contul. Datele în pauză sunt șterse conform acelorași reguli ale contului |
+| Evidența faptului că am șters datele tale privind sănătatea (ID-ul contului, data, ce s-a șters; fără date privind sănătatea) | 3 ani de la ștergere, pentru a dovedi că am dat curs cererii tale |
 | Conturi de vizitator | Șterse după 12 luni de inactivitate |
 | Conturi înregistrate inactive | După 23 de luni de inactivitate trimitem un e-mail de avertizare. Contul este șters la 24 de luni și niciodată mai devreme de 30 de zile de la avertizare. Reconectarea anulează ștergerea. Sunt exceptate conturile de administrator, precum și conturile înregistrate fără adresă de e-mail, deoarece acestea nu pot fi avertizate |
 | Imagini din scaner | Stocate în contul tău și șterse odată cu acesta |
@@ -157,7 +158,7 @@ Poți solicita o copie a garanțiilor relevante la [info@riov.app](mailto:info@r
 - fișierele tale stocate, inclusiv imaginile din scaner, fotografiile din recenzii și atașamentele din feedback (Cloud Storage)
 - înregistrarea ta de autentificare (Firebase Authentication)
 
-Singurele excepții sunt rețetele publicate (păstrate fără numele tău), perioada de păstrare a copiilor de rezervă de mai sus și orice suntem obligați să păstrăm prin lege. Atunci când LOPDGDD impune acest lucru (art. 32), aceste date sunt blocate și păstrate doar pentru a fi puse la dispoziția instanțelor și autorităților cât timp sunt posibile acțiuni în justiție.
+Singurele excepții sunt rețetele publicate (păstrate fără numele tău), evidența faptului că am șters datele tale privind sănătatea (păstrată 3 ani, vezi tabelul de mai sus), perioada de păstrare a copiilor de rezervă de mai sus și orice suntem obligați să păstrăm prin lege. Atunci când LOPDGDD impune acest lucru (art. 32), aceste date sunt blocate și păstrate doar pentru a fi puse la dispoziția instanțelor și autorităților cât timp sunt posibile acțiuni în justiție.
 
 Statisticile de utilizare (secțiunea 13) nu sunt asociate contului tău, așa că nu sunt șterse odată cu acesta, ci automat, în cel mult 2 luni.
 

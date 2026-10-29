@@ -1,6 +1,6 @@
 # Riovs privatlivspolitik
 
-**Senest opdateret: 26. oktober 2026** · Version 2.3
+**Senest opdateret: DATE-ON-MERGE** · Version 2.4
 
 Denne privatlivspolitik forklarer, hvordan dine personoplysninger behandles, når du bruger Riov-mobilappen ("Appen") og webstedet www.riov.app ("Webstedet"), tilsammen "Tjenesterne". Den er udformet, så den opfylder EU's generelle forordning om databeskyttelse (forordning (EU) 2016/679, "GDPR") og Spaniens organiske lov 3/2018 om beskyttelse af personoplysninger og garanti for digitale rettigheder ("LOPDGDD").
 
@@ -63,7 +63,7 @@ Oplysninger om dine allergier, intolerancer, ingredienser, du ikke kan lide, **k
 - **Samtykke før brug.** Du kan give dette samtykke, når du opretter en konto, i et separat felt, der er frivilligt og ikke er afkrydset på forhånd, eller senere på en separat, udtrykkelig samtykkeskærm. Skærmen vises, før du indtaster allergier, ingredienser, du ikke kan lide, eller en kosttype, bruger ernæringsdagbogen, registrerer måltider fra tilberedningstilstand eller gemmer resultater fra scanneren eller hurtig tilføjelse. Hvis du ikke giver det, kan du stadig bruge Riov, men disse funktioner forbliver slået fra.
 - **Frivilligt.** Uden samtykke forbliver disse funktioner slået fra. Du kan stadig bruge resten af Appen. Madplangeneratoren fungerer så uden dine personlige filtre og viser en advarsel om allergener.
 - **Administrer eller træk samtykket tilbage når som helst** under **Menu › Helbredsdata og privatliv** eller ved at skrive til [info@riov.app](mailto:info@riov.app). Når du trækker samtykket tilbage, kan du vælge at:
-  - **trække tilbage og slette:** dine helbreds- og kostoplysninger slettes, eller
+  - **trække tilbage og slette:** dine helbreds- og kostoplysninger slettes (vi gemmer kun en kort registrering af, at det er sket, uden helbredsoplysninger; se afsnit 9), eller
   - **trække tilbage og sætte oplysningerne på pause:** oplysningerne opbevares, men behandles slet ikke, indtil du giver samtykke igen, eller indtil de slettes efter reglerne for opbevaring af kontoen i afsnit 9.
 
   Tilbagetrækningen gør ikke tidligere behandling ulovlig.
@@ -139,6 +139,7 @@ Du kan bede om en kopi af de relevante garantier på [info@riov.app](mailto:info
 |---|---|
 | Konto, profil, planer, Kurv, favoritter | Indtil du sletter din konto, eller indtil den slettes på grund af inaktivitet (se nedenfor) |
 | Helbreds- og kostoplysninger | Indtil du trækker samtykket tilbage og vælger sletning, eller sletter din konto. Oplysninger på pause slettes efter de samme kontoregler |
+| Registreringer af, at vi har slettet dine helbredsoplysninger (konto-id, dato, hvad der blev slettet; ingen helbredsoplysninger) | 3 år fra sletningen, for at dokumentere, at vi har efterkommet din anmodning |
 | Gæstekonti | Slettes efter 12 måneders inaktivitet |
 | Inaktive registrerede konti | Efter 23 måneders inaktivitet sender vi en advarselsmail. Kontoen slettes efter 24 måneder og aldrig mindre end 30 dage efter advarslen. Hvis du logger ind igen, annulleres sletningen. Administratorkonti er undtaget, og det samme gælder registrerede konti uden e-mailadresse, fordi de ikke kan advares |
 | Scannerbilleder | Gemmes på din konto og slettes sammen med den |
@@ -157,7 +158,7 @@ Du kan bede om en kopi af de relevante garantier på [info@riov.app](mailto:info
 - dine gemte filer, herunder scannerbilleder, anmeldelsesbilleder og vedhæftede filer fra feedback (Cloud Storage)
 - din loginpost (Firebase Authentication)
 
-De eneste undtagelser er offentliggjorte opskrifter (bevares uden dit navn), sikkerhedskopieringsperioden ovenfor og det, vi skal opbevare efter loven. Hvor LOPDGDD kræver det (art. 32), blokeres sådanne oplysninger og opbevares kun for at kunne stilles til rådighed for domstole og myndigheder, så længe retskrav fortsat er mulige.
+De eneste undtagelser er offentliggjorte opskrifter (bevares uden dit navn), registreringen af, at vi har slettet dine helbredsoplysninger (opbevares i 3 år, se tabellen ovenfor), sikkerhedskopieringsperioden ovenfor og det, vi skal opbevare efter loven. Hvor LOPDGDD kræver det (art. 32), blokeres sådanne oplysninger og opbevares kun for at kunne stilles til rådighed for domstole og myndigheder, så længe retskrav fortsat er mulige.
 
 Brugsstatistik (afsnit 13) er ikke knyttet til din konto og slettes derfor ikke sammen med den, men automatisk inden for 2 måneder.
 
