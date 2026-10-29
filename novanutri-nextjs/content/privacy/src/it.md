@@ -1,6 +1,6 @@
 # Informativa sulla privacy di Riov
 
-**Ultimo aggiornamento: 26 ottobre 2026** · Versione 2.3
+**Ultimo aggiornamento: DATE-ON-MERGE** · Versione 2.4
 
 La presente Informativa sulla privacy spiega come vengono trattati i tuoi dati personali quando utilizzi l'app mobile Riov (l'"App") e il sito web www.riov.app (il "Sito"), insieme i "Servizi". È redatta in conformità al Regolamento generale sulla protezione dei dati dell'UE (Regolamento (UE) 2016/679, "GDPR") e alla Legge organica spagnola 3/2018 sulla protezione dei dati personali e la garanzia dei diritti digitali ("LOPDGDD").
 
@@ -63,7 +63,7 @@ I dati relativi ad allergie, intolleranze, ingredienti non graditi, **tipo di di
 - **Consenso prima dell'uso.** Puoi dare questo consenso al momento della registrazione, in una casella separata, non spuntata e facoltativa, oppure in seguito in una schermata di adesione separata ed esplicita. Tale schermata compare prima che tu inserisca allergie, ingredienti non graditi o un tipo di dieta, utilizzi il diario nutrizionale, registri pasti dalla Modalità Cottura o salvi risultati dello scanner o dell'aggiunta rapida. Se non lo dai, puoi comunque usare Riov, ma queste funzioni restano disattivate.
 - **Facoltativo.** Senza consenso, queste funzioni restano disattivate. Puoi comunque usare il resto dell'App. In tal caso il generatore di piani dei pasti funziona senza i tuoi filtri personali e mostra un avviso sugli allergeni.
 - **Gestisci o revoca il consenso in qualsiasi momento** in **Menu › Dati sanitari e privacy**, oppure scrivendo a [info@riov.app](mailto:info@riov.app). Al momento della revoca puoi scegliere di:
-  - **revocare e cancellare:** i tuoi dati sanitari e alimentari vengono cancellati; oppure
+  - **revocare e cancellare:** i tuoi dati sanitari e alimentari vengono cancellati (conserviamo solo un breve registro dell'avvenuta cancellazione, senza dati sanitari; vedi la sezione 9); oppure
   - **revocare e mantenere i dati in pausa:** i dati vengono conservati ma non sono trattati in alcun modo, finché non presti nuovamente il consenso o finché non vengono cancellati secondo le regole di conservazione dell'account della sezione 9.
 
   La revoca non pregiudica la liceità del trattamento effettuato in precedenza.
@@ -139,6 +139,7 @@ Puoi chiedere una copia delle garanzie pertinenti scrivendo a [info@riov.app](ma
 |---|---|
 | Account, profilo, piani, Carrello, preferiti | Fino all'eliminazione del tuo account, o fino alla sua eliminazione per inattività (vedi sotto) |
 | Dati sanitari e alimentari | Fino a quando revochi il consenso e scegli la cancellazione, oppure elimini il tuo account. I dati in pausa vengono cancellati secondo le stesse regole dell'account |
+| Registri che attestano la cancellazione dei tuoi dati sanitari (ID dell'account, data, cosa è stato cancellato; nessun dato sanitario) | 3 anni dalla cancellazione, per dimostrare che abbiamo dato seguito alla tua richiesta |
 | Account ospite | Eliminati dopo 12 mesi di inattività |
 | Account registrati inattivi | Dopo 23 mesi di inattività inviamo un'e-mail di avviso. L'account viene eliminato a 24 mesi, e mai prima di 30 giorni dall'avviso. Accedere di nuovo annulla l'eliminazione. Sono esclusi gli account amministratore, così come gli account registrati senza indirizzo e-mail, perché non è possibile avvisarli |
 | Immagini dello scanner | Conservate nel tuo account ed eliminate insieme a esso |
@@ -157,7 +158,7 @@ Puoi chiedere una copia delle garanzie pertinenti scrivendo a [info@riov.app](ma
 - i tuoi file archiviati, comprese le immagini dello scanner, le foto delle recensioni e gli allegati del feedback (Cloud Storage)
 - il tuo record di accesso (Firebase Authentication)
 
-Le uniche eccezioni sono le ricette pubblicate (conservate senza il tuo nome), il periodo di backup sopra indicato e quanto siamo tenuti a conservare per legge. Ove richiesto dalla LOPDGDD (art. 32), tali dati sono bloccati e conservati unicamente per metterli a disposizione dell'autorità giudiziaria e delle autorità competenti finché sono possibili azioni legali.
+Le uniche eccezioni sono le ricette pubblicate (conservate senza il tuo nome), il registro che attesta la cancellazione dei tuoi dati sanitari (conservato 3 anni, vedi la tabella sopra), il periodo di backup sopra indicato e quanto siamo tenuti a conservare per legge. Ove richiesto dalla LOPDGDD (art. 32), tali dati sono bloccati e conservati unicamente per metterli a disposizione dell'autorità giudiziaria e delle autorità competenti finché sono possibili azioni legali.
 
 Le statistiche di utilizzo (sezione 13) non sono collegate al tuo account: non vengono quindi cancellate insieme all'account, ma eliminate automaticamente entro 2 mesi.
 

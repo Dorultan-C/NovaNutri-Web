@@ -1,6 +1,6 @@
 # Politique de confidentialité de Riov
 
-**Dernière mise à jour : 26 octobre 2026** · Version 2.3
+**Dernière mise à jour : DATE-ON-MERGE** · Version 2.4
 
 La présente Politique de confidentialité explique comment vos données à caractère personnel sont traitées lorsque vous utilisez l'application mobile Riov (l'« Application ») et le site web www.riov.app (le « Site »), ensemble les « Services ». Elle est rédigée conformément au Règlement général sur la protection des données de l'UE (Règlement (UE) 2016/679, « RGPD ») et à la loi organique espagnole 3/2018 relative à la protection des données à caractère personnel et à la garantie des droits numériques (« LOPDGDD »).
 
@@ -63,7 +63,7 @@ Les données relatives à vos allergies, intolérances, ingrédients que vous n'
 - **Consentement préalable.** Vous pouvez donner ce consentement lors de votre inscription, dans une case distincte, non cochée et facultative, ou plus tard sur un écran d'acceptation distinct et explicite. Cet écran s'affiche avant que vous saisissiez des allergies, des ingrédients que vous n'aimez pas ou un type de régime, utilisiez le journal nutritionnel, enregistriez des repas en Mode Cuisson ou enregistriez des résultats du scanner ou de l'ajout rapide. Si vous ne le donnez pas, vous pouvez quand même utiliser Riov, mais ces fonctionnalités restent désactivées.
 - **Facultatif.** Sans consentement, ces fonctionnalités restent désactivées. Vous pouvez continuer à utiliser le reste de l'Application. Le générateur de plans de repas fonctionne alors sans vos filtres personnels et affiche un avertissement sur les allergènes.
 - **Gérez ou retirez votre consentement à tout moment** dans **Menu › Données de santé et confidentialité**, ou en écrivant à [info@riov.app](mailto:info@riov.app). Lors du retrait, vous pouvez choisir :
-  - **retirer et supprimer :** vos données de santé et d'alimentation sont effacées ; ou
+  - **retirer et supprimer :** vos données de santé et d'alimentation sont effacées (nous conservons uniquement un bref enregistrement attestant cette suppression, sans aucune donnée de santé ; voir la section 9) ; ou
   - **retirer et conserver les données en pause :** les données sont conservées mais ne font l'objet d'aucun traitement, jusqu'à ce que vous donniez à nouveau votre consentement ou qu'elles soient supprimées selon les règles de conservation du compte de la section 9.
 
   Le retrait ne compromet pas la licéité du traitement effectué auparavant.
@@ -139,6 +139,7 @@ Vous pouvez demander une copie des garanties applicables à [info@riov.app](mail
 |---|---|
 | Compte, profil, plans, Panier, favoris | Jusqu'à la suppression de votre compte, ou jusqu'à sa suppression pour inactivité (voir ci-dessous) |
 | Données de santé et d'alimentation | Jusqu'à ce que vous retiriez votre consentement et choisissiez la suppression, ou supprimiez votre compte. Les données en pause sont supprimées selon les mêmes règles que le compte |
+| Enregistrements attestant que nous avons supprimé vos données de santé (identifiant du compte, date, ce qui a été supprimé ; aucune donnée de santé) | 3 ans à compter de la suppression, pour démontrer que nous avons donné suite à votre demande |
 | Comptes invités | Supprimés après 12 mois d'inactivité |
 | Comptes enregistrés inactifs | Après 23 mois d'inactivité, nous envoyons un e-mail d'avertissement. Le compte est supprimé à 24 mois, et jamais moins de 30 jours après l'avertissement. Se reconnecter annule la suppression. Les comptes administrateurs sont exemptés, de même que les comptes enregistrés sans adresse e-mail, car ils ne peuvent pas être avertis |
 | Images du scanner | Stockées dans votre compte et supprimées avec celui-ci |
@@ -157,7 +158,7 @@ Vous pouvez demander une copie des garanties applicables à [info@riov.app](mail
 - vos fichiers stockés, y compris les images du scanner, les photos d'avis et les pièces jointes des commentaires (Cloud Storage)
 - votre identifiant de connexion (Firebase Authentication)
 
-Les seules exceptions sont les recettes publiées (conservées sans votre nom), la période de sauvegarde indiquée ci-dessus et ce que la loi nous oblige à conserver. Lorsque la LOPDGDD l'exige (art. 32), ces données sont bloquées et conservées uniquement pour être mises à la disposition des juridictions et des autorités tant que des actions en justice restent possibles.
+Les seules exceptions sont les recettes publiées (conservées sans votre nom), l'enregistrement attestant que nous avons supprimé vos données de santé (conservé 3 ans, voir le tableau ci-dessus), la période de sauvegarde indiquée ci-dessus et ce que la loi nous oblige à conserver. Lorsque la LOPDGDD l'exige (art. 32), ces données sont bloquées et conservées uniquement pour être mises à la disposition des juridictions et des autorités tant que des actions en justice restent possibles.
 
 Les statistiques d'utilisation (section 13) ne sont pas liées à votre compte : elles ne sont donc pas effacées avec celui-ci, mais supprimées automatiquement dans un délai de 2 mois.
 

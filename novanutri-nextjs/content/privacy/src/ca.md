@@ -1,6 +1,6 @@
 # Política de privadesa de Riov
 
-**Darrera actualització: 26 d'octubre de 2026** · Versió 2.3
+**Darrera actualització: DATE-ON-MERGE** · Versió 2.4
 
 Aquesta Política de privadesa explica com es tracten les teves dades personals quan utilitzes l'aplicació mòbil Riov (l'"App") i el lloc web www.riov.app (el "Lloc web"), conjuntament els "Serveis". Està redactada per complir el Reglament general de protecció de dades de la UE (Reglament (UE) 2016/679, "RGPD") i la Llei orgànica 3/2018, de protecció de dades personals i garantia dels drets digitals ("LOPDGDD").
 
@@ -63,7 +63,7 @@ Les dades sobre les teves al·lèrgies, intoleràncies, ingredients que no t'agr
 - **Consentiment previ a l'ús.** Pots donar aquest consentiment quan et registres, en una casella a part, sense marcar i opcional, o més endavant en una pantalla d'acceptació específica i explícita. Aquesta pantalla apareix abans que introdueixis al·lèrgies, ingredients que no t'agraden o un tipus de dieta, utilitzis el diari nutricional, registris àpats des del Mode de cocció o desis resultats de l'escàner o del registre ràpid. Si no el dones, pots continuar utilitzant Riov, però aquestes funcions es mantenen desactivades.
 - **Opcional.** Sense consentiment, aquestes funcions es mantenen desactivades. Pots continuar utilitzant la resta de l'App. En aquest cas, el generador de plans d'àpats funciona sense els teus filtres personals i mostra un avís sobre al·lèrgens.
 - **Gestiona o retira el consentiment en qualsevol moment** a **Menú › Dades de salut i privadesa**, o escrivint a [info@riov.app](mailto:info@riov.app). Quan el retiris, pots triar:
-  - **retirar i esborrar:** s'eliminen les teves dades de salut i alimentació; o
+  - **retirar i esborrar:** s'eliminen les teves dades de salut i alimentació (només conservem un breu registre que ho demostra, sense dades de salut; vegeu la secció 9); o
   - **retirar i mantenir les dades en pausa:** les dades es conserven però no es tracten de cap manera, fins que tornis a donar el consentiment o s'eliminin d'acord amb les regles de conservació del compte de la secció 9.
 
   La retirada no afecta la licitud del tractament anterior.
@@ -139,6 +139,7 @@ Pots sol·licitar una còpia de les garanties corresponents a [info@riov.app](ma
 |---|---|
 | Compte, perfil, plans, Cistella, preferits | Fins que eliminis el teu compte, o fins que s'elimini per inactivitat (vegeu més avall) |
 | Dades de salut i alimentació | Fins que retiris el consentiment i triïs l'esborrament, o eliminis el teu compte. Les dades en pausa s'eliminen d'acord amb les mateixes regles del compte |
+| Registres que demostren que hem eliminat les teves dades de salut (ID del compte, data, què s'ha eliminat; sense dades de salut) | 3 anys des de l'eliminació, per demostrar que hem atès la teva sol·licitud |
 | Comptes de convidat | S'eliminen després de 12 mesos d'inactivitat |
 | Comptes registrats inactius | Després de 23 mesos d'inactivitat enviem un correu d'avís. El compte s'elimina als 24 mesos, i mai abans de 30 dies després de l'avís. Tornar a iniciar la sessió cancel·la l'eliminació. En queden exempts els comptes d'administrador, així com els comptes registrats sense adreça de correu electrònic, perquè no se'ls pot avisar |
 | Imatges de l'escàner | S'emmagatzemen al teu compte i s'eliminen amb aquest |
@@ -157,7 +158,7 @@ Pots sol·licitar una còpia de les garanties corresponents a [info@riov.app](ma
 - els teus fitxers emmagatzemats, incloses les imatges de l'escàner, les fotos de ressenyes i els fitxers adjunts dels comentaris (Cloud Storage)
 - el teu registre d'inici de sessió (Firebase Authentication)
 
-Les úniques excepcions són les receptes publicades (que es conserven sense el teu nom), el període de còpies de seguretat indicat i el que hàgim de conservar per llei. Quan ho exigeix la LOPDGDD (art. 32), aquestes dades es bloquegen i es conserven únicament per posar-les a disposició dels jutges i tribunals i de les autoritats competents mentre puguin existir responsabilitats legals.
+Les úniques excepcions són les receptes publicades (que es conserven sense el teu nom), el registre que demostra que hem eliminat les teves dades de salut (es conserva 3 anys, vegeu la taula anterior), el període de còpies de seguretat indicat i el que hàgim de conservar per llei. Quan ho exigeix la LOPDGDD (art. 32), aquestes dades es bloquegen i es conserven únicament per posar-les a disposició dels jutges i tribunals i de les autoritats competents mentre puguin existir responsabilitats legals.
 
 Les dades d'analítica d'ús (secció 13) no estan vinculades al teu compte, així que no s'esborren en eliminar-lo, sinó automàticament en un termini de 2 mesos.
 
