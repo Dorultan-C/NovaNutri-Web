@@ -1,6 +1,6 @@
 # Política de privacidad de Riov
 
-**Última actualización: DATE-ON-MERGE** · Versión 2.4
+**Última actualización: 29 de octubre de 2026** · Versión 2.4
 
 Esta Política de privacidad explica cómo se tratan tus datos personales cuando utilizas la aplicación móvil Riov (la "App") y el sitio web www.riov.app (el "Sitio web"), conjuntamente los "Servicios". Está redactada para cumplir el Reglamento General de Protección de Datos de la UE (Reglamento (UE) 2016/679, "RGPD") y la Ley Orgánica 3/2018, de Protección de Datos Personales y garantía de los derechos digitales ("LOPDGDD").
 
