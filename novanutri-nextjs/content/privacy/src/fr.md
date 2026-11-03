@@ -1,6 +1,6 @@
 # Politique de confidentialité de Riov
 
-**Dernière mise à jour : DATE-ON-MERGE** · Version 2.4
+**Dernière mise à jour : 29 octobre 2026** · Version 2.4
 
 La présente Politique de confidentialité explique comment vos données à caractère personnel sont traitées lorsque vous utilisez l'application mobile Riov (l'« Application ») et le site web www.riov.app (le « Site »), ensemble les « Services ». Elle est rédigée conformément au Règlement général sur la protection des données de l'UE (Règlement (UE) 2016/679, « RGPD ») et à la loi organique espagnole 3/2018 relative à la protection des données à caractère personnel et à la garantie des droits numériques (« LOPDGDD »).
 
