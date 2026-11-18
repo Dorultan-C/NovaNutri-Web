@@ -1,6 +1,6 @@
 # Politique de confidentialité de Riov
 
-**Dernière mise à jour : 29 octobre 2026** · Version 2.4
+**Dernière mise à jour : 18 novembre 2026** · Version 2.5
 
 La présente Politique de confidentialité explique comment vos données à caractère personnel sont traitées lorsque vous utilisez l'application mobile Riov (l'« Application ») et le site web www.riov.app (le « Site »), ensemble les « Services ». Elle est rédigée conformément au Règlement général sur la protection des données de l'UE (Règlement (UE) 2016/679, « RGPD ») et à la loi organique espagnole 3/2018 relative à la protection des données à caractère personnel et à la garantie des droits numériques (« LOPDGDD »).
 
@@ -43,6 +43,7 @@ Riov est une application de planification des repas et des courses. Ses principa
 | Catégorie | Exemples | Source |
 |---|---|---|
 | Données du compte | E-mail, nom affiché, identifiant utilisateur, méthode de connexion, mot de passe (stocké uniquement sous forme de hachage par Google Firebase), langue, région | Vous / connexion avec Google |
+| Origine de l'inscription | Le libellé de campagne du lien que vous avez utilisé pour arriver sur Riov (par exemple « tiktok » ou « youtube ») et la date de votre inscription | Le lien que vous avez utilisé (nous n'utilisons ni cookies ni le stockage de votre appareil pour cela) |
 | Données du compte invité | Identifiant utilisateur anonyme et contenu que vous créez en tant qu'invité | Générées automatiquement |
 | Données du profil | Photo de profil, objectifs nutritionnels, langue et région | Vous / les réglages de votre appareil |
 | **Données de santé et d'alimentation (catégorie particulière)** | Allergies et intolérances, ingrédients que vous n'aimez pas, type de régime, journal nutritionnel, repas enregistrés en Mode Cuisson, éléments enregistrés via le scanner et l'ajout rapide | Vous (uniquement avec votre consentement explicite, section 4) |
@@ -89,6 +90,7 @@ Vous pouvez donner, retirer ou supprimer votre consentement concernant les donn�
 | Liste d'attente du Site | Consentement, art. 6, par. 1, point a) |
 | Statistiques d'utilisation dans l'Application (Google Analytics for Firebase), pour savoir quelles fonctionnalités sont utilisées et améliorer l'Application | Consentement, art. 6, par. 1, point a). Le stockage et la lecture de l'identifiant de mesure sur votre appareil nécessitent aussi votre consentement en vertu de l'art. 22, par. 2, de la LSSI espagnole et des règles équivalentes du pays où vous vivez. Elles sont désactivées tant que vous ne les activez pas, et vous pouvez retirer votre consentement à tout moment (section 13) |
 | Mesure d'audience du Site (Vercel Analytics, sans cookies et agrégée) | Intérêt légitime, art. 6, par. 1, point f) |
+| Compter les canaux qui apportent de nouvelles inscriptions (origine de l'inscription) | Intérêt légitime, art. 6, par. 1, point f) : savoir quelle promotion fonctionne. Utilisé uniquement pour des totaux globaux, jamais à des fins publicitaires, et jamais partagé avec qui que ce soit. Vous pouvez vous y opposer à info@riov.app |
 | Prévention du spam et des abus (reCAPTCHA sur le formulaire de contact) | Intérêt légitime, art. 6, par. 1, point f) |
 | Sécurité, prévention de la fraude, diagnostic des erreurs | Intérêt légitime, art. 6, par. 1, point f) |
 | Respect des obligations légales et défense en justice | Art. 6, par. 1, point c) / art. 6, par. 1, point f) |
@@ -138,6 +140,7 @@ Vous pouvez demander une copie des garanties applicables à [info@riov.app](mail
 | Données | Durée de conservation |
 |---|---|
 | Compte, profil, plans, Panier, favoris | Jusqu'à la suppression de votre compte, ou jusqu'à sa suppression pour inactivité (voir ci-dessous) |
+| Origine de l'inscription | 12 mois à compter de l'inscription, puis supprimée (les totaux globaux peuvent être conservés) |
 | Données de santé et d'alimentation | Jusqu'à ce que vous retiriez votre consentement et choisissiez la suppression, ou supprimiez votre compte. Les données en pause sont supprimées selon les mêmes règles que le compte |
 | Enregistrements attestant que nous avons supprimé vos données de santé (identifiant du compte, date, ce qui a été supprimé ; aucune donnée de santé) | 3 ans à compter de la suppression, pour démontrer que nous avons donné suite à votre demande |
 | Comptes invités | Supprimés après 12 mois d'inactivité |

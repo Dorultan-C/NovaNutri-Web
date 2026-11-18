@@ -1,6 +1,6 @@
 # Riovs privatlivspolitik
 
-**Senest opdateret: 29. oktober 2026** · Version 2.4
+**Senest opdateret: 18. november 2026** · Version 2.5
 
 Denne privatlivspolitik forklarer, hvordan dine personoplysninger behandles, når du bruger Riov-mobilappen ("Appen") og webstedet www.riov.app ("Webstedet"), tilsammen "Tjenesterne". Den er udformet, så den opfylder EU's generelle forordning om databeskyttelse (forordning (EU) 2016/679, "GDPR") og Spaniens organiske lov 3/2018 om beskyttelse af personoplysninger og garanti for digitale rettigheder ("LOPDGDD").
 
@@ -43,6 +43,7 @@ Riov er en app til madplanlægning og indkøb. De vigtigste funktioner er:
 | Kategori | Eksempler | Kilde |
 |---|---|---|
 | Kontooplysninger | E-mail, vist navn, bruger-id, loginmetode, adgangskode (gemmes kun som hash af Google Firebase), sprog, region | Dig / log ind med Google |
+| Tilmeldingskilde | Kampagnemærket i det link, du brugte til at komme til Riov (for eksempel 'tiktok' eller 'youtube'), og hvornår du tilmeldte dig | Det link, du brugte (vi bruger ikke cookies eller lagring på din enhed til dette) |
 | Gæstekontooplysninger | Anonymt bruger-id og det indhold, du opretter som gæst | Genereres automatisk |
 | Profiloplysninger | Profilbillede, ernæringsmål, sprog og region | Dig / din enheds indstillinger |
 | **Helbreds- og kostoplysninger (særlige kategorier)** | Allergier og intolerancer, ingredienser, du ikke kan lide, kosttype, ernæringsdagbog, måltider registreret fra tilberedningstilstand, elementer gemt fra scanneren og hurtig tilføjelse | Dig (kun med udtrykkeligt samtykke, afsnit 4) |
@@ -89,6 +90,7 @@ Du kan give, trække tilbage eller slette dit samtykke til helbredsoplysninger n
 | Webstedets venteliste | Samtykke, artikel 6, stk. 1, litra a |
 | Brugsstatistik i Appen (Google Analytics for Firebase) for at forstå, hvilke funktioner der bruges, og forbedre Appen | Samtykke, artikel 6, stk. 1, litra a. Lagring og læsning af statistik-id'et på din enhed kræver desuden dit samtykke efter artikel 22, stk. 2, i den spanske LSSI og tilsvarende regler, hvor du bor. Det er slået fra, medmindre du slår det til, og du kan til enhver tid trække dit samtykke tilbage (afsnit 13) |
 | Webstedsstatistik (Vercel Analytics, uden cookies og aggregeret) | Legitim interesse, artikel 6, stk. 1, litra f |
+| Optælling af, hvilke kanaler der giver nye tilmeldinger (tilmeldingskilde) | Legitim interesse, artikel 6, stk. 1, litra f: at forstå, hvilken markedsføring der virker. Bruges kun til samlede tal, aldrig til reklame, og deles ikke med nogen. Du kan gøre indsigelse på info@riov.app |
 | Forebyggelse af spam og misbrug (reCAPTCHA på kontaktformularen) | Legitim interesse, artikel 6, stk. 1, litra f |
 | Sikkerhed, forebyggelse af svindel, fejldiagnose | Legitim interesse, artikel 6, stk. 1, litra f |
 | Opfyldelse af retlige forpligtelser og forsvar af retskrav | Artikel 6, stk. 1, litra c / artikel 6, stk. 1, litra f |
@@ -138,6 +140,7 @@ Du kan bede om en kopi af de relevante garantier på [info@riov.app](mailto:info
 | Oplysninger | Opbevaring |
 |---|---|
 | Konto, profil, planer, Kurv, favoritter | Indtil du sletter din konto, eller indtil den slettes på grund af inaktivitet (se nedenfor) |
+| Tilmeldingskilde | 12 måneder fra tilmelding, derefter slettet (samlede tal kan blive gemt) |
 | Helbreds- og kostoplysninger | Indtil du trækker samtykket tilbage og vælger sletning, eller sletter din konto. Oplysninger på pause slettes efter de samme kontoregler |
 | Registreringer af, at vi har slettet dine helbredsoplysninger (konto-id, dato, hvad der blev slettet; ingen helbredsoplysninger) | 3 år fra sletningen, for at dokumentere, at vi har efterkommet din anmodning |
 | Gæstekonti | Slettes efter 12 måneders inaktivitet |

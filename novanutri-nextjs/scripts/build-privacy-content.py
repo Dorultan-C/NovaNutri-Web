@@ -4,13 +4,13 @@ import markdown, re, json, pathlib
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 SRC = ROOT / 'content' / 'privacy' / 'src'
 META = {
-  'en': {'htmlLang':'en','title':'Privacy Policy','policyTitle':'Riov Privacy Policy','lastUpdated':'Last updated: 29 October 2026','version':'Version 2.4','languageName':'English','path':''},
-  'es': {'htmlLang':'es','title':'Política de privacidad','policyTitle':'Política de privacidad de Riov','lastUpdated':'Última actualización: 29 de octubre de 2026','version':'Versión 2.4','languageName':'Español','path':'es'},
-  'ca': {'htmlLang':'ca','title':'Política de privadesa','policyTitle':'Política de privadesa de Riov','lastUpdated':"Darrera actualització: 29 d'octubre de 2026",'version':'Versió 2.4','languageName':'Català','path':'ca'},
-  'fr': {'htmlLang':'fr','title':'Politique de confidentialité','policyTitle':'Politique de confidentialité de Riov','lastUpdated':'Dernière mise à jour : 29 octobre 2026','version':'Version 2.4','languageName':'Français','path':'fr'},
-  'it': {'htmlLang':'it','title':'Informativa sulla privacy','policyTitle':'Informativa sulla privacy di Riov','lastUpdated':'Ultimo aggiornamento: 29 ottobre 2026','version':'Versione 2.4','languageName':'Italiano','path':'it'},
-  'ro': {'htmlLang':'ro','title':'Politică de confidențialitate','policyTitle':'Politica de confidențialitate Riov','lastUpdated':'Ultima actualizare: 29 octombrie 2026','version':'Versiunea 2.4','languageName':'Română','path':'ro'},
-  'da': {'htmlLang':'da','title':'Privatlivspolitik','policyTitle':'Riovs privatlivspolitik','lastUpdated':'Senest opdateret: 29. oktober 2026','version':'Version 2.4','languageName':'Dansk','path':'da'},
+  'en': {'htmlLang':'en','title':'Privacy Policy','policyTitle':'Riov Privacy Policy','lastUpdated':'Last updated: 18 November 2026','version':'Version 2.5','languageName':'English','path':''},
+  'es': {'htmlLang':'es','title':'Política de privacidad','policyTitle':'Política de privacidad de Riov','lastUpdated':'Última actualización: 18 de noviembre de 2026','version':'Versión 2.5','languageName':'Español','path':'es'},
+  'ca': {'htmlLang':'ca','title':'Política de privadesa','policyTitle':'Política de privadesa de Riov','lastUpdated':'Darrera actualització: 18 de novembre de 2026','version':'Versió 2.5','languageName':'Català','path':'ca'},
+  'fr': {'htmlLang':'fr','title':'Politique de confidentialité','policyTitle':'Politique de confidentialité de Riov','lastUpdated':'Dernière mise à jour : 18 novembre 2026','version':'Version 2.5','languageName':'Français','path':'fr'},
+  'it': {'htmlLang':'it','title':'Informativa sulla privacy','policyTitle':'Informativa sulla privacy di Riov','lastUpdated':'Ultimo aggiornamento: 18 novembre 2026','version':'Versione 2.5','languageName':'Italiano','path':'it'},
+  'ro': {'htmlLang':'ro','title':'Politică de confidențialitate','policyTitle':'Politica de confidențialitate Riov','lastUpdated':'Ultima actualizare: 18 noiembrie 2026','version':'Versiunea 2.5','languageName':'Română','path':'ro'},
+  'da': {'htmlLang':'da','title':'Privatlivspolitik','policyTitle':'Riovs privatlivspolitik','lastUpdated':'Senest opdateret: 18. november 2026','version':'Version 2.5','languageName':'Dansk','path':'da'},
 }
 SWITCHER = {
   'en':'Language','es':'Idioma','ca':'Idioma','fr':'Langue','it':'Lingua','ro':'Limbă','da':'Sprog'

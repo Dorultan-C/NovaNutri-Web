@@ -1,6 +1,6 @@
 # Política de privacidad de Riov
 
-**Última actualización: 29 de octubre de 2026** · Versión 2.4
+**Última actualización: 18 de noviembre de 2026** · Versión 2.5
 
 Esta Política de privacidad explica cómo se tratan tus datos personales cuando utilizas la aplicación móvil Riov (la "App") y el sitio web www.riov.app (el "Sitio web"), conjuntamente los "Servicios". Está redactada para cumplir el Reglamento General de Protección de Datos de la UE (Reglamento (UE) 2016/679, "RGPD") y la Ley Orgánica 3/2018, de Protección de Datos Personales y garantía de los derechos digitales ("LOPDGDD").
 
@@ -43,6 +43,7 @@ Riov es una app de planificación de comidas y de compra. Sus principales funcio
 | Categoría | Ejemplos | Origen |
 |---|---|---|
 | Datos de la cuenta | Correo electrónico, nombre visible, ID de usuario, método de inicio de sesión, contraseña (almacenada solo como hash por Google Firebase), idioma, región | Tú / inicio de sesión con Google |
+| Origen del registro | La etiqueta de campaña del enlace que usaste para llegar a Riov (por ejemplo, 'tiktok' o 'youtube') y cuándo te registraste | El enlace que usaste (no usamos cookies ni el almacenamiento del dispositivo para esto) |
 | Datos de la cuenta de invitado | ID de usuario anónimo y el contenido que creas como invitado | Generados automáticamente |
 | Datos del perfil | Foto de perfil, objetivos nutricionales, idioma y región | Tú / la configuración de tu dispositivo |
 | **Datos de salud y alimentación (categoría especial)** | Alergias e intolerancias, ingredientes que no te gustan, tipo de dieta, diario nutricional, registros de comidas del Modo de Cocción, elementos guardados desde el escáner y el registro rápido | Tú (solo con consentimiento explícito, sección 4) |
@@ -89,6 +90,7 @@ Puedes dar, retirar o borrar tu consentimiento sobre los datos de salud en cualq
 | Lista de espera del sitio web | Consentimiento, art. 6.1.a) |
 | Analítica de uso en la App (Google Analytics for Firebase), para saber qué funciones se usan y mejorar la App | Consentimiento, art. 6.1.a). Almacenar y leer el identificador de analítica en tu dispositivo también requiere tu consentimiento conforme al art. 22.2 de la LSSI y a las normas equivalentes de tu país. Está desactivada salvo que la actives, y puedes retirar tu consentimiento en cualquier momento (sección 13) |
 | Analítica del sitio web (Vercel Analytics, sin cookies y agregada) | Interés legítimo, art. 6.1.f) |
+| Contar qué canales traen nuevos registros (origen del registro) | Interés legítimo, art. 6.1.f): saber qué promoción funciona. Solo se usa para recuentos globales, nunca para publicidad, y no se comparte con nadie. Puedes oponerte en info@riov.app |
 | Prevención de spam y abusos (reCAPTCHA en el formulario de contacto) | Interés legítimo, art. 6.1.f) |
 | Seguridad, prevención del fraude, diagnóstico de errores | Interés legítimo, art. 6.1.f) |
 | Cumplimiento de obligaciones legales y defensa frente a reclamaciones | Art. 6.1.c) / art. 6.1.f) |
@@ -138,6 +140,7 @@ Puedes solicitar una copia de las garantías correspondientes en [info@riov.app]
 | Datos | Plazo de conservación |
 |---|---|
 | Cuenta, perfil, planes, Cesta, favoritos | Hasta que elimines tu cuenta, o hasta que se elimine por inactividad (ver más abajo) |
+| Origen del registro | 12 meses desde el registro; después se elimina (pueden conservarse los recuentos globales) |
 | Datos de salud y alimentación | Hasta que retires el consentimiento y elijas el borrado, o elimines tu cuenta. Los datos en pausa se eliminan conforme a las mismas reglas de la cuenta |
 | Registros que acreditan que hemos eliminado tus datos de salud (ID de la cuenta, fecha, qué se eliminó; sin datos de salud) | 3 años desde la eliminación, para demostrar que atendimos tu solicitud |
 | Cuentas de invitado | Se eliminan tras 12 meses de inactividad |
