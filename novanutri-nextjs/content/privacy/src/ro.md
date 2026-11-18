@@ -1,6 +1,6 @@
 # Politica de confidențialitate Riov
 
-**Ultima actualizare: 29 octombrie 2026** · Versiunea 2.4
+**Ultima actualizare: 18 noiembrie 2026** · Versiunea 2.5
 
 Prezenta Politică de confidențialitate explică modul în care sunt prelucrate datele tale cu caracter personal atunci când utilizezi aplicația mobilă Riov („Aplicația”) și site-ul www.riov.app („Site-ul”), denumite împreună „Serviciile”. Aceasta este redactată în conformitate cu Regulamentul general privind protecția datelor al UE (Regulamentul (UE) 2016/679, „GDPR”) și cu Legea organică spaniolă 3/2018 privind protecția datelor cu caracter personal și garantarea drepturilor digitale („LOPDGDD”).
 
@@ -43,6 +43,7 @@ Riov este o aplicație de planificare a meselor și a cumpărăturilor. Principa
 | Categorie | Exemple | Sursă |
 |---|---|---|
 | Datele contului | E-mail, nume afișat, ID de utilizator, metodă de conectare, parolă (stocată doar ca hash de Google Firebase), limbă, regiune | Tu / conectare cu Google |
+| Sursa înregistrării | Eticheta de campanie din linkul pe care l-ai folosit pentru a ajunge la Riov (de exemplu „tiktok” sau „youtube”) și momentul în care te-ai înregistrat | Linkul pe care l-ai folosit (nu folosim cookie-uri sau stocarea de pe dispozitiv pentru aceasta) |
 | Datele contului de vizitator | ID de utilizator anonim și conținutul pe care îl creezi ca vizitator | Generate automat |
 | Datele profilului | Fotografie de profil, obiective nutriționale, limbă și regiune | Tu / setările dispozitivului tău |
 | **Date privind sănătatea și alimentația (categorie specială)** | Alergii și intoleranțe, ingrediente care nu îți plac, tip de dietă, jurnal nutrițional, mese înregistrate din modul „Mod de Gătire”, elemente salvate prin scaner și adăugare rapidă | Tu (doar cu consimțământ explicit, secțiunea 4) |
@@ -89,6 +90,7 @@ Datele despre alergiile, intoleranțele, ingredientele care nu îți plac, **tip
 | Lista de așteptare a Site-ului | Consimțământ, art. 6 alin. (1) lit. (a) |
 | Statistici de utilizare în Aplicație (Google Analytics for Firebase), pentru a înțelege ce funcții sunt folosite și a îmbunătăți Aplicația | Consimțământ, art. 6 alin. (1) lit. (a). Stocarea și citirea identificatorului pentru statistici pe dispozitivul tău necesită, de asemenea, consimțământul tău conform art. 22.2 din LSSI (legea spaniolă privind serviciile societății informaționale) și normelor echivalente din țara ta. Sunt dezactivate dacă nu le activezi și îți poți retrage consimțământul oricând (secțiunea 13) |
 | Statistici ale Site-ului (Vercel Analytics, fără cookie-uri și agregate) | Interes legitim, art. 6 alin. (1) lit. (f) |
+| Numărarea canalelor care aduc înregistrări noi (sursa înregistrării) | Interes legitim, art. 6 alin. (1) lit. (f): să înțelegem ce promovare funcționează. Folosită doar pentru totaluri generale, niciodată pentru publicitate și nu este partajată cu nimeni. Te poți opune la info@riov.app |
 | Prevenirea spamului și a abuzurilor (reCAPTCHA pe formularul de contact) | Interes legitim, art. 6 alin. (1) lit. (f) |
 | Securitate, prevenirea fraudei, diagnosticarea erorilor | Interes legitim, art. 6 alin. (1) lit. (f) |
 | Respectarea obligațiilor legale și apărarea unor drepturi în instanță | Art. 6 alin. (1) lit. (c) / art. 6 alin. (1) lit. (f) |
@@ -138,6 +140,7 @@ Poți solicita o copie a garanțiilor relevante la [info@riov.app](mailto:info@r
 | Date | Perioada de păstrare |
 |---|---|
 | Cont, profil, planuri, Coș, favorite | Până când îți ștergi contul sau până când acesta este șters pentru inactivitate (vezi mai jos) |
+| Sursa înregistrării | 12 luni de la înregistrare, apoi este ștearsă (totalurile generale pot fi păstrate) |
 | Date privind sănătatea și alimentația | Până când îți retragi consimțământul și alegi ștergerea sau până când îți ștergi contul. Datele în pauză sunt șterse conform acelorași reguli ale contului |
 | Evidența faptului că am șters datele tale privind sănătatea (ID-ul contului, data, ce s-a șters; fără date privind sănătatea) | 3 ani de la ștergere, pentru a dovedi că am dat curs cererii tale |
 | Conturi de vizitator | Șterse după 12 luni de inactivitate |

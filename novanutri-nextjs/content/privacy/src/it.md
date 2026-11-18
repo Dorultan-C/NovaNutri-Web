@@ -1,6 +1,6 @@
 # Informativa sulla privacy di Riov
 
-**Ultimo aggiornamento: 29 ottobre 2026** · Versione 2.4
+**Ultimo aggiornamento: 18 novembre 2026** · Versione 2.5
 
 La presente Informativa sulla privacy spiega come vengono trattati i tuoi dati personali quando utilizzi l'app mobile Riov (l'"App") e il sito web www.riov.app (il "Sito"), insieme i "Servizi". È redatta in conformità al Regolamento generale sulla protezione dei dati dell'UE (Regolamento (UE) 2016/679, "GDPR") e alla Legge organica spagnola 3/2018 sulla protezione dei dati personali e la garanzia dei diritti digitali ("LOPDGDD").
 
@@ -43,6 +43,7 @@ Riov è un'app per la pianificazione dei pasti e della spesa. Le sue funzioni pr
 | Categoria | Esempi | Fonte |
 |---|---|---|
 | Dati dell'account | E-mail, nome visualizzato, ID utente, metodo di accesso, password (conservata solo come hash da Google Firebase), lingua, regione | Tu / accesso con Google |
+| Origine dell'iscrizione | L'etichetta di campagna del link che hai usato per arrivare su Riov (ad esempio 'tiktok' o 'youtube') e quando ti sei iscritto | Il link che hai usato (non usiamo cookie né la memoria del dispositivo per questo) |
 | Dati dell'account ospite | ID utente anonimo e i contenuti che crei come ospite | Generati automaticamente |
 | Dati del profilo | Foto del profilo, obiettivi nutrizionali, lingua e regione | Tu / le impostazioni del tuo dispositivo |
 | **Dati sanitari e alimentari (categoria particolare)** | Allergie e intolleranze, ingredienti non graditi, tipo di dieta, diario nutrizionale, pasti registrati in Modalità Cottura, elementi salvati con lo scanner e l'aggiunta rapida | Tu (solo con consenso esplicito, sezione 4) |
@@ -89,6 +90,7 @@ Puoi prestare, revocare o cancellare il tuo consenso relativo ai dati sanitari i
 | Lista d'attesa del Sito | Consenso, art. 6, par. 1, lett. a) |
 | Statistiche di utilizzo nell'App (Google Analytics for Firebase), per capire quali funzioni vengono usate e migliorare l'App | Consenso, art. 6, par. 1, lett. a). La memorizzazione e la lettura dell'identificativo per le statistiche sul tuo dispositivo richiedono inoltre il tuo consenso ai sensi dell'art. 22.2 della LSSI spagnola e delle norme equivalenti del paese in cui vivi. Sono disattivate finché non le attivi e puoi revocare il consenso in qualsiasi momento (sezione 13) |
 | Statistiche del Sito (Vercel Analytics, senza cookie e aggregate) | Legittimo interesse, art. 6, par. 1, lett. f) |
+| Contare quali canali portano nuove iscrizioni (origine dell'iscrizione) | Legittimo interesse, art. 6, par. 1, lett. f): capire quale promozione funziona. Usato solo per conteggi complessivi, mai per pubblicità, e non condiviso con nessuno. Puoi opporti scrivendo a info@riov.app |
 | Prevenzione di spam e abusi (reCAPTCHA sul modulo di contatto) | Legittimo interesse, art. 6, par. 1, lett. f) |
 | Sicurezza, prevenzione delle frodi, diagnosi degli errori | Legittimo interesse, art. 6, par. 1, lett. f) |
 | Adempimento di obblighi di legge e difesa in giudizio | Art. 6, par. 1, lett. c) / art. 6, par. 1, lett. f) |
@@ -138,6 +140,7 @@ Puoi chiedere una copia delle garanzie pertinenti scrivendo a [info@riov.app](ma
 | Dati | Periodo di conservazione |
 |---|---|
 | Account, profilo, piani, Carrello, preferiti | Fino all'eliminazione del tuo account, o fino alla sua eliminazione per inattività (vedi sotto) |
+| Origine dell'iscrizione | 12 mesi dall'iscrizione, poi eliminata (i conteggi complessivi possono essere conservati) |
 | Dati sanitari e alimentari | Fino a quando revochi il consenso e scegli la cancellazione, oppure elimini il tuo account. I dati in pausa vengono cancellati secondo le stesse regole dell'account |
 | Registri che attestano la cancellazione dei tuoi dati sanitari (ID dell'account, data, cosa è stato cancellato; nessun dato sanitario) | 3 anni dalla cancellazione, per dimostrare che abbiamo dato seguito alla tua richiesta |
 | Account ospite | Eliminati dopo 12 mesi di inattività |

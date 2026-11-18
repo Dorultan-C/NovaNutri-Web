@@ -1,6 +1,6 @@
 # Riov Privacy Policy
 
-**Last updated: 29 October 2026** · Version 2.4
+**Last updated: 18 November 2026** · Version 2.5
 
 This Privacy Policy explains how your personal data is processed when you use the Riov mobile app (the "App") and the website www.riov.app (the "Website"), together the "Services". It is written to meet the EU General Data Protection Regulation (Regulation (EU) 2016/679, "GDPR") and Spain's Organic Law 3/2018 on Personal Data Protection and Guarantee of Digital Rights ("LOPDGDD").
 
@@ -43,6 +43,7 @@ Riov is a meal-planning and grocery app. Its main features are:
 | Category | Examples | Source |
 |---|---|---|
 | Account data | Email, display name, user ID, sign-in method, password (stored only as a hash by Google Firebase), language, region | You / Google sign-in |
+| Sign-up source | The campaign label in the link you used to reach Riov (for example 'tiktok' or 'youtube') and when you signed up | The link you used (we don't use cookies or device storage for this) |
 | Guest account data | Anonymous user ID and the content you create as a guest | Generated automatically |
 | Profile data | Profile photo, nutrition targets, language and region | You / your device settings |
 | **Health and diet data (special category)** | Allergies and intolerances, disliked ingredients, diet type, nutrition diary, cooking-mode meal logs, scanner and quick-add saves | You (only with explicit consent, section 4) |
@@ -89,6 +90,7 @@ You can give, withdraw or delete your health data consent at any time in Menu �
 | Website waitlist | Consent, Art. 6(1)(a) |
 | Usage analytics in the App (Google Analytics for Firebase), to understand which features are used and improve the App | Consent, Art. 6(1)(a). Storing and reading the analytics identifier on your device also requires your consent under art. 22.2 LSSI and equivalent rules where you live. It is off unless you turn it on, and you can withdraw at any time (section 13) |
 | Website analytics (Vercel Analytics, cookieless and aggregated) | Legitimate interest, Art. 6(1)(f) |
+| Counting which channels bring new sign-ups (sign-up source) | Legitimate interest, Art. 6(1)(f): understanding which promotion works. Used only for overall counts, never for advertising or shared with anyone. You can object at info@riov.app |
 | Spam and abuse prevention (reCAPTCHA on the contact form) | Legitimate interest, Art. 6(1)(f) |
 | Security, fraud prevention, error diagnostics | Legitimate interest, Art. 6(1)(f) |
 | Meeting legal obligations and defending legal claims | Art. 6(1)(c) / Art. 6(1)(f) |
@@ -138,6 +140,7 @@ You can ask for a copy of the relevant safeguards at [info@riov.app](mailto:info
 | Data | Retention |
 |---|---|
 | Account, profile, plans, Basket, favourites | Until you delete your account, or until it is deleted for inactivity (below) |
+| Sign-up source | 12 months from sign-up, then deleted (overall counts may be kept) |
 | Health and diet data | Until you withdraw consent and choose deletion, or delete your account. Paused data is deleted under the same account rules |
 | Records that we deleted your health data (account ID, date, what was deleted; no health data) | 3 years from the deletion, to show we honoured your request |
 | Guest accounts | Deleted after 12 months of inactivity |

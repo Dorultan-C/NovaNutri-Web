@@ -1,6 +1,6 @@
 # Política de privadesa de Riov
 
-**Darrera actualització: 29 d'octubre de 2026** · Versió 2.4
+**Darrera actualització: 18 de novembre de 2026** · Versió 2.5
 
 Aquesta Política de privadesa explica com es tracten les teves dades personals quan utilitzes l'aplicació mòbil Riov (l'"App") i el lloc web www.riov.app (el "Lloc web"), conjuntament els "Serveis". Està redactada per complir el Reglament general de protecció de dades de la UE (Reglament (UE) 2016/679, "RGPD") i la Llei orgànica 3/2018, de protecció de dades personals i garantia dels drets digitals ("LOPDGDD").
 
@@ -43,6 +43,7 @@ Riov és una app de planificació d'àpats i de compra. Les seves funcions princ
 | Categoria | Exemples | Origen |
 |---|---|---|
 | Dades del compte | Correu electrònic, nom visible, ID d'usuari, mètode d'inici de sessió, contrasenya (emmagatzemada només com a hash per Google Firebase), idioma, regió | Tu / inici de sessió amb Google |
+| Origen del registre | L'etiqueta de campanya de l'enllaç que vas fer servir per arribar a Riov (per exemple 'tiktok' o 'youtube') i quan et vas registrar | L'enllaç que vas fer servir (no fem servir galetes ni l'emmagatzematge del dispositiu per a això) |
 | Dades del compte de convidat | ID d'usuari anònim i el contingut que crees com a convidat | Generades automàticament |
 | Dades del perfil | Foto de perfil, objectius nutricionals, idioma i regió | Tu / la configuració del teu dispositiu |
 | **Dades de salut i alimentació (categoria especial)** | Al·lèrgies i intoleràncies, ingredients que no t'agraden, tipus de dieta, diari nutricional, registres d'àpats del Mode de cocció, elements desats des de l'escàner i el registre ràpid | Tu (només amb consentiment explícit, secció 4) |
@@ -89,6 +90,7 @@ Pots donar, retirar o esborrar el teu consentiment sobre les dades de salut en q
 | Llista d'espera del lloc web | Consentiment, art. 6.1.a) |
 | Analítica d'ús a l'App (Google Analytics for Firebase), per saber quines funcions es fan servir i millorar l'App | Consentiment, art. 6.1.a). Emmagatzemar i llegir l'identificador d'analítica al teu dispositiu també requereix el teu consentiment d'acord amb l'art. 22.2 de la LSSI i les normes equivalents del teu país. Està desactivada si no l'actives, i pots retirar el consentiment en qualsevol moment (secció 13) |
 | Analítica del lloc web (Vercel Analytics, sense galetes i agregada) | Interès legítim, art. 6.1.f) |
+| Comptar quins canals porten nous registres (origen del registre) | Interès legítim, art. 6.1.f): saber quina promoció funciona. Només s'utilitza per a recomptes globals, mai per a publicitat, i no es comparteix amb ningú. Pots oposar-t'hi a info@riov.app |
 | Prevenció de correu brossa i abusos (reCAPTCHA al formulari de contacte) | Interès legítim, art. 6.1.f) |
 | Seguretat, prevenció del frau, diagnòstic d'errors | Interès legítim, art. 6.1.f) |
 | Compliment d'obligacions legals i defensa davant de reclamacions | Art. 6.1.c) / art. 6.1.f) |
@@ -138,6 +140,7 @@ Pots sol·licitar una còpia de les garanties corresponents a [info@riov.app](ma
 | Dades | Termini de conservació |
 |---|---|
 | Compte, perfil, plans, Cistella, preferits | Fins que eliminis el teu compte, o fins que s'elimini per inactivitat (vegeu més avall) |
+| Origen del registre | 12 mesos des del registre; després s'elimina (es poden conservar els recomptes globals) |
 | Dades de salut i alimentació | Fins que retiris el consentiment i triïs l'esborrament, o eliminis el teu compte. Les dades en pausa s'eliminen d'acord amb les mateixes regles del compte |
 | Registres que demostren que hem eliminat les teves dades de salut (ID del compte, data, què s'ha eliminat; sense dades de salut) | 3 anys des de l'eliminació, per demostrar que hem atès la teva sol·licitud |
 | Comptes de convidat | S'eliminen després de 12 mesos d'inactivitat |
