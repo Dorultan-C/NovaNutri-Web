@@ -55,7 +55,7 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="w-full bg-surface py-24 px-6 border-t border-muted/10">
+    <section id="contact" className="w-full bg-surface py-20 md:py-24 px-6 border-t border-line">
       <div className="max-w-3xl mx-auto text-center">
         
         <h2 className="text-4xl font-extrabold text-heading tracking-tight mb-4">{t.title}</h2>
@@ -64,15 +64,16 @@ export default function Contact() {
         </p>
 
         {submitted ? (
-          <div className="bg-green-50 text-green-700 p-8 rounded-3xl border border-green-200 font-medium flex flex-col items-center justify-center gap-4 animate-in fade-in zoom-in duration-300">
-            <span className="text-4xl">📬</span>
+          <div className="notice-ok p-8 rounded-3xl font-medium flex flex-col items-center justify-center gap-4">
+            <span className="text-4xl" aria-hidden="true">📬</span>
             <div className="text-center">
               <h3 className="text-xl font-bold mb-1">{t.receivedTitle}</h3>
-              <p className="text-green-600">{t.receivedBody}</p>
+              <p>{t.receivedBody}</p>
             </div>
-            <button 
+            <button
+              type="button"
               onClick={() => setSubmitted(false)}
-              className="mt-4 px-6 py-2 bg-green-100 hover:bg-green-200 text-green-800 rounded-full font-bold transition-colors"
+              className="btn mt-2"
             >
               {t.sendAnother}
             </button>
@@ -90,7 +91,7 @@ export default function Contact() {
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                   placeholder={t.namePlaceholder} 
-                  className="px-5 py-4 rounded-2xl border border-muted/30 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent text-heading shadow-sm placeholder:text-muted transition-all" 
+                  className="field" 
                 />
               </div>
               
@@ -104,7 +105,7 @@ export default function Contact() {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder={t.emailPlaceholder} 
-                  className="px-5 py-4 rounded-2xl border border-muted/30 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent text-heading shadow-sm placeholder:text-muted transition-all" 
+                  className="field" 
                 />
               </div>
             </div>
@@ -119,14 +120,14 @@ export default function Contact() {
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
                 placeholder={t.messagePlaceholder} 
-                className="px-5 py-4 rounded-2xl border border-muted/30 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent text-heading shadow-sm placeholder:text-muted transition-all resize-y"
+                className="field resize-y"
               ></textarea>
             </div>
 
             <button 
               type="submit" 
               disabled={loading}
-              className="mt-4 bg-primary hover:bg-primary-dark disabled:opacity-70 disabled:cursor-not-allowed text-white px-8 py-4 rounded-2xl font-bold transition-all shadow-lg shadow-primary/30 hover:shadow-primary/50 w-full md:w-auto md:self-end active:scale-95"
+              className="btn mt-2 w-full md:w-auto md:self-end"
             >
               {loading ? t.sending : t.submit}
             </button>

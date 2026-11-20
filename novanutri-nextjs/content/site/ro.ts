@@ -15,6 +15,11 @@ const messages = {
     about: "Despre",
     investors: "Investitori",
     contact: "Contactează-ne",
+    forBrands: "Pentru mărci",
+    skip: "Sari la conținut",
+    darkMode: "Mod întunecat",
+    searchLanguages: "Caută limbi",
+    noLanguages: "Nicio limbă",
   },
   hero: {
     badge: "Disponibil acum pe iOS și Android",
@@ -27,6 +32,9 @@ const messages = {
     qrAlt: "Scanează pentru a descărca Riov",
     scan: "Scanează pentru a descărca",
     mockupAlt: "Interfața aplicației Riov",
+    shotIntake: "Consumul de azi",
+    shotRecipes: "Rețete, cu prețuri",
+    shotPlan: "Planul săptămânii",
   },
   features: {
     headlineLead: "Tot ce ai nevoie, ",

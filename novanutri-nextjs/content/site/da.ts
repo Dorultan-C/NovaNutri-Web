@@ -15,6 +15,11 @@ const messages = {
     about: "Om os",
     investors: "Investorer",
     contact: "Kontakt os",
+    forBrands: "Til mærker",
+    skip: "Spring til indhold",
+    darkMode: "Mørk tilstand",
+    searchLanguages: "Søg sprog",
+    noLanguages: "Ingen sprog",
   },
   hero: {
     badge: "Ude nu til iOS og Android",
@@ -27,6 +32,9 @@ const messages = {
     qrAlt: "Scan for at hente Riov",
     scan: "Scan for at hente",
     mockupAlt: "Riov-appens brugerflade",
+    shotIntake: "Dagens indtag",
+    shotRecipes: "Opskrifter, med priser",
+    shotPlan: "Ugeplanen",
   },
   features: {
     headlineLead: "Alt det, du har brug for, i ",

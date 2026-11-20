@@ -15,6 +15,11 @@ const messages = {
     about: "Chi siamo",
     investors: "Investitori",
     contact: "Contattaci",
+    forBrands: "Per i marchi",
+    skip: "Vai al contenuto",
+    darkMode: "Modalità scura",
+    searchLanguages: "Cerca lingue",
+    noLanguages: "Nessuna lingua",
   },
   hero: {
     badge: "Disponibile su iOS e Android",
@@ -27,6 +32,9 @@ const messages = {
     qrAlt: "Scansiona per scaricare Riov",
     scan: "Scansiona per scaricare",
     mockupAlt: "Interfaccia dell'app Riov",
+    shotIntake: "L'apporto di oggi",
+    shotRecipes: "Ricette, con i prezzi",
+    shotPlan: "Il piano settimanale",
   },
   features: {
     headlineLead: "Tutto ciò che ti serve in ",

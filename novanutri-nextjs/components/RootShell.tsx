@@ -1,6 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 import { Providers } from "@/app/providers";
+import { themeInitScript } from "@/lib/theme";
 import "@/app/globals.css";
 
 const geistSans = Geist({
@@ -24,9 +25,11 @@ export default function RootShell({
   return (
     <html
       lang={lang}
-      className={`${geistSans.variable} ${geistMono.variable} scroll-smooth h-full antialiased`}
+      suppressHydrationWarning
+      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col font-sans">
+      <body className="min-h-full flex flex-col font-sans" suppressHydrationWarning>
+        <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
         <Providers>
           {children}
           <Analytics />

@@ -6,13 +6,13 @@ export default function LicenseView() {
   const t = useSiteMessages().license;
 
   return (
-    <main className="w-full bg-surface min-h-screen pt-8 pb-24 px-6">
+    <main id="content" className="w-full bg-background min-h-screen py-12 px-6">
       <div className="max-w-3xl mx-auto">
         <h1 className="text-4xl md:text-5xl font-extrabold text-heading tracking-tight mb-4">{t.title}</h1>
         <p className="text-muted mb-12 font-medium">{t.copyright}</p>
 
-        <div className="text-body space-y-6 leading-relaxed bg-white p-8 rounded-3xl border border-muted/10 shadow-sm">
-          <p className="font-bold uppercase tracking-wider text-heading text-sm mb-6 pb-4 border-b border-muted/10">
+        <div className="card text-body space-y-6 leading-relaxed p-8">
+          <p className="font-bold uppercase tracking-wider text-heading text-sm mb-6 pb-4 border-b border-line">
             {t.kicker}
           </p>
 
@@ -37,7 +37,7 @@ export default function LicenseView() {
             {t.liability}
           </p>
 
-          <p className="pt-6 border-t border-muted/10 font-medium text-heading">
+          <p className="pt-6 border-t border-line font-medium text-heading">
             {t.closing}
           </p>
         </div>

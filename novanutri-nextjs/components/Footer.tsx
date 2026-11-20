@@ -10,7 +10,7 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="w-full bg-surface border-t border-muted/10 pt-16 pb-8 px-6">
+    <footer className="w-full bg-surface border-t border-line pt-16 pb-8 px-6">
       <div className="max-w-4xl mx-auto flex flex-col items-center">
         <div className="flex flex-col items-center text-center mb-12 w-full">
           <h3 className="text-2xl font-bold text-heading mb-3 tracking-tight">{t.footer.communityTitle}</h3>
@@ -23,7 +23,7 @@ export default function Footer() {
               href="https://www.instagram.com/riov.app/"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-12 h-12 rounded-full bg-muted/5 flex items-center justify-center text-muted hover:text-[#E4405F] hover:bg-[#E4405F]/10 hover:scale-110 transition-all duration-300"
+              className="social-link hover:text-[#E4405F]"
               aria-label="Instagram"
             >
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -37,7 +37,7 @@ export default function Footer() {
               href="https://www.youtube.com/@Riov-app"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-12 h-12 rounded-full bg-muted/5 flex items-center justify-center text-muted hover:text-[#FF0000] hover:bg-[#FF0000]/10 hover:scale-110 transition-all duration-300"
+              className="social-link hover:text-[#FF0000]"
               aria-label="YouTube"
             >
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -50,7 +50,7 @@ export default function Footer() {
               href="https://x.com/RiovApp"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-12 h-12 rounded-full bg-muted/5 flex items-center justify-center text-muted hover:text-black hover:bg-black/5 hover:scale-110 transition-all duration-300"
+              className="social-link"
               aria-label="X (Twitter)"
             >
               <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
@@ -62,7 +62,7 @@ export default function Footer() {
               href="https://www.threads.com/@riov.app"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-12 h-12 rounded-full bg-muted/5 flex items-center justify-center text-muted hover:text-black hover:bg-black/5 hover:scale-110 transition-all duration-300"
+              className="social-link"
               aria-label="Threads"
             >
               <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
@@ -74,7 +74,7 @@ export default function Footer() {
               href="https://www.facebook.com/profile.php?id=61589291707380"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-12 h-12 rounded-full bg-muted/5 flex items-center justify-center text-muted hover:text-[#1877F2] hover:bg-[#1877F2]/10 hover:scale-110 transition-all duration-300"
+              className="social-link hover:text-[#1877F2]"
               aria-label="Facebook"
             >
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -86,7 +86,7 @@ export default function Footer() {
               href="https://www.tiktok.com/@riov.app"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-12 h-12 rounded-full bg-muted/5 flex items-center justify-center text-muted hover:text-black hover:bg-black/5 hover:scale-110 transition-all duration-300"
+              className="social-link"
               aria-label="TikTok"
             >
               <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
@@ -96,15 +96,16 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="w-full flex flex-col md:flex-row justify-between items-center pt-8 border-t border-muted/10 gap-4">
+        <div className="w-full flex flex-col md:flex-row justify-between items-center pt-8 border-t border-line gap-4">
           <p className="text-sm font-bold text-heading mb-4 md:mb-0">Riov</p>
           <p className="text-sm text-muted text-center mb-4 md:mb-0">
             &copy; {currentYear} Riov. {t.footer.rights}
           </p>
-          <div className="flex gap-6 text-sm text-muted font-medium flex-wrap justify-center">
-            <Link href={termsPath(lang)} className="hover:text-primary transition-colors">{t.footer.terms}</Link>
-            <Link href={privacyPath(lang)} className="hover:text-primary transition-colors">{t.footer.privacy}</Link>
-            <Link href="/license" className="hover:text-primary transition-colors">{t.footer.license}</Link>
+          <div className="flex gap-x-6 gap-y-2 text-sm text-muted font-medium flex-wrap justify-center">
+            <Link href="/brands" className="hover:text-accent transition-colors">{t.nav.forBrands}</Link>
+            <Link href={termsPath(lang)} className="hover:text-accent transition-colors">{t.footer.terms}</Link>
+            <Link href={privacyPath(lang)} className="hover:text-accent transition-colors">{t.footer.privacy}</Link>
+            <Link href="/license" className="hover:text-accent transition-colors">{t.footer.license}</Link>
           </div>
         </div>
       </div>
