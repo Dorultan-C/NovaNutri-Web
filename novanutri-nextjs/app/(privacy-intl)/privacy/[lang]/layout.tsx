@@ -1,7 +1,7 @@
-import RootShell from "@/components/RootShell";
+import AppShell from "@/components/AppShell";
 import { TRANSLATED_LANGS, getPrivacyLocale } from "@/content/privacy-helpers";
 
-// Root layout for the translated privacy pages, so <html lang> matches the page language.
+// Root layout for the translated privacy pages, so <html lang> matches the document language.
 export default async function PrivacyLangRootLayout({
   children,
   params,
@@ -13,5 +13,5 @@ export default async function PrivacyLangRootLayout({
   const htmlLang = (TRANSLATED_LANGS as readonly string[]).includes(lang)
     ? getPrivacyLocale(lang)?.htmlLang ?? "en"
     : "en";
-  return <RootShell lang={htmlLang}>{children}</RootShell>;
+  return <AppShell htmlLang={htmlLang}>{children}</AppShell>;
 }

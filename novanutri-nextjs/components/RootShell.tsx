@@ -26,7 +26,7 @@ export default function RootShell({
       lang={lang}
       className={`${geistSans.variable} ${geistMono.variable} scroll-smooth h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">
+      <body className="min-h-full flex flex-col font-sans">
         <Providers>
           {children}
           <Analytics />
