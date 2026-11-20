@@ -1,39 +1,71 @@
 import Image from "next/image";
+import Link from "next/link";
+import LanguageWheel from "@/components/LanguageWheel";
+import ThemeToggle from "@/components/ThemeToggle";
 
-export default function Header() {
+type HeaderProps = {
+  /** Localized brands URL. Defaults to /brands, which PR #10 adds. */
+  brandsHref?: string;
+  brandsLabel?: string;
+  brandsActive?: boolean;
+};
+
+export default function Header({
+  brandsHref = "/brands",
+  brandsLabel = "For brands",
+  brandsActive = false,
+}: HeaderProps) {
+  const links = [
+    { href: "/#hero", label: "Get the app" },
+    { href: "/#features", label: "Features" },
+    { href: "/#about", label: "About" },
+    { href: "/#investors", label: "Investors" },
+    { href: brandsHref, label: brandsLabel, current: brandsActive },
+    { href: "/#contact", label: "Contact us" },
+  ];
+
   return (
-    <header className="w-full px-6 py-6 flex justify-between items-center max-w-7xl mx-auto">
-      
-      {/* Updated Logo Section */}
-      <div className="flex flex-col items-center gap-1">
-        <div className="relative w-20 h-20 rounded-2xl overflow-hidden shadow-sm">
-          <Image 
-            src="/logo.png" 
-            alt="Riov Logo" 
-            fill 
-            sizes="80px"
-            className="object-cover"
-          />
-        </div>
-        <span className=" text-xl font-medium text-black tracking-wide">Riov</span>
-      </div>
+    <header className="site-header">
+      <a href="#content" className="skip-link">
+        Skip to content
+      </a>
+      <div className="site-header-inner">
+        <div className="topbar">
+          <Link href="/" className="brand">
+            <span className="logo-mark">
+              <Image
+                src="/logo.png"
+                alt=""
+                fill
+                sizes="44px"
+                className="object-cover"
+                priority
+              />
+            </span>
+            <span className="wordmark">Riov</span>
+          </Link>
 
-      {/* Navigation Menu */}
-      <nav className="hidden md:flex gap-8 text-body font-medium items-center">
-      <a 
-  href="#hero"
-  className="bg-primary hover:bg-primary-dark text-white px-5 py-2.5 rounded-xl font-bold transition-all shadow-md active:scale-95"
->
-  Get the App
-</a>
-        <a href="#features" className="hover:text-primary transition-colors">Features</a>
-        <a href="#about" className="hover:text-primary transition-colors">About</a>
-        <a href="#investors" className="hover:text-primary transition-colors">Investors</a>
-        <a href="#contact" className="text-primary font-semibold hover:text-primary-dark transition-colors">
-          Contact Us
-        </a>
-      </nav>
-      
+          <div className="topbar-tools">
+            <LanguageWheel />
+            <ThemeToggle />
+            <Link href="/#contact" className="btn btn-sm contact-desktop">
+              Contact us
+            </Link>
+          </div>
+        </div>
+
+        <nav className="main-nav" aria-label="Main">
+          {links.map((link) => (
+            <Link
+              key={link.label}
+              href={link.href}
+              aria-current={link.current ? "page" : undefined}
+            >
+              {link.label}
+            </Link>
+          ))}
+        </nav>
+      </div>
     </header>
   );
 }

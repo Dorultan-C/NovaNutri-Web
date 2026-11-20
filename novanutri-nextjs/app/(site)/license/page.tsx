@@ -1,14 +1,17 @@
 import React from "react";
+import Header from "@/components/Header";
 
 export default function LicensePage() {
   return (
-    <main className="w-full bg-surface min-h-screen py-24 px-6">
+    <>
+    <Header />
+    <main id="content" className="w-full bg-background min-h-screen py-12 px-6">
       <div className="max-w-3xl mx-auto">
         <h1 className="text-4xl md:text-5xl font-extrabold text-heading tracking-tight mb-4">Software License</h1>
         <p className="text-muted mb-12 font-medium">Copyright &copy; 2026 Riov. All Rights Reserved.</p>
 
-        <div className="text-body space-y-6 leading-relaxed bg-white p-8 rounded-3xl border border-muted/10 shadow-sm">
-          <p className="font-bold uppercase tracking-wider text-heading text-sm mb-6 pb-4 border-b border-muted/10">
+        <div className="card text-body space-y-6 leading-relaxed p-8">
+          <p className="font-bold uppercase tracking-wider text-heading text-sm mb-6 pb-4 border-b border-line">
             Proprietary and Closed Source License
           </p>
 
@@ -33,11 +36,12 @@ export default function LicensePage() {
             IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES.
           </p>
 
-          <p className="pt-6 border-t border-muted/10 font-medium text-heading">
+          <p className="pt-6 border-t border-line font-medium text-heading">
             Unauthorized use of this code is strictly prohibited and constitutes a violation of copyright law.
           </p>
         </div>
       </div>
     </main>
+    </>
   );
 }

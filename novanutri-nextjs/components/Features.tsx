@@ -1,108 +1,92 @@
+import Reveal from "@/components/Reveal";
+
 export default function Features() {
   const features = [
     {
       category: "Cook & Share",
-      badgeColor: "bg-purple-100 text-purple-700 border-purple-200",
       items: [
         {
           title: "AI Food Scanner",
           description: "Not sure what to cook? Scan the ingredients in your kitchen, and we'll generate the perfect meal using exactly what you have.",
-          icon: "📸"
+          icon: "📸",
         },
         {
           title: "Export Your Plan & List as PDF",
           description: "Turn your weekly meal plan or shopping list into a clean PDF and share it from your phone, or copy your list as text to paste into WhatsApp or Messenger.",
-          icon: "📄"
-        }
-      ]
+          icon: "📄",
+        },
+      ],
     },
     {
       category: "Smart Organization",
-      badgeColor: "bg-blue-100 text-blue-700 border-blue-200",
       items: [
         {
           title: "Meal Planner & Virtual Fridge",
           description: "Plan your entire week in seconds. Keep track of what's inside your Virtual Fridge to drastically reduce food waste.",
-          icon: "📅"
+          icon: "📅",
         },
         {
           title: "Smart Shopping Organizer",
           description: "Your meal plan automatically generates a highly organized shopping list, categorized by supermarket aisles to save you time.",
-          icon: "🛒"
-        }
-      ]
+          icon: "🛒",
+        },
+      ],
     },
     {
       category: "Health, Wallet & Safety",
-      badgeColor: "bg-green-100 text-green-700 border-green-200",
       items: [
         {
           title: "Mediterranean Plans & Nutrition",
           description: "Generate weekly menus based on clinical Mediterranean guidelines (prioritizing vegetables, legumes, and lean proteins) while tracking your daily macros.",
-          icon: "🥑"
+          icon: "🥑",
         },
         {
           title: "Clinical Dietary & Allergy Control",
           description: "Navigate recipes safely. Set strict food allergies (like gluten or dairy) or list disliked ingredients, and Riov will automatically filter your meals.",
-          icon: "🛡️"
-        }
-      ]
-    }
+          icon: "🛡️",
+        },
+      ],
+    },
   ];
 
   return (
-    <section id="features" className="w-full bg-white py-24 px-6 relative overflow-hidden">
-      {/* Background decoration */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-full overflow-hidden pointer-events-none opacity-30">
-        <div className="absolute -top-[20%] -right-[10%] w-125 h-125 rounded-full bg-primary/5 blur-3xl"></div>
-        <div className="absolute top-[60%] -left-[10%] w-150 h-150 rounded-full bg-blue-500/5 blur-3xl"></div>
-      </div>
+    <section id="features" className="w-full bg-background py-20 md:py-24 px-6">
+      <div className="max-w-7xl mx-auto">
+        <Reveal>
+          <div className="text-center max-w-3xl mx-auto mb-14 md:mb-16">
+            <h2 className="text-4xl md:text-5xl font-extrabold text-heading tracking-tight mb-6">
+              Everything you need in <span className="text-accent">one app.</span>
+            </h2>
+            <p className="text-lg text-body">
+              Riov replaces your notes app, your calorie counter, and your budget tracker with a single, AI-powered ecosystem.
+            </p>
+          </div>
+        </Reveal>
 
-      <div className="max-w-7xl mx-auto relative z-10">
-        
-        {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-20">
-          <h2 className="text-4xl md:text-5xl font-extrabold text-heading tracking-tight mb-6">
-            Everything you need in <span className="text-primary">one app.</span>
-          </h2>
-          <p className="text-lg text-body">
-          Riov replaces your notes app, your calorie counter, and your budget tracker with a single, AI-powered ecosystem.
-          </p>
-        </div>
+        <Reveal>
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            {features.map((section) => (
+              <div key={section.category} className="flex flex-col gap-5">
+                <div className="flex items-center gap-3">
+                  <span className="px-3 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider bg-accent-soft text-accent border border-line">
+                    {section.category}
+                  </span>
+                  <div className="h-px bg-line flex-1" />
+                </div>
 
-        {/* Feature Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          {features.map((section, sectionIdx) => (
-            <div key={sectionIdx} className="flex flex-col gap-6">
-              
-              {/* Category Badge */}
-              <div className="flex items-center gap-2 mb-2">
-                <span className={`px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider border shadow-sm ${section.badgeColor}`}>
-                  {section.category}
-                </span>
-                <div className="h-px bg-muted/20 flex-1"></div>
+                {section.items.map((item) => (
+                  <div key={item.title} className="card flex-1 flex flex-col p-7">
+                    <div className="icon-tile mb-5" aria-hidden="true">
+                      {item.icon}
+                    </div>
+                    <h3 className="text-xl font-bold text-heading mb-3">{item.title}</h3>
+                    <p className="text-body leading-relaxed grow">{item.description}</p>
+                  </div>
+                ))}
               </div>
-
-{/* Feature Cards */}
-{section.items.map((item, itemIdx) => (
-  <div 
-    key={itemIdx} 
-    // 🌟 ADD 'flex-1' and 'flex flex-col' to make all cards in a row equal height
-    className="flex-1 flex flex-col bg-surface border border-muted/10 p-8 rounded-3xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group"
-  >
-    <div className="w-14 h-14 bg-muted/5 rounded-2xl flex items-center justify-center text-3xl mb-6 group-hover:scale-110 transition-transform duration-300 shadow-inner border border-muted/10">
-      {item.icon}
-    </div>
-    <h3 className="text-xl font-bold text-heading mb-3">{item.title}</h3>
-    
-    {/* 🌟 ADD 'flex-grow' to the paragraph so it fills the vertical space */}
-    <p className="text-body leading-relaxed grow">{item.description}</p>
-  </div>
-))}
-            </div>
-          ))}
-        </div>
-
+            ))}
+          </div>
+        </Reveal>
       </div>
     </section>
   );

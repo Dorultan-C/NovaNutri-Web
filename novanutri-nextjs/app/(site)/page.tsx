@@ -8,13 +8,15 @@ import Investors from "@/components/Investors";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-background flex flex-col font-sans selection:bg-primary-light selection:text-primary-dark">
+    <div className="min-h-screen bg-background flex flex-col font-sans">
       <Header />
-      <About />
-      <Hero />
-      <Features />
-      <Investors />
-      <Contact />
+      <main id="content" className="flex-1">
+        <Hero />
+        <Features />
+        <About />
+        <Investors />
+        <Contact />
+      </main>
       <Footer />
     </div>
   );
