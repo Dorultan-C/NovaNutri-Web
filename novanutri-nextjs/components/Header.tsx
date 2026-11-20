@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import LanguageWheel from "@/components/LanguageWheel";
+import LanguageMenu from "@/components/LanguageMenu";
 import ThemeToggle from "@/components/ThemeToggle";
 
 type HeaderProps = {
@@ -46,7 +46,7 @@ export default function Header({
           </Link>
 
           <div className="topbar-tools">
-            <LanguageWheel />
+            <LanguageMenu />
             <ThemeToggle />
             <Link href="/#contact" className="btn btn-sm contact-desktop">
               Contact us

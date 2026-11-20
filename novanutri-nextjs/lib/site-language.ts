@@ -1,53 +1,27 @@
 /**
- * Site language preference for the header wheel.
+ * Language rows for the header menu.
  *
- * Isolated on purpose. No site-wide translation branch was available when this
- * landed. A later i18n change should keep this storage key and these codes
- * (`en`, `es`, `ca`, `fr`, `it`, `ro`, `da` — the legal-page locales) and can
- * replace `readStoredLanguage` / `writeStoredLanguage`, or listen for the
- * `riov-language-change` event.
+ * Persistence lives in lib/language-adapter.ts (cookie `riov_lang`, the same
+ * cookie as PR #12). This list does not translate the page.
  *
- * This module does not translate copy and does not change `<html lang>`,
- * so a legal page keeps the language of its URL.
+ * Adding a language is data: one entry here, plus a flag in
+ * `components/flags.tsx` for its `flag` id. `label` is the native name.
+ * `englishName` is the other string the search box matches.
  */
 
-export const SITE_LANGUAGE_STORAGE_KEY = "riov-language";
-
-export const SITE_LANGUAGE_EVENT = "riov-language-change";
-
 export const SITE_LANGUAGES = [
-  { code: "en", label: "English" },
-  { code: "es", label: "Español" },
-  { code: "ca", label: "Català" },
-  { code: "fr", label: "Français" },
-  { code: "it", label: "Italiano" },
-  { code: "ro", label: "Română" },
-  { code: "da", label: "Dansk" },
+  { code: "en", label: "English", englishName: "English", short: "EN", flag: "uk" },
+  { code: "es", label: "Español", englishName: "Spanish", short: "ES", flag: "es" },
+  { code: "ca", label: "Català", englishName: "Catalan", short: "CA", flag: "catalonia" },
+  { code: "fr", label: "Français", englishName: "French", short: "FR", flag: "fr" },
+  { code: "it", label: "Italiano", englishName: "Italian", short: "IT", flag: "it" },
+  { code: "ro", label: "Română", englishName: "Romanian", short: "RO", flag: "ro" },
+  { code: "da", label: "Dansk", englishName: "Danish", short: "DA", flag: "dk" },
 ] as const;
 
-export type SiteLanguageCode = (typeof SITE_LANGUAGES)[number]["code"];
+export type SiteLanguage = (typeof SITE_LANGUAGES)[number];
+export type SiteLanguageCode = SiteLanguage["code"];
 
 export function isSiteLanguage(value: string | null | undefined): value is SiteLanguageCode {
   return !!value && SITE_LANGUAGES.some((language) => language.code === value);
-}
-
-export function readStoredLanguage(): SiteLanguageCode | null {
-  if (typeof window === "undefined") return null;
-  try {
-    const value = localStorage.getItem(SITE_LANGUAGE_STORAGE_KEY);
-    return isSiteLanguage(value) ? value : null;
-  } catch {
-    return null;
-  }
-}
-
-export function writeStoredLanguage(code: SiteLanguageCode) {
-  if (typeof window === "undefined") return;
-  try {
-    localStorage.setItem(SITE_LANGUAGE_STORAGE_KEY, code);
-  } catch {
-    /* Private browsing can block storage. The wheel still updates in memory. */
-  }
-  document.documentElement.setAttribute("data-lang", code);
-  window.dispatchEvent(new CustomEvent(SITE_LANGUAGE_EVENT, { detail: code }));
 }
