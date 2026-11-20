@@ -1,7 +1,6 @@
-import Link from "next/link";
 import type { TermsLocale } from "@/lib/terms";
 import { TERMS_LOCALES, termsHref } from "@/content/terms-helpers";
-import Header from "@/components/Header";
+import PersistLangLink from "@/components/PersistLangLink";
 
 const CONTENT_CLASS =
   "text-body leading-relaxed [&_h2]:text-2xl [&_h2]:font-bold [&_h2]:text-heading [&_h2]:mt-10 [&_h2]:mb-3 [&_h3]:text-xl [&_h3]:font-bold [&_h3]:text-heading [&_h3]:mt-6 [&_h3]:mb-2 [&_p]:mb-3 [&_ul]:list-disc [&_ul]:pl-6 [&_ul]:mb-3 [&_ul]:space-y-2 [&_ol]:list-decimal [&_ol]:pl-6 [&_ol]:mb-3 [&_ol]:space-y-2 [&_a]:text-accent [&_a]:underline [&_strong]:font-semibold [&_strong]:text-heading [&_blockquote]:border-l-4 [&_blockquote]:border-accent/40 [&_blockquote]:pl-4 [&_blockquote]:italic [&_blockquote]:my-4 [&_table]:w-full [&_table]:text-sm [&_table]:my-4 [&_table]:border-collapse [&_th]:text-left [&_th]:font-semibold [&_th]:text-heading [&_th]:border [&_th]:border-line [&_th]:p-2 [&_th]:bg-surface-muted [&_td]:border [&_td]:border-line [&_td]:p-2 [&_td]:align-top";
@@ -9,8 +8,6 @@ const CONTENT_CLASS =
 export default function TermsView({ locale }: { locale: TermsLocale }) {
   const langs = Object.values(TERMS_LOCALES);
   return (
-    <>
-    <Header />
     <main id="content" lang={locale.htmlLang} className="w-full bg-background min-h-screen py-12 px-6">
       <div className="max-w-3xl mx-auto">
         <nav aria-label={locale.switcherLabel} className="mb-8 flex flex-wrap items-center gap-2 text-sm">
@@ -18,19 +15,20 @@ export default function TermsView({ locale }: { locale: TermsLocale }) {
           {langs.map((l) => {
             const active = l.lang === locale.lang;
             return (
-              <Link
+              <PersistLangLink
                 key={l.lang}
+                lang={l.lang}
                 href={termsHref(l)}
                 hrefLang={l.htmlLang}
+                current={active}
                 className={
                   active
                     ? "px-3 py-1 rounded-full bg-primary text-white font-semibold"
                     : "px-3 py-1 rounded-full border border-line text-body hover:border-accent hover:text-accent"
                 }
-                aria-current={active ? "page" : undefined}
               >
                 {l.languageName}
-              </Link>
+              </PersistLangLink>
             );
           })}
         </nav>
@@ -48,6 +46,5 @@ export default function TermsView({ locale }: { locale: TermsLocale }) {
         />
       </div>
     </main>
-    </>
   );
 }

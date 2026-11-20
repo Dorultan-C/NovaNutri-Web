@@ -1,9 +1,8 @@
 "use client";
 
 import { useId } from "react";
-import type { SiteLanguage } from "@/lib/site-language";
 
-export type FlagId = SiteLanguage["flag"];
+export type FlagId = "uk" | "es" | "catalonia" | "fr" | "it" | "ro" | "dk";
 
 function Svg({ children, label }: { children: React.ReactNode; label: string }) {
   return (

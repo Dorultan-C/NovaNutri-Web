@@ -28,7 +28,7 @@ export default function RootShell({
       suppressHydrationWarning
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col" suppressHydrationWarning>
+      <body className="min-h-full flex flex-col font-sans" suppressHydrationWarning>
         <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
         <Providers>
           {children}

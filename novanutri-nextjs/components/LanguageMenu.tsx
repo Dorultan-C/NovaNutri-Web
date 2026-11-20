@@ -1,27 +1,32 @@
 "use client";
 
-import { useEffect, useId, useMemo, useRef, useState, type KeyboardEvent as ReactKeyboardEvent } from "react";
+import { useEffect, useId, useMemo, useRef, useState, type KeyboardEvent } from "react";
 import { usePathname, useRouter } from "next/navigation";
-import { Flag } from "@/components/flags";
-import { localizedLegalPath } from "@/lib/language-adapter";
-import { SITE_LANGUAGES, type SiteLanguage, type SiteLanguageCode } from "@/lib/site-language";
-import { useSiteLanguage } from "@/lib/use-site-language";
+import { Flag, type FlagId } from "@/components/flags";
+import { useLanguage, useSiteMessages } from "@/components/LanguageProvider";
+import { SITE_LOCALES, localizedLegalPath, localeByCode, type SiteLang } from "@/lib/i18n/locales";
+
+const LANG_UI: Record<SiteLang, { short: string; englishName: string; flag: FlagId }> = {
+  en: { short: "EN", englishName: "English", flag: "uk" },
+  es: { short: "ES", englishName: "Spanish", flag: "es" },
+  ca: { short: "CA", englishName: "Catalan", flag: "catalonia" },
+  fr: { short: "FR", englishName: "French", flag: "fr" },
+  it: { short: "IT", englishName: "Italian", flag: "it" },
+  ro: { short: "RO", englishName: "Romanian", flag: "ro" },
+  da: { short: "DA", englishName: "Danish", flag: "dk" },
+};
 
 function fold(value: string) {
   return value.normalize("NFD").replace(/\p{M}/gu, "").toLowerCase();
 }
 
-function matches(language: SiteLanguage, query: string) {
-  if (!query) return true;
-  const haystack = fold(`${language.label} ${language.englishName} ${language.short} ${language.code}`);
-  return haystack.includes(fold(query.trim()));
-}
-
 export default function LanguageMenu() {
-  const { language, setLanguage } = useSiteLanguage();
+  const { lang, setLang } = useLanguage();
+  const t = useSiteMessages();
   const pathname = usePathname();
   const router = useRouter();
-  const current = SITE_LANGUAGES.find((item) => item.code === language) ?? SITE_LANGUAGES[0];
+  const current = localeByCode(lang);
+  const currentUi = LANG_UI[lang];
   const [open, setOpen] = useState(false);
   const [query, setQuery] = useState("");
   const [active, setActive] = useState(0);
@@ -30,10 +35,15 @@ export default function LanguageMenu() {
   const triggerRef = useRef<HTMLButtonElement>(null);
   const listId = useId();
 
-  const filtered = useMemo(
-    () => SITE_LANGUAGES.filter((item) => matches(item, query)),
-    [query],
-  );
+  const filtered = useMemo(() => {
+    const needle = fold(query.trim());
+    if (!needle) return SITE_LOCALES;
+    return SITE_LOCALES.filter((locale) => {
+      const extra = LANG_UI[locale.code];
+      const haystack = fold(`${locale.name} ${extra.englishName} ${extra.short} ${locale.code}`);
+      return haystack.includes(needle);
+    });
+  }, [query]);
 
   useEffect(() => {
     if (!open) return;
@@ -65,17 +75,21 @@ export default function LanguageMenu() {
     if (restoreFocus) triggerRef.current?.focus();
   };
 
-  const choose = (code: SiteLanguageCode) => {
-    setLanguage(code);
-    const dest = localizedLegalPath(pathname || "/", code);
+  const choose = (next: SiteLang) => {
+    const dest = localizedLegalPath(pathname || "/", next);
     close();
-    if (dest && dest !== (pathname || "/")) router.push(dest);
+    if (next !== lang) setLang(next);
+    if (dest && dest !== (pathname || "/")) {
+      router.push(dest);
+      return;
+    }
+    if (next !== lang) router.refresh();
   };
 
-  const onSearchKeyDown = (event: ReactKeyboardEvent<HTMLInputElement>) => {
+  const onSearchKeyDown = (event: KeyboardEvent<HTMLInputElement>) => {
     if (event.key === "ArrowDown") {
       event.preventDefault();
-      setActive((index) => Math.min(filtered.length - 1, index + 1));
+      setActive((index) => Math.min(Math.max(filtered.length - 1, 0), index + 1));
     } else if (event.key === "ArrowUp") {
       event.preventDefault();
       setActive((index) => Math.max(0, index - 1));
@@ -107,7 +121,7 @@ export default function LanguageMenu() {
         aria-haspopup="listbox"
         aria-expanded={open}
         aria-controls={listId}
-        aria-label={`Language: ${current.label}`}
+        aria-label={`${current.switcherLabel}: ${current.name}`}
         onClick={() => setOpen((value) => !value)}
         onKeyDown={(event) => {
           if (event.key === "ArrowDown" || event.key === "Enter" || event.key === " ") {
@@ -116,8 +130,8 @@ export default function LanguageMenu() {
           }
         }}
       >
-        <Flag id={current.flag} />
-        <span className="lang-short">{current.short}</span>
+        <Flag id={currentUi.flag} />
+        <span className="lang-short">{currentUi.short}</span>
         <svg className={`lang-chevron${open ? " is-open" : ""}`} width="12" height="12" viewBox="0 0 12 12" aria-hidden="true">
           <path d="M2.2 4.2 L6 8 L9.8 4.2" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
         </svg>
@@ -130,20 +144,20 @@ export default function LanguageMenu() {
             className="lang-search"
             type="search"
             value={query}
-            placeholder="Search languages"
-            aria-label="Search languages"
+            placeholder={t.nav.searchLanguages}
+            aria-label={t.nav.searchLanguages}
             aria-autocomplete="list"
             aria-controls={listId}
             aria-activedescendant={filtered[active] ? `${listId}-${filtered[active].code}` : undefined}
             onChange={(event) => setQuery(event.target.value)}
             onKeyDown={onSearchKeyDown}
           />
-          <ul id={listId} className="lang-list" role="listbox" aria-label="Languages">
+          <ul id={listId} className="lang-list" role="listbox" aria-label={current.switcherLabel}>
             {filtered.length === 0 ? (
-              <li className="lang-empty">No languages</li>
+              <li className="lang-empty">{t.nav.noLanguages}</li>
             ) : (
               filtered.map((item, index) => {
-                const selected = item.code === language;
+                const selected = item.code === lang;
                 return (
                   <li
                     key={item.code}
@@ -155,8 +169,8 @@ export default function LanguageMenu() {
                     onMouseDown={(event) => event.preventDefault()}
                     onClick={() => choose(item.code)}
                   >
-                    <Flag id={item.flag} />
-                    <span className="lang-name">{item.label}</span>
+                    <Flag id={LANG_UI[item.code].flag} />
+                    <span className="lang-name">{item.name}</span>
                     {selected ? <span className="lang-check" aria-hidden="true">✓</span> : null}
                   </li>
                 );

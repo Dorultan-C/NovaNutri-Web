@@ -1,7 +1,10 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import LanguageMenu from "@/components/LanguageMenu";
 import ThemeToggle from "@/components/ThemeToggle";
+import { useSiteMessages } from "@/components/LanguageProvider";
 
 type HeaderProps = {
   /** Localized brands URL. Defaults to /brands, which PR #10 adds. */
@@ -12,21 +15,22 @@ type HeaderProps = {
 
 export default function Header({
   brandsHref = "/brands",
-  brandsLabel = "For brands",
+  brandsLabel,
   brandsActive = false,
 }: HeaderProps) {
+  const t = useSiteMessages();
   const links = [
-    { href: "/#hero", label: "Get the app" },
-    { href: "/#features", label: "Features" },
-    { href: "/#about", label: "About" },
-    { href: "/#investors", label: "Investors" },
-    { href: brandsHref, label: brandsLabel, current: brandsActive },
+    { href: "/#hero", label: t.nav.getApp },
+    { href: "/#features", label: t.nav.features },
+    { href: "/#about", label: t.nav.about },
+    { href: "/#investors", label: t.nav.investors },
+    { href: brandsHref, label: brandsLabel ?? t.nav.forBrands, current: brandsActive },
   ];
 
   return (
     <header className="site-header">
       <a href="#content" className="skip-link">
-        Skip to content
+        {t.nav.skip}
       </a>
       <div className="site-header-inner">
         <div className="topbar">
@@ -48,15 +52,15 @@ export default function Header({
             <LanguageMenu />
             <ThemeToggle />
             <Link href="/#contact" className="btn btn-sm contact-top">
-              Contact us
+              {t.nav.contact}
             </Link>
           </div>
         </div>
 
-        <nav className="main-nav" aria-label="Main">
+        <nav className="main-nav" aria-label={t.nav.primary}>
           {links.map((link) => (
             <Link
-              key={link.label}
+              key={link.href}
               href={link.href}
               aria-current={link.current ? "page" : undefined}
             >

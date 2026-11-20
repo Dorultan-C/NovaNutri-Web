@@ -1,29 +1,21 @@
-import Image from "next/image";
+"use client";
 
-const shots = [
-  {
-    src: "/hero-mockup.png",
-    alt: "Riov home screen showing today's calorie and macro intake",
-    caption: "Today's intake",
-  },
-  {
-    src: "/feature-2.png",
-    alt: "Riov recipe list with a price on each dish",
-    caption: "Recipes, with prices",
-  },
-  {
-    src: "/feature-3.png",
-    alt: "Riov weekly meal plan with breakfast, lunch, and dinner",
-    caption: "The weekly plan",
-  },
-];
+import Image from "next/image";
+import { useSiteMessages } from "@/components/LanguageProvider";
 
 export default function Hero() {
+  const t = useSiteMessages().hero;
+  const shots = [
+    { src: "/hero-mockup.png", alt: t.mockupAlt, caption: t.shotIntake },
+    { src: "/feature-2.png", alt: t.shotRecipes, caption: t.shotRecipes },
+    { src: "/feature-3.png", alt: t.shotPlan, caption: t.shotPlan },
+  ];
+
   return (
     <section id="hero" className="hero">
       <div className="hero-inner">
         <div className="hero-grid">
-          <div className="shot-row" aria-label="App screenshots">
+          <div className="shot-row" aria-label={t.mockupAlt}>
             {shots.map((shot, index) => (
               <figure className="shot" key={shot.src}>
                 <div className="shot-frame">
@@ -45,20 +37,18 @@ export default function Hero() {
           <div className="hero-copy">
             <div className="hero-badge">
               <span aria-hidden="true">🚀</span>
-              Now Live on iOS & Android
+              {t.badge}
             </div>
 
             <h1>
-              Plan smarter.
+              {t.line1}
               <br />
-              <span className="text-accent">Eat better.</span>
+              <span className="text-accent">{t.line2}</span>
               <br />
-              Spend less.
+              {t.line3}
             </h1>
 
-            <p className="hero-lead">
-              Riov automatically builds your weekly meal plan, tracks your nutrients, and organizes your grocery list to save you time and money.
-            </p>
+            <p className="hero-lead">{t.body}</p>
 
             <div className="hero-cta">
               <div className="store-col">
@@ -68,13 +58,7 @@ export default function Hero() {
                   rel="noopener noreferrer"
                   className="store-badge"
                 >
-                  <Image
-                    src="/google-play-badge.png"
-                    alt="Get it on Google Play"
-                    fill
-                    sizes="192px"
-                    className="object-contain"
-                  />
+                  <Image src="/google-play-badge.png" alt={t.googlePlayAlt} fill sizes="192px" className="object-contain" />
                 </a>
                 <a
                   href="https://apps.apple.com/us/app/riov-mediterranean-meal-plan/id6770679057"
@@ -82,29 +66,15 @@ export default function Hero() {
                   rel="noopener noreferrer"
                   className="store-badge"
                 >
-                  <Image
-                    src="/app-store-badge.svg"
-                    alt="Download on the App Store"
-                    fill
-                    sizes="192px"
-                    className="object-contain"
-                  />
+                  <Image src="/app-store-badge.svg" alt={t.appStoreAlt} fill sizes="192px" className="object-contain" />
                 </a>
               </div>
 
               <div className="qr-block">
                 <div className="relative size-36 shrink-0 rounded-2xl bg-white p-2 shadow-md">
-                  <Image
-                    src="/qr-code.svg"
-                    alt="Scan to download Riov"
-                    fill
-                    sizes="144px"
-                    className="object-contain"
-                  />
+                  <Image src="/qr-code.svg" alt={t.qrAlt} fill sizes="144px" className="object-contain" />
                 </div>
-                <span className="max-w-24 text-sm font-bold uppercase tracking-wider text-muted">
-                  Scan to Download
-                </span>
+                <span className="max-w-24 text-sm font-bold uppercase tracking-wider text-muted">{t.scan}</span>
               </div>
             </div>
           </div>

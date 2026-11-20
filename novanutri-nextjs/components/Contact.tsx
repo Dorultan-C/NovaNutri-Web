@@ -2,9 +2,10 @@
 
 import { useState } from "react";
 import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
-import Reveal from "@/components/Reveal";
+import { useSiteMessages } from "@/components/LanguageProvider";
 
 export default function Contact() {
+  const t = useSiteMessages().contact;
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -23,7 +24,7 @@ export default function Contact() {
     try {
       // 1. Ensure the script has loaded
       if (!executeRecaptcha) {
-        alert("reCAPTCHA is still loading. Please try again in a moment.");
+        alert(t.captchaLoading);
         return;
       }
 
@@ -47,7 +48,7 @@ export default function Contact() {
       setMessage("");
     } catch (error) {
       console.error("Error submitting form: ", error);
-      alert("Something went wrong. Please try again.");
+      alert(t.error);
     } finally {
       setLoading(false);
     }
@@ -55,80 +56,85 @@ export default function Contact() {
 
   return (
     <section id="contact" className="w-full bg-surface py-20 md:py-24 px-6 border-t border-line">
-      <Reveal className="max-w-3xl mx-auto text-center">
-        <h2 className="text-4xl font-extrabold text-heading tracking-tight mb-4">Get in Touch</h2>
+      <div className="max-w-3xl mx-auto text-center">
+        
+        <h2 className="text-4xl font-extrabold text-heading tracking-tight mb-4">{t.title}</h2>
         <p className="text-lg text-body mb-12">
-          Have a question about the app, need support, or want to partner with us? Send us a message and our team will get back to you shortly.
+          {t.intro}
         </p>
 
         {submitted ? (
           <div className="notice-ok p-8 rounded-3xl font-medium flex flex-col items-center justify-center gap-4">
             <span className="text-4xl" aria-hidden="true">📬</span>
             <div className="text-center">
-              <h3 className="text-xl font-bold mb-1">Message Received!</h3>
-              <p>Thanks for reaching out. We&apos;ll get back to you soon.</p>
+              <h3 className="text-xl font-bold mb-1">{t.receivedTitle}</h3>
+              <p>{t.receivedBody}</p>
             </div>
             <button
               type="button"
               onClick={() => setSubmitted(false)}
               className="btn mt-2"
             >
-              Send another message
+              {t.sendAnother}
             </button>
           </div>
         ) : (
           <form className="flex flex-col gap-6 text-left" onSubmit={handleContactSubmit}>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {/* Name Input */}
               <div className="flex flex-col gap-2">
-                <label htmlFor="name" className="text-sm font-bold text-heading ml-1">Name</label>
-                <input
-                  type="text"
-                  id="name"
-                  required
+                <label htmlFor="name" className="text-sm font-bold text-heading ml-1">{t.name}</label>
+                <input 
+                  type="text" 
+                  id="name" 
+                  required 
                   value={name}
                   onChange={(e) => setName(e.target.value)}
-                  placeholder="John Doe"
-                  className="field"
+                  placeholder={t.namePlaceholder} 
+                  className="field" 
                 />
               </div>
-
+              
+              {/* Email Input */}
               <div className="flex flex-col gap-2">
-                <label htmlFor="email" className="text-sm font-bold text-heading ml-1">Email Address</label>
-                <input
-                  type="email"
-                  id="email"
-                  required
+                <label htmlFor="email" className="text-sm font-bold text-heading ml-1">{t.email}</label>
+                <input 
+                  type="email" 
+                  id="email" 
+                  required 
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  placeholder="john@example.com"
-                  className="field"
+                  placeholder={t.emailPlaceholder} 
+                  className="field" 
                 />
               </div>
             </div>
-
+            
+            {/* Message Textarea */}
             <div className="flex flex-col gap-2">
-              <label htmlFor="message" className="text-sm font-bold text-heading ml-1">Message</label>
-              <textarea
-                id="message"
-                required
-                rows={5}
+              <label htmlFor="message" className="text-sm font-bold text-heading ml-1">{t.message}</label>
+              <textarea 
+                id="message" 
+                required 
+                rows={5} 
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
-                placeholder="How can we help you?"
+                placeholder={t.messagePlaceholder} 
                 className="field resize-y"
-              />
+              ></textarea>
             </div>
 
-            <button
-              type="submit"
+            <button 
+              type="submit" 
               disabled={loading}
               className="btn mt-2 w-full md:w-auto md:self-end"
             >
-              {loading ? "Sending..." : "Send Message"}
+              {loading ? t.sending : t.submit}
             </button>
           </form>
         )}
-      </Reveal>
+
+      </div>
     </section>
   );
 }

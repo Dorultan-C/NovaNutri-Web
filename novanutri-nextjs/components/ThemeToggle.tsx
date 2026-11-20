@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { useSiteMessages } from "@/components/LanguageProvider";
 import { THEME_STORAGE_KEY, type ThemeName } from "@/lib/theme";
 
 function applyTheme(theme: ThemeName) {
@@ -19,6 +20,7 @@ function readDark() {
 }
 
 export default function ThemeToggle() {
+  const t = useSiteMessages();
   const [dark, setDark] = useState(false);
 
   useEffect(() => {
@@ -31,7 +33,7 @@ export default function ThemeToggle() {
       className="theme-pill"
       role="switch"
       aria-checked={dark}
-      aria-label="Dark mode"
+      aria-label={t.nav.darkMode}
       onClick={() => {
         const next = !readDark();
         applyTheme(next ? "dark" : "light");
