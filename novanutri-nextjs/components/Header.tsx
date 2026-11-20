@@ -21,7 +21,6 @@ export default function Header({
     { href: "/#about", label: "About" },
     { href: "/#investors", label: "Investors" },
     { href: brandsHref, label: brandsLabel, current: brandsActive },
-    { href: "/#contact", label: "Contact us" },
   ];
 
   return (
@@ -48,7 +47,7 @@ export default function Header({
           <div className="topbar-tools">
             <LanguageMenu />
             <ThemeToggle />
-            <Link href="/#contact" className="btn btn-sm contact-desktop">
+            <Link href="/#contact" className="btn btn-sm contact-top">
               Contact us
             </Link>
           </div>
