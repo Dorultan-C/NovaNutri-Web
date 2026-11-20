@@ -1,4 +1,14 @@
-export default function Footer() {
+import Link from "next/link";
+
+type FooterProps = {
+  brandsHref?: string;
+  brandsLabel?: string;
+};
+
+export default function Footer({
+  brandsHref = "/brands",
+  brandsLabel = "For brands",
+}: FooterProps) {
   const currentYear = new Date().getFullYear();
 
   return (
@@ -105,10 +115,11 @@ export default function Footer() {
           <p className="text-sm text-muted text-center mb-4 md:mb-0">
             &copy; {currentYear} Riov. All rights reserved.
           </p>
-          <div className="flex gap-6 text-sm text-muted font-medium">
-            <a href="/terms" className="hover:text-primary transition-colors">Terms & Conditions</a>
-            <a href="/privacy" className="hover:text-primary transition-colors">Privacy policy</a>
-            <a href="/license" className="hover:text-primary transition-colors">License</a>
+          <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm text-muted font-medium">
+            <Link href={brandsHref} className="hover:text-primary transition-colors text-heading">{brandsLabel}</Link>
+            <Link href="/terms" className="hover:text-primary transition-colors">Terms & Conditions</Link>
+            <Link href="/privacy" className="hover:text-primary transition-colors">Privacy policy</Link>
+            <Link href="/license" className="hover:text-primary transition-colors">License</Link>
           </div>
         </div>
 
