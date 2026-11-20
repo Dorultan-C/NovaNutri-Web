@@ -1,70 +1,65 @@
+"use client";
+
 import Image from "next/image";
+import { useSiteMessages } from "@/components/LanguageProvider";
 
 export default function About() {
+  const t = useSiteMessages().about;
+
   return (
     <section id="about" className="w-full bg-surface py-24 px-6 border-t border-muted/10">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-        
-        {/* Left Side: Image */}
         <div className="relative w-full h-75 md:h-100 rounded-[2.5rem] overflow-hidden shadow-2xl">
-          <Image 
+          <Image
             src="/about-image.png"
-            alt="Family enjoying a healthy meal together" 
-            fill 
+            alt={t.imageAlt}
+            fill
             sizes="1048px"
             className="object-cover"
-            priority 
-          /> 
+            priority
+          />
         </div>
 
-        {/* Right Side: Copy & Stats */}
         <div className="flex flex-col items-start text-left">
-          
-
           <span className="text-primary font-bold uppercase tracking-wider text-sm mb-3">
-            Our Mission
+            {t.mission}
           </span>
-          
+
           <h2 className="text-4xl md:text-5xl font-extrabold text-heading tracking-tight mb-6 leading-tight">
-            From <span className="text-indigo-500">Scrolling</span> to Serving.
+            {t.headlineLead}<span className="text-indigo-500">{t.headlineHighlight}</span>{t.headlineTail}
           </h2>
-          
+
           <p className="text-lg text-body mb-6 leading-relaxed">
-            We believe feeding your family shouldn&apos;t feel like a second job. Between rising grocery costs, the stress of meal planning, and the guilt of throwing away forgotten food, dinner time has become unnecessarily complicated.
-          </p>
-          
-          <p className="text-lg text-body mb-10 leading-relaxed">
-            Riov was built to change that. By combining our AI recipe scanner with practical household tools—like the Virtual Fridge and budget tracking—we help you maximize the ingredients you already have, discover new cuisines, and bring the joy back to the kitchen.
+            {t.paragraph1}
           </p>
 
-          {/* NEW: Founder Background */}
+          <p className="text-lg text-body mb-10 leading-relaxed">
+            {t.paragraph2}
+          </p>
+
           <div className="bg-primary/5 border-l-4 border-primary p-4 rounded-r-xl mb-10">
             <p className="text-sm text-heading font-medium italic">
-              &quot;After 10 years working as a professional Chef and Kitchen Manager, I realized households were missing the tools we use in the industry: strict food cost control, allergen compliance, and zero-waste logistics. I built Riov to bring that professional efficiency into your family kitchen.&quot;
+              &quot;{t.quote}&quot;
             </p>
-            <p className="text-xs text-muted mt-2 font-bold uppercase tracking-wider">— Cristian Dorultan, Founder & Lead Engineer</p>
+            <p className="text-xs text-muted mt-2 font-bold uppercase tracking-wider">— {t.attribution}</p>
           </div>
 
-          {/* Stats Row */}
           <div className="grid grid-cols-2 md:grid-cols-3 gap-8 w-full border-t border-muted/10 pt-8 mt-2">
-            
             <div className="flex flex-col">
               <span className="text-3xl font-extrabold text-heading mb-1">7+</span>
-              <span className="text-sm font-bold text-muted uppercase tracking-wider">Languages</span>
-            </div>
-            
-            <div className="flex flex-col">
-              <span className="text-3xl font-extrabold text-heading mb-1">Live</span>
-              <span className="text-sm font-bold text-muted uppercase tracking-wider">Budget Tracking</span>
-            </div>
-            
-            <div className="flex flex-col">
-              <span className="text-3xl font-extrabold text-heading mb-1">Minimal</span>
-              <span className="text-sm font-bold text-muted uppercase tracking-wider">Food Waste</span>
+              <span className="text-sm font-bold text-muted uppercase tracking-wider">{t.statLanguages}</span>
             </div>
 
+            <div className="flex flex-col">
+              <span className="text-3xl font-extrabold text-heading mb-1">{t.statLive}</span>
+              <span className="text-sm font-bold text-muted uppercase tracking-wider">{t.statBudget}</span>
+            </div>
+
+            <div className="flex flex-col">
+              <span className="text-3xl font-extrabold text-heading mb-1">{t.statMinimal}</span>
+              <span className="text-sm font-bold text-muted uppercase tracking-wider">{t.statWaste}</span>
+            </div>
           </div>
-          
         </div>
       </div>
     </section>
