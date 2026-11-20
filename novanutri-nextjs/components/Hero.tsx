@@ -1,114 +1,85 @@
+"use client";
+
 import Image from "next/image";
+import { useSiteMessages } from "@/components/LanguageProvider";
 
 export default function Hero() {
+  const t = useSiteMessages().hero;
+  const shots = [
+    { src: "/hero-mockup.png", alt: t.mockupAlt, caption: t.shotIntake },
+    { src: "/feature-2.png", alt: t.shotRecipes, caption: t.shotRecipes },
+    { src: "/feature-3.png", alt: t.shotPlan, caption: t.shotPlan },
+  ];
+
   return (
-    <main id="hero" className="grow flex items-center justify-center px-6 py-12 md:py-24 overflow-hidden relative" >
-      
-      {/* Background Glow */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-200 h-200 bg-primary/5 rounded-full blur-3xl -z-10"></div>
-
-      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-        
-        {/* Left Text Content */}
-        <div className="flex flex-col items-start text-left z-10">
-          
-          {/* Updated Top Badge for both stores */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-bold mb-6 shadow-sm">
-            <span className="text-lg">🚀</span>
-            Now Live on iOS & Android
-          </div>
-
-          <h1 className="text-5xl lg:text-7xl font-extrabold text-heading tracking-tight mb-6 leading-tight">
-            Plan smarter.<br/>
-            <span className="text-primary">Eat better.</span><br/>
-            Spend less.
-          </h1>
-          
-          <p className="text-lg text-body mb-10 max-w-lg leading-relaxed">
-            Riov automatically builds your weekly meal plan, tracks your nutrients, and organizes your grocery list to save you time and money.
-          </p>
-
-          {/* Download CTAs & QR Code */}
-          <div className="w-full max-w-xl flex flex-col sm:flex-row items-start sm:items-center gap-8 animate-in fade-in duration-700 delay-200">
-            
-            {/* App Store Buttons Container */}
-            <div className="flex flex-col gap-4 shrink-0">
-              {/* Google Play Button */}
-              <a 
-                href="https://play.google.com/store/apps/details?id=com.riov.app&pcampaignid=web_share" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="active:scale-95 transition-transform hover:opacity-90 shrink-0"
-              >
-                <div className="relative w-48 h-14">
-                  <Image 
-                    src="/google-play-badge.png" 
-                    alt="Get it on Google Play" 
-                    fill 
-                    sizes="192px"
-                    className="object-contain"
-                  />
-                </div>
-              </a>
-
-              {/* App Store Button */}
-              <a 
-                href="https://apps.apple.com/us/app/riov-mediterranean-meal-plan/id6770679057" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="active:scale-95 transition-transform hover:opacity-90 shrink-0"
-              >
-                <div className="relative w-48 h-14">
-                  <Image 
-                    src="/app-store-badge.svg" 
-                    alt="Download on the App Store" 
-                    fill 
-                    sizes="192px"
-                    className="object-contain"
-                  />
-                </div>
-              </a>
-            </div>
-
-            {/* Desktop QR Code (Hidden on small screens) */}
-            <div className="hidden sm:flex items-center gap-4 pl-8 border-l border-muted/20">
-              <div className="bg-white p-2 rounded-2xl shadow-sm border border-muted/10 relative w-50 h-50 shrink-0">
-                <Image 
-                  src="/qr-code.svg" 
-                  alt="Scan to download Riov" 
-                  fill 
-                  sizes="200px"
-                  className="object-cover rounded-xl"
-                />
-              </div>
-              <span className="text-sm font-bold text-muted uppercase tracking-wider max-w-25 leading-tight">
-                Scan to Download
-              </span>
-            </div>
-
-          </div>
-
-        </div>
-
-        {/* Right Image/App Preview Content */}
-        <div className="relative w-full flex items-center justify-center lg:justify-end animate-in fade-in zoom-in duration-700 delay-200 lg:pl-10">
-           {/* Smartphone Frame Container */}
-           <div className="relative w-75 sm:w-85 aspect-9/19.5">
-               <div className="absolute inset-0 bg-linear-to-tr from-primary/20 to-primary/5 rounded-[3rem] -rotate-3 scale-105 -z-10 translate-x-2 translate-y-4"></div>
-               <div className="w-full h-full bg-white rounded-[2.5rem] shadow-2xl border-[6px] sm:border-8 border-white overflow-hidden relative ring-1 ring-black/5">
-                  <Image 
-                    src="/hero-mockup.png"
-                    alt="Riov App Interface"
+    <section id="hero" className="hero">
+      <div className="hero-inner">
+        <div className="hero-grid">
+          <div className="shot-row" aria-label={t.mockupAlt}>
+            {shots.map((shot, index) => (
+              <figure className="shot" key={shot.src}>
+                <div className="shot-frame">
+                  <Image
+                    src={shot.src}
+                    alt={shot.alt}
                     fill
-                    sizes="1048px"
-                    className="object-cover object-top" 
-                    priority 
+                    sizes="(min-width: 960px) 220px, 68vw"
+                    className="object-cover object-top"
+                    priority={index === 0}
+                    quality={60}
                   />
-               </div>
-           </div>
-        </div>
+                </div>
+                <figcaption>{shot.caption}</figcaption>
+              </figure>
+            ))}
+          </div>
 
+          <div className="hero-copy">
+            <div className="hero-badge">
+              <span aria-hidden="true">🚀</span>
+              {t.badge}
+            </div>
+
+            <h1>
+              {t.line1}
+              <br />
+              <span className="text-accent">{t.line2}</span>
+              <br />
+              {t.line3}
+            </h1>
+
+            <p className="hero-lead">{t.body}</p>
+
+            <div className="hero-cta">
+              <div className="store-col">
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.riov.app&pcampaignid=web_share"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="store-badge"
+                >
+                  <Image src="/google-play-badge.png" alt={t.googlePlayAlt} fill sizes="192px" className="object-contain" />
+                </a>
+                <a
+                  href="https://apps.apple.com/us/app/riov-mediterranean-meal-plan/id6770679057"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="store-badge"
+                >
+                  <Image src="/app-store-badge.svg" alt={t.appStoreAlt} fill sizes="192px" className="object-contain" />
+                </a>
+              </div>
+
+              <div className="qr-block">
+                <div className="relative size-36 shrink-0 rounded-2xl bg-white p-2 shadow-md">
+                  <Image src="/qr-code.svg" alt={t.qrAlt} fill sizes="144px" className="object-contain" />
+                </div>
+                <span className="max-w-24 text-sm font-bold uppercase tracking-wider text-muted">{t.scan}</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </main>
+    </section>
   );
 }
